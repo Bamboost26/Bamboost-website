@@ -15,202 +15,8 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<style>
+<link rel="stylesheet" href="../assets/css/style.css">
 
-    /* ===== BAMBOOST GLOBAL CSS ===== */
-    :root {
-      --g1: #0d2b1a;
-      --g2: #1a3a2a;
-      --g3: #2d6a4f;
-      --g4: #52b788;
-      --g5: #95d5b2;
-      --g6: #d8f3dc;
-      --cream: #f7f3ea;
-      --cream2: #ece7da;
-      --gold: #c9a84c;
-      --gold2: #e8d08a;
-      --text1: #181810;
-      --text2: #3a3a2e;
-      --text3: #6e6e5a;
-    }
-    * { box-sizing: border-box; }
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--cream); color: var(--text1); overflow-x: hidden; }
-
-    /* NAV */
-    .bam-nav { background: rgba(247,243,234,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(82,183,136,0.15); padding: 0.75rem 0; transition: box-shadow 0.3s; }
-    .bam-nav.scrolled { box-shadow: 0 4px 24px rgba(13,43,26,0.1); }
-    .bam-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.75rem; font-weight: 700; color: var(--g2) !important; text-decoration: none; letter-spacing: -0.3px; }
-    .bam-logo span { color: var(--g4); }
-    .bam-nav .nav-link { color: var(--text2) !important; font-size: 0.875rem; font-weight: 500; padding: 0.45rem 0.8rem !important; border-radius: 100px; transition: all 0.2s; }
-    .bam-nav .nav-link:hover, .bam-nav .nav-link.active { color: var(--g3) !important; background: var(--g6); }
-    .bam-dropdown { border: 1px solid var(--cream2); border-radius: 14px; box-shadow: 0 12px 40px rgba(13,43,26,0.12); padding: 0.5rem; min-width: 210px; }
-    .bam-dropdown .dropdown-item { font-size: 0.84rem; color: var(--text2); padding: 0.55rem 0.9rem; border-radius: 8px; transition: all 0.15s; }
-    .bam-dropdown .dropdown-item:hover { background: var(--g6); color: var(--g3); }
-    .bam-dropdown .dropdown-divider { border-color: var(--cream2); margin: 0.25rem 0; }
-    .navbar-toggler { border: 1px solid rgba(82,183,136,0.3) !important; }
-    .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(26,58,42,0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; }
-
-    /* BUTTONS */
-    .bam-btn-primary { background: var(--g2); color: var(--cream) !important; border: none; border-radius: 100px; font-weight: 600; font-size: 0.875rem; transition: all 0.3s; }
-    .bam-btn-primary:hover { background: var(--g3); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(26,58,42,0.25); color: var(--cream) !important; }
-    .bam-btn-green { background: var(--g4); color: var(--g1) !important; border: none; border-radius: 100px; font-weight: 600; transition: all 0.3s; }
-    .bam-btn-green:hover { background: var(--g5); transform: translateY(-2px); color: var(--g1) !important; }
-    .bam-btn-gold { background: var(--gold); color: var(--g1) !important; border: none; border-radius: 100px; font-weight: 600; transition: all 0.3s; }
-    .bam-btn-gold:hover { background: var(--gold2); transform: translateY(-2px); color: var(--g1) !important; }
-    .bam-btn-ghost { background: transparent; color: #fff !important; border: 2px solid rgba(255,255,255,0.35); border-radius: 100px; font-weight: 500; transition: all 0.3s; }
-    .bam-btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,0.1); color: #fff !important; }
-    .bam-btn-outline { background: transparent; color: var(--g3) !important; border: 2px solid var(--g3); border-radius: 100px; font-weight: 600; transition: all 0.3s; }
-    .bam-btn-outline:hover { background: var(--g3); color: #fff !important; }
-
-    /* HERO */
-    .bam-hero { background: var(--g1); padding-top: 100px; padding-bottom: 60px; position: relative; overflow: hidden; }
-    .bam-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 15% 60%, rgba(82,183,136,0.18) 0%, transparent 55%), radial-gradient(ellipse at 85% 20%, rgba(201,168,76,0.09) 0%, transparent 50%); pointer-events: none; }
-    .bam-hero-content { position: relative; z-index: 2; }
-    .hero-eyebrow { display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: var(--g5); margin-bottom: 1rem; }
-    .bam-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.4rem, 5vw, 4.2rem); font-weight: 700; color: var(--cream); line-height: 1.1; margin-bottom: 1.3rem; }
-    .bam-hero h1 em { color: var(--g4); font-style: italic; }
-    .bam-hero .lead { color: rgba(247,243,234,0.72); font-size: 1.05rem; line-height: 1.8; max-width: 560px; }
-    .breadcrumb-dark { font-size: 0.78rem; color: rgba(247,243,234,0.45); margin-bottom: 1.2rem; }
-    .breadcrumb-dark a { color: var(--g5); text-decoration: none; }
-    .breadcrumb-dark a:hover { color: #fff; }
-    .hero-pill { display: inline-block; background: rgba(82,183,136,0.14); border: 1px solid rgba(82,183,136,0.28); color: var(--g5); padding: 0.32rem 0.85rem; border-radius: 100px; font-size: 0.78rem; margin: 0.2rem; }
-
-    /* BAMBOO DECO */
-    .bam-stalk-wrap { position: absolute; right: 0; top: 0; bottom: 0; width: 45%; pointer-events: none; overflow: hidden; opacity: 0.07; }
-    .bam-stalk { position: absolute; bottom: -5%; border-radius: 50%; background: linear-gradient(180deg, #52b788 0%, #2d6a4f 60%, #1a3a2a 100%); animation: bamSway 5s ease-in-out infinite; transform-origin: bottom center; }
-    @keyframes bamSway { 0%,100%{transform:rotate(-1.5deg)} 50%{transform:rotate(1.5deg)} }
-
-    /* SECTIONS */
-    .section-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: var(--g4); display: block; margin-bottom: 0.7rem; }
-    .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 3vw, 2.7rem); font-weight: 700; color: var(--g2); line-height: 1.15; margin-bottom: 1rem; }
-    .section-title em { font-style: italic; color: var(--g4); }
-    .section-title.light { color: var(--cream); }
-    .section-divider { width: 48px; height: 3px; background: linear-gradient(90deg, var(--g4), var(--gold)); border-radius: 2px; margin: 1rem 0 1.4rem; }
-    .section-divider.center { margin-left: auto; margin-right: auto; }
-    .bam-section { padding: 80px 0; }
-    .bam-section-sm { padding: 50px 0; }
-    .bg-cream { background: var(--cream) !important; }
-    .bg-cream2 { background: var(--cream2) !important; }
-    .bg-dark-green { background: var(--g2) !important; }
-    .bg-darkest { background: var(--g1) !important; }
-    .bg-white-custom { background: #fff !important; }
-
-    /* CARDS */
-    .bam-card { background: #fff; border: 1px solid var(--cream2); border-radius: 20px; padding: 1.8rem; transition: all 0.3s; position: relative; overflow: hidden; height: 100%; }
-    .bam-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--g4), var(--gold)); border-radius: 20px 20px 0 0; }
-    .bam-card:hover { border-color: var(--g5); box-shadow: 0 12px 40px rgba(13,43,26,0.1); transform: translateY(-4px); }
-    .bam-card-dark { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 1.8rem; transition: all 0.3s; height: 100%; }
-    .bam-card-dark:hover { background: rgba(82,183,136,0.12); border-color: rgba(82,183,136,0.35); transform: translateY(-4px); }
-    .card-icon { font-size: 2rem; margin-bottom: 0.9rem; display: block; }
-    .bam-card h3, .bam-card h4 { font-size: 1rem; font-weight: 600; color: var(--g2); margin-bottom: 0.5rem; }
-    .bam-card-dark h3, .bam-card-dark h4 { color: var(--cream); }
-    .bam-card p, .bam-card-dark p { font-size: 0.86rem; color: var(--text3); line-height: 1.65; }
-    .bam-card-dark p { color: rgba(247,243,234,0.62); }
-    .chip-green { display: inline-block; background: var(--g6); color: var(--g3); padding: 0.25rem 0.7rem; border-radius: 100px; font-size: 0.7rem; font-weight: 600; margin-top: 0.8rem; }
-    .chip-dark { display: inline-block; background: rgba(82,183,136,0.15); color: var(--g4); border: 1px solid rgba(82,183,136,0.3); padding: 0.25rem 0.7rem; border-radius: 100px; font-size: 0.7rem; font-weight: 600; margin-top: 0.8rem; }
-
-    /* STATS CARD */
-    .stats-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(82,183,136,0.2); border-radius: 28px; padding: 2rem; backdrop-filter: blur(10px); }
-    .stats-mini { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 1.2rem; text-align: center; }
-    .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2.4rem; font-weight: 700; color: var(--cream); display: block; line-height: 1; }
-    .stat-num-dark { font-family: 'Cormorant Garamond', serif; font-size: 2.4rem; font-weight: 700; color: var(--g2); display: block; line-height: 1; }
-    .stat-label { font-size: 0.78rem; color: rgba(247,243,234,0.55); margin-top: 0.25rem; display: block; }
-    .stat-label-dark { font-size: 0.78rem; color: var(--text3); margin-top: 0.25rem; display: block; }
-    .bar-label-row { display: flex; justify-content: space-between; font-size: 0.75rem; color: rgba(247,243,234,0.5); margin-bottom: 0.35rem; }
-    .bar-track { height: 7px; background: rgba(255,255,255,0.08); border-radius: 10px; overflow: hidden; margin-bottom: 0.9rem; }
-    .bar-fill { height: 100%; border-radius: 10px; background: linear-gradient(90deg, var(--g4), var(--g3)); }
-
-    /* PROCESS STEPS */
-    .process-step { display: flex; gap: 1.3rem; align-items: flex-start; padding: 1.4rem 0; border-bottom: 1px solid rgba(82,183,136,0.12); transition: padding-left 0.3s; }
-    .process-step:last-child { border: none; }
-    .process-step:hover { padding-left: 0.5rem; }
-    .step-icon-box { flex-shrink: 0; width: 48px; height: 48px; border-radius: 14px; background: var(--g6); border: 1px solid rgba(82,183,136,0.2); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; transition: all 0.3s; }
-    .process-step:hover .step-icon-box { background: var(--g3); }
-    .step-num-box { flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: var(--cream2); border: 2px solid var(--g4); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; font-weight: 700; color: var(--g2); }
-    .process-step h5 { font-size: 0.95rem; font-weight: 600; color: var(--g2); margin-bottom: 0.3rem; }
-    .process-step p { font-size: 0.84rem; color: var(--text3); line-height: 1.6; margin: 0; }
-
-    /* WHY POINTS (dark bg) */
-    .why-point { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 1.4rem; transition: all 0.3s; height: 100%; }
-    .why-point:hover { background: rgba(82,183,136,0.1); border-color: rgba(82,183,136,0.3); }
-    .why-point .wi { font-size: 1.5rem; margin-bottom: 0.6rem; display: block; }
-    .why-point h5 { font-size: 0.88rem; font-weight: 600; color: var(--cream); margin-bottom: 0.3rem; }
-    .why-point p { font-size: 0.8rem; color: rgba(247,243,234,0.6); line-height: 1.55; margin: 0; }
-
-    /* CASE STUDY CARDS */
-    .case-card { border-radius: 20px; padding: 2rem; height: 100%; }
-    .case-card.c1 { background: var(--g2); color: #fff; }
-    .case-card.c2 { background: var(--gold); }
-    .case-card.c3 { background: var(--g3); color: #fff; }
-    .case-metric { font-family: 'Cormorant Garamond', serif; font-size: 3.2rem; font-weight: 700; display: block; line-height: 1; margin-bottom: 0.25rem; }
-    .case-sub { font-size: 0.84rem; opacity: 0.75; margin-bottom: 1rem; display: block; }
-    .case-tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.6; display: block; margin-bottom: 1rem; }
-    .case-points { list-style: none; padding: 0; margin: 0; }
-    .case-points li { font-size: 0.82rem; opacity: 0.82; padding: 0.3rem 0; border-top: 1px solid rgba(255,255,255,0.12); }
-    .c2 .case-points li { border-color: rgba(26,58,42,0.15); color: var(--g2); }
-
-    /* TESTIMONIALS */
-    .testi-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 18px; padding: 1.8rem; transition: all 0.3s; height: 100%; }
-    .testi-card:hover { background: rgba(82,183,136,0.1); border-color: rgba(82,183,136,0.3); }
-    .testi-stars { color: var(--gold); letter-spacing: 2px; margin-bottom: 0.8rem; }
-    .testi-text { font-size: 0.93rem; line-height: 1.75; color: rgba(247,243,234,0.82); font-style: italic; margin-bottom: 1.2rem; }
-    .testi-author { font-size: 0.8rem; color: var(--g5); font-weight: 600; }
-
-    /* FAQ */
-    .bam-faq-item { border-bottom: 1px solid var(--cream2); }
-    .bam-faq-q { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 0; cursor: pointer; font-weight: 500; font-size: 0.93rem; color: var(--g2); gap: 1rem; border: none; background: none; width: 100%; text-align: left; }
-    .bam-faq-q:hover { color: var(--g3); }
-    .faq-toggle { flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: var(--g6); border: 1px solid rgba(82,183,136,0.2); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; color: var(--g3); transition: all 0.3s; line-height: 1; }
-    .bam-faq-item.open .faq-toggle { background: var(--g3); color: #fff; transform: rotate(45deg); }
-    .bam-faq-a { display: none; padding: 0 0 1.2rem; font-size: 0.87rem; color: var(--text3); line-height: 1.7; }
-    .bam-faq-item.open .bam-faq-a { display: block; }
-
-    /* CTA STRIP */
-    .bam-cta { background: linear-gradient(135deg, var(--g1) 0%, #0a1e12 100%); padding: 80px 0; position: relative; overflow: hidden; }
-    .bam-cta::after { content: '🎋'; position: absolute; right: -3rem; bottom: -6rem; font-size: 20rem; opacity: 0.04; pointer-events: none; transform: rotate(10deg); }
-    .bam-cta h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 3.5vw, 3rem); color: var(--cream); font-weight: 700; line-height: 1.2; margin-bottom: 1rem; }
-    .bam-cta p { color: rgba(247,243,234,0.65); font-size: 0.97rem; line-height: 1.75; max-width: 460px; margin: 0 auto 2rem; }
-
-    /* TRUST BAR */
-    .trust-bar { background: var(--g1); padding: 40px 0; }
-
-    /* FOOTER */
-    .bam-footer { background: var(--g1); border-top: 1px solid rgba(82,183,136,0.1); }
-    .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 700; color: var(--cream) !important; text-decoration: none; }
-    .footer-logo span { color: var(--g4); }
-    .footer-desc { font-size: 0.84rem; color: rgba(247,243,234,0.5); line-height: 1.7; }
-    .footer-heading { font-size: 0.75rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--g5); margin-bottom: 1rem; }
-    .footer-links { list-style: none; padding: 0; margin: 0; }
-    .footer-links li { margin-bottom: 0.4rem; }
-    .footer-links a, .footer-links span { font-size: 0.83rem; color: rgba(247,243,234,0.5); text-decoration: none; transition: color 0.2s; }
-    .footer-links a:hover { color: var(--g5); }
-    .social-btn { width: 36px; height: 36px; border-radius: 50%; background: rgba(82,183,136,0.12); border: 1px solid rgba(82,183,136,0.2); display: inline-flex; align-items: center; justify-content: center; font-size: 0.78rem; color: var(--g5); text-decoration: none; transition: all 0.25s; }
-    .social-btn:hover { background: var(--g3); color: #fff; }
-    .footer-hr { border-color: rgba(82,183,136,0.1); margin: 0; }
-    .footer-copy { font-size: 0.78rem; color: rgba(247,243,234,0.35); }
-    .footer-copy a { color: var(--g5); text-decoration: none; }
-
-    /* SERVICE PAGE SPECIFICS */
-    .what-box { background: var(--g2); border-radius: 24px; padding: 2.5rem; color: white; }
-    .what-box blockquote { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-style: italic; color: var(--g5); border-left: 3px solid var(--gold); padding-left: 1.2rem; line-height: 1.6; }
-
-    /* SCROLL REVEAL */
-    .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.7s ease, transform 0.7s ease; }
-    .reveal.up { opacity: 1; transform: translateY(0); }
-
-    /* MISC */
-    .pain-item { display: flex; align-items: center; gap: 0.6rem; padding: 0.5rem 0; border-bottom: 1px solid var(--cream2); font-size: 0.88rem; color: var(--text2); }
-    .pain-item:last-child { border: none; }
-    .pain-x { color: #e05a4e; font-weight: 700; }
-    .expertise-tag { display: inline-block; background: var(--g6); color: var(--g3); border-radius: 8px; padding: 0.4rem 0.8rem; font-size: 0.78rem; font-weight: 500; margin: 0.2rem; }
-    .mission-box { background: var(--g2); border-radius: 14px; padding: 1.4rem; margin-top: 1.2rem; }
-    .mission-box p { font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--g5); font-size: 1.05rem; line-height: 1.6; margin: 0; }
-    .growth-step-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.4rem; margin: 2rem 0; }
-    .g-step { background: rgba(82,183,136,0.12); border: 1px solid rgba(82,183,136,0.25); color: var(--g5); padding: 0.5rem 1.2rem; border-radius: 100px; font-size: 0.84rem; white-space: nowrap; }
-    .g-arrow { color: rgba(82,183,136,0.4); font-size: 1.1rem; padding: 0 0.2rem; }
-    @media (max-width: 768px) { .bam-stalk-wrap { display: none; } .bam-hero { padding-top: 90px; } }
-
-</style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg fixed-top bam-nav">
@@ -226,6 +32,7 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="../services.html" role="button" data-bs-toggle="dropdown">Services</a>
           <ul class="dropdown-menu bam-dropdown">
+            <li><a class="dropdown-item" href="../services/seo-services.html">SEO Services</a></li>
             <li><a class="dropdown-item" href="../services/local-seo.html">Local SEO</a></li>
             <li><a class="dropdown-item" href="../services/on-page-seo.html">On-Page SEO</a></li>
             <li><a class="dropdown-item" href="../services/off-page-seo.html">Off-Page SEO</a></li>
@@ -280,12 +87,12 @@
         <span class="section-label">What It Is</span>
         <h2 class="section-title">The Secret Behind Consistent Direct Bookings — Not Just OTAs</h2>
         <div class="section-divider"></div>
-        <p style="color:var(--text2);font-size:0.97rem;line-height:1.8;">Hotel SEO is the process of improving your hotel's visibility in Google Search, Google Maps, travel-related keywords, 'Hotels in your location' queries, AI search platforms & local tourism searches. Our SEO for hotels ensures more direct bookings, less OTA dependency, higher occupancy & more walk-in guests.</p>
+        <p class="txt-body">Hotel SEO is the process of improving your hotel's visibility in Google Search, Google Maps, travel-related keywords, 'Hotels in your location' queries, AI search platforms & local tourism searches. Our SEO for hotels ensures more direct bookings, less OTA dependency, higher occupancy & more walk-in guests.</p>
       </div>
       <div class="col-lg-6 reveal">
         <div class="what-box">
           <blockquote>"Strong roots → Strategic execution → Unstoppable upward growth."</blockquote>
-          <p style="margin-top:1rem;font-size:0.8rem;color:rgba(247,243,234,0.45);">— The Bamboost Growth Philosophy</p>
+          <p class="txt-muted-sm">— The Bamboost Growth Philosophy</p>
         </div>
       </div>
     </div>
@@ -296,7 +103,7 @@
 <section class="bam-section bg-dark-green">
   <div class="container">
     <div class="text-center mb-5 reveal">
-      <span class="section-label" style="color:var(--g5)">Why It Matters</span>
+      <span class="section-label">Why It Matters</span>
       <h2 class="section-title light">Why This Service Matters for Your Growth</h2>
     </div>
     <div class="row g-3"><div class="col-sm-6 col-lg-4 reveal"><div class="why-point"><span class="wi">🎋</span><h5>70% of Bookings Start With Google</h5><p>If you're not ranking, your rooms stay empty while your competitors get booked.</p></div></div><div class="col-sm-6 col-lg-4 reveal"><div class="why-point"><span class="wi">🌱</span><h5>Local SEO Boosts Nearby Guest Traffic</h5><p>Tourists and business travelers rely heavily on 'near me' searches.</p></div></div><div class="col-sm-6 col-lg-4 reveal"><div class="why-point"><span class="wi">🌿</span><h5>Direct Bookings = Higher Profit</h5><p>Less commission paid to OTAs → More revenue for you.</p></div></div><div class="col-sm-6 col-lg-4 reveal"><div class="why-point"><span class="wi">🎍</span><h5>Strong Visibility Builds Trust</h5><p>Guests prefer hotels with high visibility + strong reviews.</p></div></div><div class="col-sm-6 col-lg-4 reveal"><div class="why-point"><span class="wi">🌾</span><h5>Establish Your Hotel as Top Stay</h5><p>Better ranking = stronger brand presence = increased demand.</p></div></div><div class="col-sm-6 col-lg-4 reveal"><div class="why-point"><span class="wi">🍃</span><h5>Future-Proof with AI Search</h5><p>We optimize for ChatGPT, Gemini & Bing Copilot travel recommendations.</p></div></div></div>
@@ -314,7 +121,7 @@
   </div>
 </section>
 
-<section class="bam-section bg-cream2"><div class="container"><div class="text-center mb-5 reveal"><span class="section-label">Real Results</span><h2 class="section-title">Growth That Rises Like Bamboo</h2></div><div class="row g-4"><div class="col-md-4 reveal"><div class="case-card c1"><span class="case-tag">Kochi Boutique Hotel</span><span class="case-metric">180%</span><span class="case-sub">More Direct Bookings</span><ul class="case-points"><li>Ranked for 'hotels near Lulu Mall Kochi'</li><li>12 keywords in Top 3</li><li>Direct bookings increased significantly</li></ul></div></div><div class="col-md-4 reveal"><div class="case-card c2"><span class="case-tag" style="color:var(--g2);">Munnar Resort</span><span class="case-metric" style="color:var(--g2);">3X</span><span class="case-sub" style="color:var(--g2);">More Organic Visits</span><ul class="case-points" style="border-color:rgba(26,58,42,0.15);color:var(--g2);"><li>Ranked for 'best resort in Munnar'</li><li>Significant rise in off-season bookings</li><li>Dominated travel search results</li></ul></div></div><div class="col-md-4 reveal"><div class="case-card c3"><span class="case-tag">Business Hotel Trivandrum</span><span class="case-metric">240%</span><span class="case-sub">GMB Views Increase</span><ul class="case-points"><li>Top local ranking achieved</li><li>Higher occupancy during weekdays</li><li>Consistent direct booking pipeline</li></ul></div></div></div></div></section>
+<section class="bam-section bg-cream2"><div class="container"><div class="text-center mb-5 reveal"><span class="section-label">Real Results</span><h2 class="section-title">Growth That Rises Like Bamboo</h2></div><div class="row g-4"><div class="col-md-4 reveal"><div class="case-card c1"><span class="case-tag">Kochi Boutique Hotel</span><span class="case-metric">180%</span><span class="case-sub">More Direct Bookings</span><ul class="case-points"><li>Ranked for 'hotels near Lulu Mall Kochi'</li><li>12 keywords in Top 3</li><li>Direct bookings increased significantly</li></ul></div></div><div class="col-md-4 reveal"><div class="case-card c2"><span class="case-tag">Munnar Resort</span><span class="case-metric">3X</span><span class="case-sub">More Organic Visits</span><ul class="case-points"><li>Ranked for 'best resort in Munnar'</li><li>Significant rise in off-season bookings</li><li>Dominated travel search results</li></ul></div></div><div class="col-md-4 reveal"><div class="case-card c3"><span class="case-tag">Business Hotel Trivandrum</span><span class="case-metric">240%</span><span class="case-sub">GMB Views Increase</span><ul class="case-points"><li>Top local ranking achieved</li><li>Higher occupancy during weekdays</li><li>Consistent direct booking pipeline</li></ul></div></div></div></div></section>
 
 <!-- FAQ -->
 <section class="bam-section bg-white-custom">
