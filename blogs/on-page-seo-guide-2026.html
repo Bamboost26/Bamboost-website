@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>On Page SEO Basics: Complete Guide for Beginners 2026</title>
+  <meta name="description" content= "Learn the fundamentals of on-page SEO with this beginner-friendly guide. Discover how to optimize titles, headings and more to rank higher on Google.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://bamboost.in/blogs/on-page-seo-guide-2026.html">
+
+  <!-- Open Graph-->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bamboost">
+  <meta property="og:title" content="On Page SEO Basics: Complete Guide for Beginners 2026">
+  <meta property="og:description" content="Learn the fundamentals of on-page SEO with this beginner-friendly guide. Discover how to optimize titles, headings and more to rank higher on Google.">
+  <meta property="og:url" content="https://bamboost.in/blogs/on-page-seo-guide-2026.html">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="On Page SEO Basics: Complete Guide for Beginners 2026">
+  <meta name="twitter:description" content="Learn the fundamentals of on-page SEO with this beginner-friendly guide. Discover how to optimize titles, headings and more to rank higher on Google.">
+  <meta name="twitter:label1" content="Written by">
+  <meta name="twitter:data1" content="Bamboost Team">
+
+  <style>
+    :root {
+      --green-dark:   #1a3a2a;
+      --green-mid:    #1e4d35;
+      --green-accent: #3fb87a;
+      --cream:        #f5f2ec;
+      --white:        #ffffff;
+      --text-dark:    #1c2a22;
+      --text-muted:   #5a6e60;
+      --border:       #d8e8dc;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--text-dark);
+      background: var(--white);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    
+
+    /* ── HERO BANNER ── */
+    .blog-hero {
+      background: linear-gradient(135deg, #0f2d1c 0%, #1a4a2c 55%, #1e5535 100%);
+      padding: 72px 0 64px;
+      position: relative;
+      overflow: hidden;
+    }
+    .blog-hero::before {
+      content: '';
+      position: absolute;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(63,184,122,.15) 0%, transparent 70%);
+      top: -100px; right: -100px;
+      pointer-events: none;
+    }
+    .blog-hero::after {
+      content: '';
+      position: absolute;
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(63,184,122,.08) 0%, transparent 70%);
+      bottom: -60px; left: 5%;
+      pointer-events: none;
+    }
+    .breadcrumb-bar {
+      font-size: .82rem;
+      color: rgba(255,255,255,.55);
+      margin-bottom: 18px;
+    }
+    .breadcrumb-bar a { color: rgba(255,255,255,.55); text-decoration: none; }
+    .breadcrumb-bar a:hover { color: var(--green-accent); }
+    .breadcrumb-bar span { color: rgba(255,255,255,.8); }
+    .hero-tag {
+      display: inline-block;
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--green-accent);
+      margin-bottom: 18px;
+    }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.9rem, 4.5vw, 3rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.18;
+      margin-bottom: 20px;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--green-accent);
+    }
+    .hero-meta {
+      font-size: .84rem;
+      color: rgba(255,255,255,.6);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .hero-meta span { display: flex; align-items: center; gap: 6px; }
+
+    /* ── LAYOUT ── */
+    .blog-layout { padding: 64px 0 80px; }
+
+    /* ── ARTICLE ── */
+    .article-body h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      margin: 40px 0 14px;
+      padding-top: 8px;
+    }
+    .article-body h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      margin: 26px 0 10px;
+    }
+    .article-body p {
+      color: #374940;
+      margin-bottom: 18px;
+      font-size: 1rem;
+      line-height: 1.85;
+    }
+    .article-body strong { color: var(--green-dark); }
+    .article-body a { color: var(--green-accent); text-decoration: none; font-weight: 600; }
+    .article-body a:hover { text-decoration: underline; }
+
+    /* Intro highlight box */
+    .intro-box {
+      border-left: 4px solid var(--green-accent);
+      background: var(--cream);
+      border-radius: 0 12px 12px 0;
+      padding: 22px 24px;
+      margin-bottom: 28px;
+    }
+    .intro-box p { margin: 0; font-size: .97rem; color: #374940; }
+
+    /* Inline CTA strip */
+    .inline-cta {
+      background: linear-gradient(135deg, var(--green-dark), #1e5535);
+      border-radius: 14px;
+      padding: 32px 36px;
+      color: #fff;
+      margin: 40px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .inline-cta p { color: rgba(255,255,255,.85); margin: 0; font-size: .95rem; }
+    .inline-cta h4 { font-family: 'Playfair Display', serif; font-size: 1.25rem; margin-bottom: 6px; color: #fff; }
+    .btn-cta-white {
+      background: #fff;
+      color: var(--green-dark) !important;
+      border-radius: 50px;
+      padding: 11px 28px;
+      font-weight: 700;
+      font-size: .9rem;
+      white-space: nowrap;
+      text-decoration: none !important;
+      display: inline-block;
+      transition: background .2s, transform .15s;
+    }
+    .btn-cta-white:hover { background: var(--green-accent); color: #fff !important; transform: translateY(-2px); }
+
+    /* Step cards */
+    .steps-grid { display: flex; flex-direction: column; gap: 18px; margin: 24px 0 32px; }
+    .step-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 24px;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .step-card:hover { box-shadow: 0 8px 28px rgba(26,58,42,.08); transform: translateY(-2px); }
+    .step-num {
+      width: 40px; height: 40px;
+      background: var(--green-dark);
+      color: var(--green-accent);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .step-card h5 { font-size: 1rem; font-weight: 700; color: var(--green-dark); margin-bottom: 6px; }
+    .step-card p { font-size: .9rem; color: #5a6e60; margin: 0; line-height: 1.6; }
+
+    /* Checklist */
+    .check-list { list-style: none; padding: 0; margin: 0 0 20px; }
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 11px;
+      font-size: .97rem;
+      color: #374940;
+      line-height: 1.6;
+    }
+    .check-list li .icon-dot {
+      width: 22px; height: 22px;
+      background: var(--green-accent);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .check-list li .icon-dot i { color: #fff; font-size: .65rem; }
+
+    /* Tip box */
+    .tip-box {
+      background: #edf7f2;
+      border: 1px solid #b6dfc8;
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin: 20px 0;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .tip-box .tip-icon {
+      color: var(--green-accent);
+      font-size: 1.3rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .tip-box p { font-size: .9rem; color: #2d5440; margin: 0; line-height: 1.65; }
+    .tip-box strong { color: var(--green-dark); }
+
+    /* Warning box */
+    .warn-box {
+      background: #fff8ec;
+      border: 1px solid #f5d87e;
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin: 20px 0;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .warn-box .warn-icon { color: #c49a00; font-size: 1.3rem; flex-shrink: 0; margin-top: 1px; }
+    .warn-box p { font-size: .9rem; color: #5a4a00; margin: 0; line-height: 1.65; }
+
+    /* Comparison table */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      font-size: .92rem;
+    }
+    .compare-table thead {
+      background: var(--green-dark);
+      color: #fff;
+    }
+    .compare-table thead th { padding: 14px 18px; font-weight: 600; text-align: left; }
+    .compare-table tbody tr:nth-child(even) { background: var(--cream); }
+    .compare-table tbody tr:hover { background: #e6f4ec; }
+    .compare-table tbody td { padding: 13px 18px; color: #374940; border-bottom: 1px solid var(--border); }
+    .compare-table tbody tr:last-child td { border-bottom: none; }
+    .badge-good { background: #d4f0e2; color: #1a5c35; border-radius: 6px; padding: 3px 10px; font-size: .78rem; font-weight: 600; }
+    .badge-bad  { background: #fde8e8; color: #8b1c1c; border-radius: 6px; padding: 3px 10px; font-size: .78rem; font-weight: 600; }
+
+    /* Author */
+    .author-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px 28px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-top: 48px;
+    }
+    .author-avatar {
+      width: 58px; height: 58px;
+      background: var(--green-dark);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--green-accent);
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+    .author-name { font-weight: 700; font-size: .95rem; color: var(--text-dark); }
+    .author-role { font-size: .82rem; color: var(--text-muted); }
+
+    /* ── SIDEBAR ── */
+    .sidebar { position: sticky; top: 32px; }
+
+    .audit-card {
+      background: linear-gradient(155deg, var(--green-dark) 0%, #226040 100%);
+      border-radius: 18px;
+      padding: 32px 28px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .audit-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      line-height: 1.3;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .audit-card p { font-size: .88rem; color: rgba(255,255,255,.75); margin-bottom: 22px; }
+    .btn-audit {
+      background: var(--green-accent);
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      padding: 12px 28px;
+      font-weight: 700;
+      font-size: .9rem;
+      width: 100%;
+      cursor: pointer;
+      transition: background .2s, transform .15s;
+    }
+    .btn-audit:hover { background: #34a86a; transform: translateY(-2px); }
+    .audit-trust { font-size: .75rem; color: rgba(255,255,255,.5); margin-top: 12px; }
+
+    .toc-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 28px;
+    }
+    .toc-card h6 {
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+    .toc-list { list-style: none; padding: 0; margin: 0; }
+    .toc-list li { margin-bottom: 9px; }
+    .toc-list a {
+      font-size: .87rem;
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color .2s;
+      line-height: 1.4;
+    }
+    .toc-list a::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--green-accent);
+      flex-shrink: 0;
+    }
+    .toc-list a:hover { color: var(--green-accent); }
+
+    .related-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+    }
+    .related-card h6 {
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+    .related-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+    }
+    .related-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .related-thumb {
+      width: 44px; height: 44px;
+      background: var(--green-dark);
+      border-radius: 8px;
+      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--green-accent);
+      font-size: 1.1rem;
+    }
+    .related-title { font-size: .84rem; font-weight: 600; color: var(--text-dark); line-height: 1.3; }
+    .related-tag { font-size: .73rem; color: var(--text-muted); margin-top: 2px; }
+
+    /* ── BOTTOM CTA ── */
+    .bottom-cta {
+      background: linear-gradient(135deg, #0f2d1c, #1e5535);
+      padding: 80px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .bottom-cta::before {
+      content: '';
+      position: absolute;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(63,184,122,.12) 0%, transparent 65%);
+      top: 50%; left: 50%;
+      transform: translate(-50%,-50%);
+      pointer-events: none;
+    }
+    .bottom-cta h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      color: #fff;
+      margin-bottom: 14px;
+    }
+    .bottom-cta h2 em { font-style: italic; color: var(--green-accent); }
+    .bottom-cta p { color: rgba(255,255,255,.7); max-width: 520px; margin: 0 auto 32px; }
+    .btn-cta-lg {
+      background: var(--green-accent);
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      padding: 15px 40px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: background .2s, transform .15s, box-shadow .2s;
+      box-shadow: 0 8px 32px rgba(63,184,122,.3);
+    }
+    .btn-cta-lg:hover { background: #34a86a; transform: translateY(-3px); box-shadow: 0 14px 40px rgba(63,184,122,.4); color: #fff; }
+    .cta-sub { font-size: .8rem; color: rgba(255,255,255,.45); margin-top: 14px; }
+
+
+    @media (max-width: 768px) {
+      .blog-hero { padding: 48px 0 44px; }
+      .inline-cta { flex-direction: column; align-items: flex-start; }
+      .step-card { flex-direction: column; }
+    }
+  </style>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav class="navbar navbar-expand-lg fixed-top bam-nav">
+  <div class="container">
+    <a class="navbar-brand bam-logo" href="/">Bambo<span>ost</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu bam-dropdown">
+            <li><a class="dropdown-item" href="../best-seo-company-in-kerala.html">Search Engine Optimization (SEO) </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../services/seo-for-educational-institutes.html">Education SEO</a></li>
+            <li><a class="dropdown-item" href="../services/seo-for-hotels.html">Hotel SEO</a></li>
+            <li><a class="dropdown-item" href="../services/ecommerce-seo-services.html">Ecommerce SEO</a></li>
+            <li><a class="dropdown-item" href="../services/seo-for-real-estate.html">Real Estate SEO</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../best-google-ads-company-in-kerala.html">Google Ads</a></li>
+            <li><a class="dropdown-item" href="../best-web-development-company-in-kerala.html">Web Development</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="../case-studies.html">Case Studies</a></li>
+        <li class="nav-item"><a class="nav-link" href="../blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2">
+          <a class="btn bam-btn-primary btn-sm px-4" href="../contact.html">Free Consultation</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="blog-hero">
+  <div class="container">
+    <div class="breadcrumb-bar">
+      <a href="#">Home</a> &rsaquo; <a href="#">Blog</a> &rsaquo; <span>On-Page SEO Basics</span>
+    </div>
+    <div class="hero-tag">SEO &amp; Developers Insights &amp; Growth Tips</div>
+    <h1 class="hero-title">On-Page SEO Basics: <em>Complete Guide</em><br class="d-none d-md-block"/> for Beginners 2026</h1>
+    <div class="hero-meta">
+      <span><i class="bi bi-person-fill"></i> By Bamboost Team</span>
+      <span><i class="bi bi-calendar3"></i> March 31, 2026</span>
+      <span><i class="bi bi-clock"></i> 8 min read</span>
+      <span><i class="bi bi-tag-fill"></i> On-Page SEO</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── MAIN ── -->
+<section class="blog-layout">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- ARTICLE -->
+      <div class="col-lg-8">
+        <article class="article-body">
+
+          <div class="intro-box">
+            <p>If you want your website to show up when people search on Google, on-page SEO is where everything begins. It is the practice of fine-tuning the elements within your own web pages - content, structure, and HTML - so that search engines can read, understand, and rank them confidently. Unlike link building or technical infrastructure, on-page SEO is entirely within your control, making it the most practical starting point for anyone new to search optimization.</p>
+          </div>
+
+          <p>This guide walks you through every core on-page SEO technique in plain language, so you can take action immediately - whether you run a small business website, a blog, or an e-commerce store.</p>
+
+          <!-- ── SECTION 1 ── -->
+          <h2 id="what">What Is On-Page SEO?</h2>
+          <p>On-page SEO refers to all the optimizations you make directly on a web page to improve its position in search engine results. The term "on-page" simply distinguishes these techniques from off-page activities (like earning backlinks) and technical work (like improving server speed).</p>
+
+          <p>When a search engine like Google crawls your page, it looks at dozens of on-page signals to determine two things: <strong>what the page is about</strong> and <strong>how well it serves the people searching for that topic.</strong> The better your on-page signals, the more likely Google is to show your page to the right audience.</p>
+
+          <div class="tip-box">
+            <div class="tip-icon"><i class="bi bi-lightbulb-fill"></i></div>
+            <p><strong>Quick insight:</strong> On-page SEO is not about tricking search engines. It is about presenting your content as clearly and helpfully as possible, so both users and algorithms immediately understand its value.</p>
+          </div>
+
+          <!-- ── SECTION 2 ── -->
+          <h2 id="keyword">Step 1 - Keyword Research Before You Write</h2>
+          <p>Every strong on-page SEO strategy begins before a single word is written. You need to understand what your target audience is actually typing into search engines, and then build your page around those terms.</p>
+
+          <h3>How to choose the right keyword</h3>
+          <p>A good target keyword for a beginner meets three criteria. First, it should have enough monthly search volume to make optimization worthwhile - typically at least a few hundred searches per month. Second, it should be achievable in terms of competition; targeting highly contested terms when your site is new leads to frustration. Third, it must match the purpose of your page.</p>
+
+          <p>There are Four types of search intent, and your keyword must align with your content type:</p>
+
+         <p>There are Four types of search intent, and your keyword must align with your content type:</p>
+
+          <ul class="check-list">
+            <li>
+              <div class="icon-dot"><i class="bi bi-check-lg"></i></div>
+              <div><strong>Informational intent</strong> - The searcher wants to learn something. Example: "what is on-page SEO." Blog posts and guides suit this intent best.</div>
+            </li>
+            <li>
+              <div class="icon-dot"><i class="bi bi-check-lg"></i></div>
+              <div><strong>Commercial intent</strong> - The searcher is researching options before buying. Example: "best SEO tools for small businesses." Comparison pages and in-depth reviews work well here.</div>
+            </li>
+            <li>
+              <div class="icon-dot"><i class="bi bi-check-lg"></i></div>
+              <div><strong>Transactional intent</strong> - The searcher is ready to take action. Example: "hire an SEO agency." Service pages and landing pages serve this intent.</div>
+            </li>
+            <li>
+              <div class="icon-dot"><i class="bi bi-check-lg"></i></div>
+              <div><strong>Navigational intent</strong> - The searcher wants to find a specific website or brand. Example: "Ahrefs login" or "Bamboost SEO services." Homepage, login pages, or dedicated brand pages are best suited for this intent.</div>
+            </li>
+          </ul>
+
+          <p>Placing your primary keyword naturally throughout your page - without forcing it - signals relevance to search engines while keeping the reading experience smooth for your audience.</p>
+
+          <!-- ── SECTION 3 ── -->
+          <h2 id="title">Step 2 - Optimizing Your Title Tag</h2>
+          <p>The title tag is the clickable headline that appears in Google search results. It is one of the most powerful on-page ranking signals available to you, and it is also the first impression your page makes on a potential visitor.</p>
+
+          <h3>Writing a title tag that ranks and gets clicked</h3>
+          <ul class="check-list">
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Place your primary keyword near the beginning of the title wherever it reads naturally.</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Keep your title between 50 and 60 characters so it does not get truncated in search results.</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Make it descriptive and specific - vague titles fail to attract clicks even when they rank.</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Avoid stuffing multiple keywords into a single title tag; focus on one clear topic.</div></li>
+          </ul>
+
+          <table class="compare-table">
+            <thead>
+              <tr><th>Example Title</th><th>Assessment</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>On-Page SEO Basics: A Complete Beginner's Guide for 2026</td><td><span class="badge-good">Strong</span></td></tr>
+              <tr><td>SEO Tips SEO Guide SEO Beginners Page Optimization</td><td><span class="badge-bad">Weak - keyword stuffed</span></td></tr>
+              <tr><td>My Blog Post About SEO</td><td><span class="badge-bad">Weak - too vague</span></td></tr>
+              <tr><td>How to Do On-Page SEO in 2026 (Step-by-Step)</td><td><span class="badge-good">Strong</span></td></tr>
+            </tbody>
+          </table>
+
+          <!-- ── SECTION 4 ── -->
+          <h2 id="meta">Step 3 - Writing a Compelling Meta Description</h2>
+          <p>A meta description is the short paragraph that appears beneath your title in search results. While it is not a direct ranking factor, it has a significant influence on your <strong>click-through rate</strong> - the percentage of people who see your result and choose to visit.</p>
+
+          <p>An effective meta description summarizes the page content accurately, incorporates the primary keyword naturally (Google often bolds it in results, drawing the eye), creates a sense of value or curiosity, and stays within 150 to 160 characters. Think of it as a micro-advertisement for your content. A page that ranks fifth with a compelling meta description will often receive more clicks than the page ranked third with a dull one.</p>
+
+          <div class="tip-box">
+            <div class="tip-icon"><i class="bi bi-lightbulb-fill"></i></div>
+            <p><strong>Pro tip:</strong> Write your meta description for the human reader first. If it clearly communicates what they will gain from clicking, it is doing its job. Including a light call to action like "Learn how," "Discover," or "Find out" can lift click rates noticeably.</p>
+          </div>
+
+          <!-- Mid-article CTA -->
+          <div class="inline-cta">
+            <div>
+              <h4>Want an Expert to Audit Your On-Page SEO?</h4>
+              <p>Our specialists will analyse every element of your pages and give you a clear action plan - completely free.</p>
+            </div>
+            <a href="#" class="btn-cta-white">Get My Free Audit &rarr;</a>
+          </div>
+
+          <!-- ── SECTION 5 ── -->
+          <h2 id="headings">Step 4 - Using Headings Correctly (H1 to H6)</h2>
+          <p>Headings create a clear hierarchy within your content, making it easier for both readers and search engines to navigate. Think of them as the chapter titles and section markers of a book.</p>
+
+          <div class="steps-grid">
+            <div class="step-card">
+              <div class="step-num">H1</div>
+              <div>
+                <h5>The Page Title - Use Once Per Page</h5>
+                <p>Your H1 should reflect the primary keyword and communicate the central topic of the page. Every page must have exactly one H1. It is typically the largest heading the visitor sees when they land on your content.</p>
+              </div>
+            </div>
+            <div class="step-card">
+              <div class="step-num">H2</div>
+              <div>
+                <h5>Main Section Headings</h5>
+                <p>H2 headings divide your content into major sections. These are excellent places to include related keywords and secondary phrases, as Google reads them as strong contextual signals about subtopics covered on the page.</p>
+              </div>
+            </div>
+            <div class="step-card">
+              <div class="step-num">H3</div>
+              <div>
+                <h5>Subsection Headings</h5>
+                <p>H3 headings break H2 sections into smaller, more specific points. They help readers skim and locate the exact information they need, which reduces bounce rates - a positive behavioural signal for SEO.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="warn-box">
+            <div class="warn-icon"><i class="bi bi-exclamation-triangle-fill"></i></div>
+            <p><strong>Common mistake:</strong> Many beginners use heading tags for styling purposes rather than structural ones, placing H2s wherever they want larger text. This confuses search engines about your page structure. Use CSS to control font sizes, and use heading tags only to signal hierarchy.</p>
+          </div>
+
+          <!-- ── SECTION 6 ── -->
+          <h2 id="content">Step 5 - Creating Content That Earns Rankings</h2>
+          <p>Content quality is the single most influential on-page factor. Search engines are increasingly sophisticated at evaluating whether a page genuinely helps its visitors, and content that only ticks keyword boxes without delivering real value struggles to rank long-term.</p>
+
+          <h3>What makes content rank?</h3>
+          <ul class="check-list">
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>Depth and completeness</strong> - Cover the topic thoroughly enough that a reader does not need to visit another website to fill in gaps. Pages that satisfy a query completely experience lower bounce rates and longer dwell times, both of which Google monitors.</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>Originality</strong> - Produce insights, examples, or perspectives that are not simply lifted from other sources. Google's algorithms are designed to surface unique, first-hand perspectives over recycled content.</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>Readability</strong> - Use short paragraphs, clear sentences, and logical flow. A page that is exhausting to read loses visitors quickly, regardless of how accurate the information is.</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>Keyword placement</strong> - Include your primary keyword in the first 100 words of your body content, within at least one H2 heading, and a few times naturally throughout - without forcing it.</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>Semantic keywords</strong> - Use related terms and phrases that naturally appear around your primary topic. This signals topical authority and helps the page rank for a broader cluster of related searches.</div></li>
+          </ul>
+
+          <!-- ── SECTION 7 ── -->
+          <h2 id="url">Step 6 - Structuring Your URL</h2>
+          <p>A clean, descriptive URL communicates the page topic to both users and search engines at a glance. Good URLs are short, contain the primary keyword, and use hyphens to separate words. They avoid unnecessary numbers, dates, or automatically generated strings of characters.</p>
+
+          <table class="compare-table">
+            <thead>
+              <tr><th>URL Style</th><th>Example</th><th>Assessment</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Descriptive</td><td>/blog/on-page-seo-guide</td><td><span class="badge-good">Ideal</span></td></tr>
+              <tr><td>With date</td><td>/blog/2026/03/28/seo-post-5</td><td><span class="badge-bad">Too long</span></td></tr>
+              <tr><td>Auto-generated</td><td>/p=4821</td><td><span class="badge-bad">No value</span></td></tr>
+              <tr><td>Overly long</td><td>/the-complete-on-page-seo-basics-guide-for-all-beginners-2026</td><td><span class="badge-bad">Too wordy</span></td></tr>
+            </tbody>
+          </table>
+
+          <!-- ── SECTION 8 ── -->
+          <h2 id="images">Step 7 - Optimizing Images for SEO</h2>
+          <p>Images enhance the user experience, but they also present SEO opportunities that many beginners overlook entirely. Every image on your page has several properties that can be optimized.</p>
+
+          <ul class="check-list">
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>Alt text</strong> - This is a brief description of the image written in the HTML. Search engines cannot "see" images the way humans do, so they rely on alt text to understand what an image depicts. Write descriptive, keyword-relevant alt text for every meaningful image on the page.</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>File name</strong> - Before uploading an image, rename the file to reflect its content. A file named "on-page-seo-checklist.jpg" provides far more context than "IMG_00412.jpg."</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>File size and format</strong> - Large images slow down page loading, which negatively affects both user experience and rankings. Compress images before uploading and consider modern formats like WebP, which offer excellent quality at smaller file sizes.</div></li>
+          </ul>
+
+          <!-- ── SECTION 9 ── -->
+          <h2 id="links">Step 8 - Internal Linking Strategy</h2>
+          <p>Internal links are hyperlinks that connect one page on your website to another page on the same website. They serve two purposes simultaneously: they help visitors discover related content, and they distribute what SEO professionals call "link equity" across your site - essentially passing authority from stronger pages to newer or less established ones.</p>
+
+          <p>A thoughtful internal linking approach involves linking to relevant content naturally within your body text using descriptive anchor text. Rather than writing "click here," use anchor text that describes the destination, such as "our guide to technical SEO" or "how to build backlinks for beginners." These descriptive anchors give search engines useful context about the linked page's topic.</p>
+
+          <div class="tip-box">
+            <div class="tip-icon"><i class="bi bi-lightbulb-fill"></i></div>
+            <p><strong>Strategy tip:</strong> When you publish a new page, revisit your older, higher-traffic pages and add a link to the new one where it makes contextual sense. This funnels existing traffic and authority to content that would otherwise start from zero.</p>
+          </div>
+
+          <!-- ── SECTION 10 ── -->
+          <h2 id="ux">Step 9 - Page Experience Signals</h2>
+          <p>Google increasingly uses how people interact with your page as a proxy for quality. If visitors arrive and leave immediately, that signals a mismatch between what the page promised and what it delivered. On-page SEO, therefore, extends into elements that shape the reading and browsing experience.</p>
+
+          <ul class="check-list">
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>Mobile responsiveness</strong> - More than half of all global web searches happen on mobile devices. A page that does not adapt to smaller screens will lose visitors and rank lower, since Google uses mobile-first indexing.</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>Page loading speed</strong> - Slow pages frustrate users, leading to higher abandonment rates. Compress media files, minimize render-blocking scripts, and use browser caching to improve load times.</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>Content above the fold</strong> - Ensure that meaningful content is visible without scrolling when a visitor first lands on the page. Pages that greet visitors with large banner ads or unrelated imagery before any substantive content often perform poorly.</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>Readable font sizes and line spacing</strong> - Small text or cramped line heights make content difficult to read on mobile. Use a minimum font size of 16px and comfortable spacing to improve readability.</div></li>
+          </ul>
+
+          <!-- ── SECTION 11 ── -->
+          <h2 id="schema">Step 10 - Schema Markup (Structured Data)</h2>
+          <p>Schema markup is a form of code added to your HTML that gives search engines extra context about your content. It is not required for basic on-page SEO, but it is a powerful way to stand out in search results once you have the fundamentals in place.</p>
+
+          <p>When implemented correctly, schema can enable rich results - enhanced search listings that display star ratings, FAQs, event dates, product prices, or how-to steps directly within Google's results page. These enhanced displays increase visibility and attract more clicks compared to standard text listings.</p>
+
+          <p>Common schema types useful for beginners include Article schema for blog posts, FAQ schema for pages that answer common questions, and LocalBusiness schema for businesses that serve a specific geographic area.</p>
+
+          <!-- ── SECTION 12 ── -->
+          <h2 id="checklist">Your On-Page SEO Checklist</h2>
+          <p>Before publishing any page, run through these core optimizations to make sure nothing is missing.</p>
+
+          <div class="steps-grid">
+            <div class="step-card">
+              <div class="step-num"><i class="bi bi-search" style="font-size:.9rem;"></i></div>
+              <div><h5>Keyword Research Completed</h5><p>Primary keyword identified with clear search intent. Secondary and semantic keywords noted for natural inclusion throughout the content.</p></div>
+            </div>
+            <div class="step-card">
+              <div class="step-num"><i class="bi bi-type" style="font-size:.9rem;"></i></div>
+              <div><h5>Title Tag &amp; Meta Description Written</h5><p>Title is 50–60 characters with keyword near the front. Meta description is under 160 characters and reads as a compelling mini-advertisement.</p></div>
+            </div>
+            <div class="step-card">
+              <div class="step-num"><i class="bi bi-layout-text-sidebar-reverse" style="font-size:.9rem;"></i></div>
+              <div><h5>Heading Structure in Place</h5><p>One H1 per page. H2s mark major sections. H3s break down subsections. Keywords appear naturally in headings where appropriate.</p></div>
+            </div>
+            <div class="step-card">
+              <div class="step-num"><i class="bi bi-file-earmark-text" style="font-size:.9rem;"></i></div>
+              <div><h5>Content Is Original and Complete</h5><p>The page thoroughly addresses the search query with unique insights. Primary keyword appears in the first 100 words and naturally throughout the body.</p></div>
+            </div>
+            <div class="step-card">
+              <div class="step-num"><i class="bi bi-image" style="font-size:.9rem;"></i></div>
+              <div><h5>Images Optimized</h5><p>All images have descriptive alt text and keyword-relevant file names. Files are compressed for fast loading.</p></div>
+            </div>
+            <div class="step-card">
+              <div class="step-num"><i class="bi bi-link-45deg" style="font-size:.9rem;"></i></div>
+              <div><h5>Internal Links Added</h5><p>At least two to three relevant internal links with descriptive anchor text point to related pages on your site.</p></div>
+            </div>
+          </div>
+
+          <!-- ── CONCLUSION ── -->
+          <h2 id="conclusion">Conclusion</h2>
+          <p>On-page SEO is the foundation that everything else in search optimization is built upon. Without well-structured pages, clear content, and properly optimized elements, even the strongest backlink profile or fastest server will not deliver consistent rankings.</p>
+
+          <p>The good news is that on-page SEO is entirely within your hands. Every technique covered in this guide can be implemented without any external dependencies - no waiting for other websites to link to you, no waiting for a developer to fix server configuration. You can begin optimizing today.</p>
+
+          <p>Start with the fundamentals: get your keyword research right, write titles and meta descriptions that earn clicks, and create content that genuinely helps your audience. Master those three areas first, and the rest of on-page SEO will feel far more manageable as you build your skills.</p>
+
+          <p>If you would like expert support implementing these techniques on your website, Bamboost's SEO team is ready to help you turn these principles into measurable growth.</p>
+
+        </article>
+
+        <!-- Author card -->
+        <div class="author-card">
+          <div class="author-avatar"><i class="bi bi-person-fill"></i></div>
+          <div>
+            <div class="author-name">Bamboost Editorial Team</div>
+            <div class="author-role">SEO Strategists &amp; Growth Experts · Updated March 2026</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="col-lg-4">
+        <aside class="sidebar">
+
+          <!-- Free audit CTA -->
+          <div class="audit-card">
+            <h4>Get Your Free On-Page SEO Audit</h4>
+            <p>Our experts will review every element of your pages and tell you exactly what to fix.</p>
+            <a href="../contact.html" class="btn-cta-lg">Book a free audit</a>
+          </div>
+
+          <!-- TOC -->
+          <div class="toc-card">
+            <h6>In This Article</h6>
+            <ul class="toc-list">
+              <li><a href="#what">What Is On-Page SEO?</a></li>
+              <li><a href="#keyword">Step 1 - Keyword Research</a></li>
+              <li><a href="#title">Step 2 - Title Tag Optimization</a></li>
+              <li><a href="#meta">Step 3 - Meta Description</a></li>
+              <li><a href="#headings">Step 4 - Heading Structure</a></li>
+              <li><a href="#content">Step 5 - Content Quality</a></li>
+              <li><a href="#url">Step 6 - URL Structure</a></li>
+              <li><a href="#images">Step 7 - Image Optimization</a></li>
+              <li><a href="#links">Step 8 - Internal Linking</a></li>
+              <li><a href="#ux">Step 9 - Page Experience</a></li>
+              <li><a href="#schema">Step 10 - Schema Markup</a></li>
+              <li><a href="#checklist">Full Checklist</a></li>
+              <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+          </div>
+
+          <!-- Related posts -->
+          <div class="related-card">
+            <h6>Related Articles</h6>
+            <a class="related-item" href="../blogs/what-is-seo-beginner-friendly-guide-2026.html">
+              <div class="related-thumb"><i class="bi bi-graph-up-arrow"></i></div>
+              <div>
+                <div class="related-title">What is SEO? Beginner’s Guide to Search Engine Optimization</div>
+                <div class="related-tag">5 min read</div>
+              </div>
+            </a>
+            <a class="related-item" href="../blogs/google-ads-how-it-works.html">
+              <div class="related-thumb"><i class="bi bi-link-45deg"></i></div>
+              <div>
+                <div class="related-title">What Is Google Ads and How Does It Work?  Beginner’s Guide</div>
+                <div class="related-tag">4 min read</div>
+              </div>
+            </a>
+            <a class="related-item" href="../blogs/mobile-friendly-website-design.html">
+              <div class="related-thumb"><i class="bi bi-speedometer2"></i></div>
+              <div>
+                <div class="related-title">Importance of Mobile-Friendly Website Design in 2026</div>
+                <div class="related-tag">6 min read</div>
+              </div>
+            </a>
+            <a class="related-item" href="../blogs/types-of-google-ads-campaigns.html">
+              <div class="related-thumb"><i class="bi bi-speedometer2"></i></div>
+              <div>
+                <div class="related-title">Types of Google Ads Campaigns Explained for Beginners</div>
+                <div class="related-tag">6 min read</div>
+              </div>
+            </a>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BOTTOM CTA ── -->
+<section class="bottom-cta">
+  <div class="container position-relative">
+    <h2>Ready to Put Your <em>On-Page SEO</em><br class="d-none d-md-block"/> Into Action?</h2>
+    <p>Let Bamboost's SEO specialists audit your site, implement proven on-page strategies, and drive the organic growth your business deserves.</p>
+    <a href="#" class="btn-cta-lg">Book a Free Consultation</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="bam-footer pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <div class="col-lg-4 col-md-6">
+        <a class="bam-logo footer-logo d-inline-block mb-3" href="https://bamboost.in/">Bambo<span>ost</span></a>
+        <p class="footer-desc">Kerala's most trusted SEO and Web development company. We build deep digital roots that drive rapid, sustainable growth, just like bamboo.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="https://www.facebook.com/" class="social-btn" aria-label="Facebook">f</a>
+          <a href="https://www.instagram.com/" class="social-btn" aria-label="Instagram">ig</a>
+          <a href="https://www.linkedin.com/" class="social-btn" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="footer-heading">Core SEO</h6>
+        <ul class="footer-links">
+          <li><a href="../services/local-seo-services.html">Local SEO</a></li>
+          <li><a href="../services/on-page-seo-services.html">On-Page SEO</a></li>
+          <li><a href="../services/off-page-seo-services.html">Off-Page SEO</a></li>
+          <li><a href="../services/technical-seo-services.html">Technical SEO</a></li>
+          <li><a href="../best-google-ads-company-in-kerala.html">Google Ads</a></li>
+          <li><a href="../best-web-development-company-in-kerala.html">Web Dev</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="footer-heading">Industries</h6>
+        <ul class="footer-links">
+          <li><a href="../services/seo-for-educational-institutes.html">Education SEO</a></li>
+          <li><a href="../services/seo-for-hotels.html">Hotel SEO</a></li>
+          <li><a href="../services/ecommerce-seo-services.html">Ecommerce SEO</a></li>
+          <li><a href="../services/seo-for-real-estate.html">Real Estate SEO</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="footer-heading">Company</h6>
+        <ul class="footer-links">
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../case-studies.html">Case Studies</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="footer-heading">Contact</h6>
+        <ul class="footer-links">
+          <li><span>Kerala, India</span></li>
+          <li><span>bamboost.company@gmail.com</span></li>
+          <li><span>+91 XXXXX XXXXX</span></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-hr">
+    <div class="d-flex flex-wrap justify-content-between align-items-center pt-2 gap-2">
+      <p class="footer-copy mb-0">© 2025 Bamboost. <strong>Best SEO and Web-development Company in Kerala</strong>. All rights reserved.</p>
+      <p class="footer-copy mb-0"><a href="#">Privacy Policy</a> · <a href="#">Terms</a> · <a href="#">Sitemap</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
