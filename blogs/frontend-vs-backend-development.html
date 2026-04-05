@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Front End vs Back End Development: What's the Difference in 2026</title>
+  <meta name="description" content="Understand the core differences between front end and back end development, what each role involves, and how they work together to build great websites.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://bamboost.in/blogs/front-end-vs-back-end-development.html">
+
+  <!-- Open Graph -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bamboost">
+  <meta property="og:title" content="Front End vs Back End Development: What's the Difference in 2026">
+  <meta property="og:description" content="Understand the core differences between front end and back end development, what each role involves, and how they work together to build great websites.">
+  <meta property="og:url" content="https://bamboost.in/blogs/front-end-vs-back-end-development.html">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Front End vs Back End Development: What's the Difference in 2026">
+  <meta name="twitter:description" content="Understand the core differences between front end and back end development, what each role involves, and how they work together to build great websites.">
+  <meta name="twitter:label1" content="Written by">
+  <meta name="twitter:data1" content="Bamboost Team">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --green-dark:   #1a3a2a;
+      --green-mid:    #1e4d35;
+      --green-accent: #3fb87a;
+      --cream:        #f5f2ec;
+      --white:        #ffffff;
+      --text-dark:    #1c2a22;
+      --text-muted:   #5a6e60;
+      --border:       #d8e8dc;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--text-dark);
+      background: var(--white);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* ── NAV ── */
+    .bam-nav {
+      background: rgba(15, 35, 22, 0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(63,184,122,.15);
+      padding: 14px 0;
+    }
+    .bam-logo { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 900; color: #fff !important; text-decoration: none; letter-spacing: -.5px; }
+    .bam-logo span { color: var(--green-accent); }
+    .navbar-nav .nav-link { color: rgba(255,255,255,.75) !important; font-size: .9rem; font-weight: 500; transition: color .2s; padding: 6px 10px; }
+    .navbar-nav .nav-link:hover { color: var(--green-accent) !important; }
+    .bam-btn-primary { background: var(--green-accent); color: #fff !important; border-radius: 50px; font-weight: 600; font-size: .85rem; padding: 8px 20px; transition: background .2s, transform .15s; }
+    .bam-btn-primary:hover { background: #34a86a; transform: translateY(-1px); }
+    .bam-dropdown { background: #0f2d1c; border: 1px solid rgba(63,184,122,.2); border-radius: 10px; padding: 8px 0; }
+    .bam-dropdown .dropdown-item { color: rgba(255,255,255,.75); font-size: .88rem; padding: 8px 20px; }
+    .bam-dropdown .dropdown-item:hover { background: rgba(63,184,122,.1); color: var(--green-accent); }
+    .bam-dropdown .dropdown-divider { border-color: rgba(63,184,122,.15); }
+    .navbar-toggler { border-color: rgba(63,184,122,.4); }
+    .navbar-toggler-icon { filter: invert(1); }
+
+    /* ── HERO BANNER ── */
+    .blog-hero {
+      background: linear-gradient(135deg, #0f2d1c 0%, #1a4a2c 55%, #1e5535 100%);
+      padding: 72px 0 64px;
+      position: relative;
+      overflow: hidden;
+      margin-top: 65px;
+    }
+    .blog-hero::before {
+      content: '';
+      position: absolute;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(63,184,122,.15) 0%, transparent 70%);
+      top: -100px; right: -100px;
+      pointer-events: none;
+    }
+    .breadcrumb-bar { font-size: .82rem; color: rgba(255,255,255,.55); margin-bottom: 18px; }
+    .breadcrumb-bar a { color: rgba(255,255,255,.55); text-decoration: none; }
+    .breadcrumb-bar a:hover { color: var(--green-accent); }
+    .breadcrumb-bar span { color: rgba(255,255,255,.8); }
+    .hero-tag { display: inline-block; font-size: .72rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--green-accent); margin-bottom: 18px; }
+    .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900; color: #fff; line-height: 1.18; margin-bottom: 20px; }
+    .hero-title em { font-style: italic; color: var(--green-accent); }
+    .hero-meta { font-size: .84rem; color: rgba(255,255,255,.6); display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .hero-meta span { display: flex; align-items: center; gap: 6px; }
+
+    /* ── LAYOUT ── */
+    .blog-layout { padding: 64px 0 80px; }
+
+    /* ── FEATURED IMAGE ── */
+    .featured-image-wrap {
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 32px;
+      background: linear-gradient(135deg, var(--green-dark) 0%, #226040 100%);
+      aspect-ratio: 16 / 7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .featured-image-wrap svg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+    }
+    .featured-image-label {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: #fff;
+    }
+    .featured-image-label span {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.4rem, 3vw, 2.2rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.2;
+    }
+    .featured-image-label small {
+      font-size: .82rem;
+      color: rgba(255,255,255,.6);
+      margin-top: 8px;
+      display: block;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    /* ── COMPARISON TABLE ── */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 28px 0 24px;
+      border-radius: 12px;
+      overflow: hidden;
+      font-size: .93rem;
+    }
+    .compare-table thead tr {
+      background: var(--green-dark);
+      color: #fff;
+    }
+    .compare-table thead th {
+      padding: 14px 18px;
+      font-weight: 600;
+      font-size: .88rem;
+      letter-spacing: .5px;
+    }
+    .compare-table thead th:first-child { color: rgba(255,255,255,.5); }
+    .compare-table thead th:nth-child(2) { color: var(--green-accent); }
+    .compare-table thead th:nth-child(3) { color: #7ec8ff; }
+    .compare-table tbody tr { border-bottom: 1px solid var(--border); }
+    .compare-table tbody tr:last-child { border-bottom: none; }
+    .compare-table tbody tr:nth-child(even) { background: var(--cream); }
+    .compare-table tbody td { padding: 12px 18px; color: #374940; vertical-align: top; }
+    .compare-table tbody td:first-child { font-weight: 600; color: var(--text-dark); font-size: .86rem; }
+
+    /* ── ARTICLE ── */
+    .article-body h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--green-dark); margin: 36px 0 14px; }
+    .article-body p { color: #374940; margin-bottom: 18px; font-size: 1rem; line-height: 1.8; }
+    .article-body strong { color: var(--green-dark); }
+    .article-body a { color: var(--green-accent); text-decoration: underline; text-underline-offset: 3px; }
+    .article-body a:hover { color: #1a3a2a; }
+
+    /* Inline CTA strip */
+    .inline-cta { background: linear-gradient(135deg, var(--green-dark), #1e5535); border-radius: 14px; padding: 32px 36px; color: #fff; margin: 36px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .inline-cta p { color: rgba(255,255,255,.85); margin: 0; font-size: .95rem; }
+    .inline-cta h4 { font-family: 'Playfair Display', serif; font-size: 1.25rem; margin-bottom: 6px; }
+    .btn-cta-white { background: #fff; color: var(--green-dark) !important; border-radius: 50px; padding: 10px 28px; font-weight: 700; font-size: .9rem; white-space: nowrap; text-decoration: none !important; display: inline-block; transition: background .2s, transform .15s; }
+    .btn-cta-white:hover { background: var(--green-accent); color: #fff !important; transform: translateY(-2px); }
+
+    /* Pillar list */
+    .pillar-list { list-style: none; padding: 0; margin: 0 0 18px; }
+    .pillar-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; font-size: .97rem; color: #374940; }
+    .pillar-list li .icon-dot { width: 22px; height: 22px; background: var(--green-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .pillar-list li .icon-dot i { color: #fff; font-size: .65rem; }
+
+    /* Split highlight boxes */
+    .split-boxes { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0 28px; }
+    .split-box { border-radius: 12px; padding: 22px; }
+    .split-box.front { background: #edf7f2; border: 1px solid #b6e4cc; }
+    .split-box.back { background: #eaf1fa; border: 1px solid #b3cfe8; }
+    .split-box h5 { font-size: .95rem; font-weight: 700; margin-bottom: 10px; }
+    .split-box.front h5 { color: var(--green-dark); }
+    .split-box.back h5 { color: #1a3056; }
+    .split-box ul { list-style: none; padding: 0; margin: 0; }
+    .split-box ul li { font-size: .88rem; color: #374940; padding: 4px 0; display: flex; align-items: center; gap: 8px; }
+    .split-box ul li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+    .split-box.front ul li::before { background: var(--green-accent); }
+    .split-box.back ul li::before { background: #5a9fd4; }
+    @media (max-width: 576px) { .split-boxes { grid-template-columns: 1fr; } }
+
+    /* Author */
+    .author-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 24px 28px; display: flex; align-items: center; gap: 18px; margin-top: 40px; }
+    .author-avatar { width: 58px; height: 58px; background: var(--green-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--green-accent); font-size: 1.4rem; flex-shrink: 0; }
+    .author-name { font-weight: 700; font-size: .95rem; color: var(--text-dark); }
+    .author-role { font-size: .82rem; color: var(--text-muted); }
+
+    /* ── SIDEBAR ── */
+    .sidebar { position: sticky; top: 90px; }
+    .audit-card { background: linear-gradient(155deg, var(--green-dark) 0%, #226040 100%); border-radius: 18px; padding: 32px 28px; color: #fff; text-align: center; margin-bottom: 28px; }
+    .audit-card h4 { font-family: 'Playfair Display', serif; font-size: 1.3rem; line-height: 1.3; margin-bottom: 10px; }
+    .audit-card p { font-size: .88rem; color: rgba(255,255,255,.75); margin-bottom: 22px; }
+    .btn-audit { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 12px 28px; font-weight: 700; font-size: .9rem; width: 100%; cursor: pointer; transition: background .2s, transform .15s; text-decoration: none; display: inline-block; }
+    .btn-audit:hover { background: #34a86a; transform: translateY(-2px); color: #fff; }
+
+    .toc-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 28px; }
+    .toc-card h6 { font-size: .78rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 14px; }
+    .toc-list { list-style: none; padding: 0; margin: 0; }
+    .toc-list li { margin-bottom: 9px; }
+    .toc-list a { font-size: .88rem; color: var(--text-dark); text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: color .2s; }
+    .toc-list a::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--green-accent); flex-shrink: 0; }
+    .toc-list a:hover { color: var(--green-accent); }
+
+    .related-card { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 24px; }
+    .related-card h6 { font-size: .78rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 14px; }
+    .related-item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--border); text-decoration: none; }
+    .related-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .related-thumb { width: 44px; height: 44px; background: var(--green-dark); border-radius: 8px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; color: var(--green-accent); font-size: 1.1rem; }
+    .related-title { font-size: .84rem; font-weight: 600; color: var(--text-dark); line-height: 1.3; }
+    .related-tag { font-size: .73rem; color: var(--text-muted); margin-top: 2px; }
+
+    /* ── BOTTOM CTA ── */
+    .bottom-cta { background: linear-gradient(135deg, #0f2d1c, #1e5535); padding: 80px 0; text-align: center; position: relative; overflow: hidden; }
+    .bottom-cta::before { content: ''; position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(63,184,122,.12) 0%, transparent 65%); top: 50%; left: 50%; transform: translate(-50%,-50%); pointer-events: none; }
+    .bottom-cta h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.8rem); color: #fff; margin-bottom: 14px; }
+    .bottom-cta h2 em { font-style: italic; color: var(--green-accent); }
+    .bottom-cta p { color: rgba(255,255,255,.7); max-width: 520px; margin: 0 auto 32px; }
+    .btn-cta-lg { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 15px 40px; font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-block; transition: background .2s, transform .15s, box-shadow .2s; box-shadow: 0 8px 32px rgba(63,184,122,.3); }
+    .btn-cta-lg:hover { background: #34a86a; transform: translateY(-3px); box-shadow: 0 14px 40px rgba(63,184,122,.4); color: #fff; }
+
+    /* ── FOOTER ── */
+    .bam-footer { background: #0a1f12; color: rgba(255,255,255,.65); }
+    .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 900; color: #fff !important; text-decoration: none; }
+    .footer-logo span { color: var(--green-accent); }
+    .footer-desc { font-size: .87rem; color: rgba(255,255,255,.5); line-height: 1.7; margin-top: 8px; }
+    .footer-heading { font-size: .78rem; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: rgba(255,255,255,.85); margin-bottom: 14px; }
+    .footer-links { list-style: none; padding: 0; margin: 0; }
+    .footer-links li { margin-bottom: 8px; }
+    .footer-links a, .footer-links span { font-size: .87rem; color: rgba(255,255,255,.5); text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: var(--green-accent); }
+    .footer-hr { border-color: rgba(255,255,255,.08); }
+    .footer-copy { font-size: .8rem; color: rgba(255,255,255,.3); }
+    .footer-copy a { color: rgba(255,255,255,.3); text-decoration: none; }
+    .footer-copy a:hover { color: var(--green-accent); }
+    .social-btn { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; background: rgba(255,255,255,.07); border-radius: 8px; color: rgba(255,255,255,.6); font-size: .8rem; font-weight: 700; text-decoration: none; transition: background .2s, color .2s; }
+    .social-btn:hover { background: var(--green-accent); color: #fff; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .blog-hero { padding: 48px 0 44px; }
+      .inline-cta { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav class="navbar navbar-expand-lg fixed-top bam-nav">
+  <div class="container">
+    <a class="navbar-brand bam-logo" href="/">Bambo<span>ost</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu bam-dropdown">
+            <li><a class="dropdown-item" href="../best-seo-company-in-kerala.html">Search Engine Optimization (SEO)</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../services/seo-for-educational-institutes.html">Education SEO</a></li>
+            <li><a class="dropdown-item" href="../services/seo-for-hotels.html">Hotel SEO</a></li>
+            <li><a class="dropdown-item" href="../services/ecommerce-seo-services.html">Ecommerce SEO</a></li>
+            <li><a class="dropdown-item" href="../services/seo-for-real-estate.html">Real Estate SEO</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../best-google-ads-company-in-kerala.html">Google Ads</a></li>
+            <li><a class="dropdown-item" href="../best-web-development-company-in-kerala.html">Web Development</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="../case-studies.html">Case Studies</a></li>
+        <li class="nav-item"><a class="nav-link" href="../blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2">
+          <a class="btn bam-btn-primary btn-sm px-4" href="../contact.html">Free Consultation</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="blog-hero">
+  <div class="container">
+    <div class="breadcrumb-bar">
+      <a href="/">Home</a> &rsaquo; <a href="../blog.html">Blog</a> &rsaquo; <span>Front End vs Back End Development</span>
+    </div>
+    <div class="hero-tag">Web Development Explained</div>
+    <h1 class="hero-title">Front End vs <em>Back End</em> Development:<br class="d-none d-md-block"/> What's the Difference in 2026?</h1>
+    <div class="hero-meta">
+      <span><i class="bi bi-person-fill"></i> By Bamboost Team</span>
+      <span><i class="bi bi-calendar3"></i> April 5, 2026</span>
+      <span><i class="bi bi-clock"></i> 6 min read</span>
+      <span><i class="bi bi-tag-fill"></i> Web Development</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── MAIN ── -->
+<section class="blog-layout">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- ARTICLE -->
+      <div class="col-lg-8">
+        <article class="article-body">
+
+          <!-- Featured Image -->
+          <div class="featured-image-wrap">
+            <svg viewBox="0 0 900 350" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#0f2d1c"/>
+                  <stop offset="100%" style="stop-color:#1e5535"/>
+                </linearGradient>
+                <radialGradient id="glow1" cx="25%" cy="30%" r="40%">
+                  <stop offset="0%" style="stop-color:#3fb87a;stop-opacity:0.18"/>
+                  <stop offset="100%" style="stop-color:transparent;stop-opacity:0"/>
+                </radialGradient>
+                <radialGradient id="glow2" cx="80%" cy="70%" r="35%">
+                  <stop offset="0%" style="stop-color:#5a9fd4;stop-opacity:0.15"/>
+                  <stop offset="100%" style="stop-color:transparent;stop-opacity:0"/>
+                </radialGradient>
+              </defs>
+              <rect width="900" height="350" fill="url(#bgGrad)"/>
+              <rect width="900" height="350" fill="url(#glow1)"/>
+              <rect width="900" height="350" fill="url(#glow2)"/>
+
+              <!-- Browser window (front end) -->
+              <rect x="80" y="100" width="280" height="170" rx="10" fill="#1a4a2c" stroke="#3fb87a" stroke-width="1.5" opacity="0.8"/>
+              <rect x="80" y="100" width="280" height="28" rx="10" fill="#3fb87a" opacity="0.3"/>
+              <circle cx="100" cy="114" r="5" fill="#3fb87a" opacity="0.7"/>
+              <circle cx="118" cy="114" r="5" fill="#3fb87a" opacity="0.4"/>
+              <circle cx="136" cy="114" r="5" fill="#3fb87a" opacity="0.25"/>
+              <!-- Mock UI lines -->
+              <rect x="100" y="142" width="120" height="8" rx="4" fill="#3fb87a" opacity="0.5"/>
+              <rect x="100" y="158" width="200" height="6" rx="3" fill="#3fb87a" opacity="0.2"/>
+              <rect x="100" y="170" width="160" height="6" rx="3" fill="#3fb87a" opacity="0.2"/>
+              <rect x="100" y="190" width="90" height="24" rx="6" fill="#3fb87a" opacity="0.45"/>
+              <text x="145" y="207" text-anchor="middle" fill="#fff" font-size="10" font-family="DM Sans, sans-serif" opacity="0.9">Button</text>
+              <text x="220" y="270" text-anchor="middle" fill="#3fb87a" font-size="13" font-family="DM Sans, sans-serif" font-weight="600" opacity="0.9">Front End</text>
+
+              <!-- Divider -->
+              <line x1="450" y1="80" x2="450" y2="290" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" stroke-dasharray="8 5"/>
+              <text x="450" y="188" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="11" font-family="DM Sans, sans-serif" letter-spacing="2">vs</text>
+
+              <!-- Server / back end -->
+              <rect x="540" y="100" width="280" height="170" rx="10" fill="#1a2d42" stroke="#5a9fd4" stroke-width="1.5" opacity="0.8"/>
+              <!-- Server racks -->
+              <rect x="560" y="120" width="240" height="22" rx="4" fill="#5a9fd4" opacity="0.2"/>
+              <rect x="560" y="148" width="240" height="22" rx="4" fill="#5a9fd4" opacity="0.15"/>
+              <rect x="560" y="176" width="240" height="22" rx="4" fill="#5a9fd4" opacity="0.1"/>
+              <circle cx="786" cy="131" r="5" fill="#5a9fd4" opacity="0.8"/>
+              <circle cx="786" cy="159" r="5" fill="#5a9fd4" opacity="0.5"/>
+              <circle cx="786" cy="187" r="5" fill="#5a9fd4" opacity="0.3"/>
+              <!-- Database cylinder -->
+              <ellipse cx="680" cy="225" rx="34" ry="10" fill="#5a9fd4" opacity="0.25"/>
+              <rect x="646" y="225" width="68" height="22" fill="#5a9fd4" opacity="0.15"/>
+              <ellipse cx="680" cy="247" rx="34" ry="10" fill="#5a9fd4" opacity="0.2"/>
+              <text x="680" y="270" text-anchor="middle" fill="#5a9fd4" font-size="13" font-family="DM Sans, sans-serif" font-weight="600" opacity="0.9">Back End</text>
+            </svg>
+            <div class="featured-image-label">
+              <span>Front End vs Back End</span>
+              <small>Web Development · Architecture · Roles</small>
+            </div>
+          </div>
+
+          <p>If you have ever had a website built — or are planning to — you've probably heard the terms <strong>front end</strong> and <strong>back end development</strong> thrown around. These two disciplines form the backbone of every website and web application on the internet. But what do they actually mean, what do developers in each area do, and why does it matter for your business?</p>
+
+          <p>This guide explains both sides in plain language, so you can make smarter decisions when investing in your digital presence.</p>
+
+          <h2 id="what-is-frontend">What Is Front End Development?</h2>
+          <p>Front end development refers to everything a user sees and interacts with directly in their browser. It is the visible layer of a website — the layouts, buttons, menus, colours, animations, and forms that make up the user experience. Front end developers are responsible for translating a design into a working, interactive interface.</p>
+
+          <p>The three core technologies of front end development are:</p>
+
+          <ul class="pillar-list">
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>HTML (HyperText Markup Language):</strong> The structural skeleton of a web page — headings, paragraphs, images, and links.</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>CSS (Cascading Style Sheets):</strong> Handles the visual presentation — colours, fonts, spacing, and layout.</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>JavaScript:</strong> Adds interactivity and dynamic behaviour — dropdown menus, form validation, animated elements, and more.</div></li>
+          </ul>
+
+          <p>Modern front end developers also work with frameworks like <strong>React</strong>, <strong>Vue</strong>, and <strong>Next.js</strong> to build complex, fast-loading interfaces. A helpful free tool to experiment with front end code live is <a href="https://codepen.io" target="_blank" rel="noopener noreferrer">CodePen</a> — it lets you write HTML, CSS, and JavaScript in your browser and see results instantly, making it a great learning and prototyping playground.</p>
+
+          <h2 id="what-is-backend">What Is Back End Development?</h2>
+          <p>Back end development is everything that happens behind the scenes — the server, the database, and the logic that powers a website's functionality. Users never directly see the back end, but they experience its effects every time they log in, submit a form, make a purchase, or see personalised content.</p>
+
+          <p>Back end developers work with technologies like <strong>Node.js</strong>, <strong>Python</strong>, <strong>PHP</strong>, and <strong>Ruby</strong>, alongside databases such as <strong>MySQL</strong>, <strong>PostgreSQL</strong>, and <strong>MongoDB</strong>. They build the APIs and server logic that connect the user-facing front end to the data and business rules that make a product work.</p>
+
+          <!-- Comparison blocks -->
+          <div class="split-boxes">
+            <div class="split-box front">
+              <h5><i class="bi bi-display me-2"></i>Front End</h5>
+              <ul>
+                <li>Runs in the browser</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Vue, Next.js</li>
+                <li>Layouts &amp; animations</li>
+                <li>User interaction</li>
+              </ul>
+            </div>
+            <div class="split-box back">
+              <h5><i class="bi bi-server me-2"></i>Back End</h5>
+              <ul>
+                <li>Runs on the server</li>
+                <li>Node.js, Python, PHP</li>
+                <li>MySQL, MongoDB APIs</li>
+                <li>Data &amp; business logic</li>
+                <li>Security &amp; authentication</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 id="key-differences">Key Differences at a Glance</h2>
+          <p>While both disciplines are essential, they differ in focus, skill set, and output. Here is a quick breakdown:</p>
+
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Aspect</th>
+                <th><i class="bi bi-display me-1"></i> Front End</th>
+                <th><i class="bi bi-server me-1"></i> Back End</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Visible to users?</td>
+                <td>Yes — all of it</td>
+                <td>No — runs server-side</td>
+              </tr>
+              <tr>
+                <td>Primary concern</td>
+                <td>Look, feel &amp; UX</td>
+                <td>Performance, data &amp; logic</td>
+              </tr>
+              <tr>
+                <td>Core tools</td>
+                <td>HTML, CSS, JS</td>
+                <td>Python, Node, SQL</td>
+              </tr>
+              <tr>
+                <td>Output</td>
+                <td>Interfaces &amp; pages</td>
+                <td>APIs &amp; databases</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Mid-article CTA -->
+          <div class="inline-cta">
+            <div>
+              <h4>Need a Website That Performs on Both Sides?</h4>
+              <p>Our team handles full-stack development — from pixel-perfect design to rock-solid infrastructure.</p>
+            </div>
+            <a href="../best-web-development-company-in-kerala.html" class="btn-cta-white">Explore Web Development &rarr;</a>
+          </div>
+
+          <h2 id="full-stack">What About Full Stack Development?</h2>
+          <p>A <strong>full stack developer</strong> is someone who is proficient in both front end and back end technologies. They can build an entire web application from scratch — handling everything from the user interface to the database and server configuration. Full stack developers are highly versatile and are particularly valuable for startups and small businesses that need a single developer to manage an entire project.</p>
+
+          <p>For a deeper technical understanding of the browser environment where front end code runs, <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener noreferrer">MDN Web Docs by Mozilla</a> is the industry-standard free reference for web developers at all levels — covering HTML, CSS, JavaScript, and web APIs in depth.</p>
+
+          <h2 id="which-do-you-need">Which Does Your Business Need?</h2>
+          <p>The answer depends on what you are trying to build. A simple brochure website or landing page is almost entirely a front end concern — it needs to look great, load quickly, and guide visitors towards an action. An e-commerce platform, a booking system, or a membership portal requires substantial back end work: user accounts, payment processing, inventory management, and secure data storage.</p>
+
+          <p>Most modern businesses need both — which is why partnering with a development team that covers the full spectrum is so valuable. As one of the leading <a href="../best-web-development-company-in-kerala.html">web development companies in Kerala</a>, Bamboost builds end-to-end solutions that are just as solid under the hood as they are beautiful on the surface.</p>
+
+          <h2 id="conclusion">Conclusion</h2>
+          <p>Front end and back end development are two halves of the same whole. The front end delivers the experience your customers see and feel; the back end powers the functionality that makes it all work. Understanding the difference helps you ask better questions, set the right expectations, and invest in the development work that actually moves your business forward.</p>
+
+          <p>Whether you need a fast, visually stunning website or a complex web application built for scale, getting both sides right from the start is what separates a great digital product from an average one.</p>
+
+        </article>
+
+        <!-- Author card -->
+        <div class="author-card">
+          <div class="author-avatar"><i class="bi bi-person-fill"></i></div>
+          <div>
+            <div class="author-name">Bamboost Editorial Team</div>
+            <div class="author-role">Web Development &amp; Digital Growth Experts</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="col-lg-4">
+        <aside class="sidebar">
+
+          <!-- Sidebar CTA -->
+          <div class="audit-card">
+            <h4>Build a Website That Looks Great and Performs Flawlessly</h4>
+            <p>From front end design to back end architecture — we do it all under one roof.</p>
+            <a href="../contact.html" class="btn-audit">Start Your Web Project</a>
+          </div>
+
+          <!-- TOC -->
+          <div class="toc-card">
+            <h6>In This Article</h6>
+            <ul class="toc-list">
+              <li><a href="#what-is-frontend">What Is Front End Development?</a></li>
+              <li><a href="#what-is-backend">What Is Back End Development?</a></li>
+              <li><a href="#key-differences">Key Differences at a Glance</a></li>
+              <li><a href="#full-stack">What About Full Stack Development?</a></li>
+              <li><a href="#which-do-you-need">Which Does Your Business Need?</a></li>
+              <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+          </div>
+
+          <!-- Related posts -->
+          <div class="related-card">
+            <h6>Related Articles</h6>
+            <a class="related-item" href="../blogs/web-design-vs-web-development.html">
+              <div class="related-thumb"><i class="bi bi-link-45deg"></i></div>
+              <div>
+                <div class="related-title">Web Design vs Web Development: What's the Difference in 2026</div>
+                <div class="related-tag">5 min read</div>
+              </div>
+            </a>
+            <a class="related-item" href="../blogs/shopify-vs-woocommerce.html">
+              <div class="related-thumb"><i class="bi bi-graph-up-arrow"></i></div>
+              <div>
+                <div class="related-title">Shopify vs WooCommerce: Which Is Better for Your Business in 2026</div>
+                <div class="related-tag">5 min read</div>
+              </div>
+            </a>
+            <a class="related-item" href="../blogs/mobile-friendly-website-design.html">
+              <div class="related-thumb"><i class="bi bi-phone"></i></div>
+              <div>
+                <div class="related-title">Importance of Mobile-Friendly Website Design in 2026</div>
+                <div class="related-tag">4 min read</div>
+              </div>
+            </a>
+          </div>
+
+        </aside>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── BOTTOM CTA ── -->
+<section class="bottom-cta">
+  <div class="container position-relative">
+    <h2>Ready to Build a Website That <em>Works Inside and Out?</em></h2>
+    <p>Bamboost delivers full-stack web development tailored to your business goals — fast, scalable, and built to convert.</p>
+    <a href="../contact.html" class="btn-cta-lg">Book a Free Consultation</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="bam-footer pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <div class="col-lg-4 col-md-6">
+        <a class="footer-logo d-inline-block mb-3" href="https://bamboost.in/">Bambo<span>ost</span></a>
+        <p class="footer-desc">Kerala's most trusted SEO and Web development company. We build deep digital roots that drive rapid, sustainable growth, just like bamboo.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="https://www.facebook.com/" class="social-btn" aria-label="Facebook">f</a>
+          <a href="https://www.instagram.com/" class="social-btn" aria-label="Instagram">ig</a>
+          <a href="https://www.linkedin.com/" class="social-btn" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="footer-heading">Services</h6>
+        <ul class="footer-links">
+          <li><a href="../best-seo-company-in-kerala.html">SEO</a></li>
+          <li><a href="../services/local-seo-services.html">Local SEO</a></li>
+          <li><a href="../services/on-page-seo-services.html">On-Page SEO</a></li>
+          <li><a href="../services/off-page-seo-services.html">Off-Page SEO</a></li>
+          <li><a href="../services/technical-seo-services.html">Technical SEO</a></li>
+          <li><a href="../best-google-ads-company-in-kerala.html">Google Ads</a></li>
+          <li><a href="../best-web-development-company-in-kerala.html">Web Development</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="footer-heading">Industries</h6>
+        <ul class="footer-links">
+          <li><a href="../services/seo-for-educational-institutes.html">Education</a></li>
+          <li><a href="../services/ecommerce-seo-services.html">Ecommerce</a></li>
+          <li><a href="../services/seo-for-real-estate.html">Real Estate</a></li>
+          <li><a href="../services/seo-for-hotels.html">Hotel</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="footer-heading">Company</h6>
+        <ul class="footer-links">
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../case-studies.html">Case Studies</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../frequently-asked-questions.html">FAQ's</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="footer-heading">Contact</h6>
+        <ul class="footer-links">
+          <li><span>Kerala, India</span></li>
+          <li><span>bamboost.company@gmail.com</span></li>
+          <li><span>+91 XXXXX XXXXX</span></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-hr">
+    <div class="d-flex flex-wrap justify-content-between align-items-center pt-2 gap-2">
+      <p class="footer-copy mb-0">© 2026 Bamboost. All rights reserved.</p>
+      <p class="footer-copy mb-0"><a href="#">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
