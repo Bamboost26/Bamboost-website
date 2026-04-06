@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /frequently-asked-questions.html
+Disallow: /seo-tools/
 
 # Sitemap
 Sitemap: https://bamboost.in/sitemap.xml
