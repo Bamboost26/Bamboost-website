@@ -137,6 +137,7 @@ img{max-width:100%;height:auto;}
 .bam-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--g4),var(--gold));border-radius:20px 20px 0 0;}
 .bam-card:hover{border-color:var(--g5);box-shadow:0 12px 40px rgba(13,43,26,0.1);transform:translateY(-4px);}
 .bam-card h3,.bam-card h4{font-size:1rem;font-weight:600;color:var(--g2);margin-bottom:0.5rem;}
+.bam-card h3,.bam-card h4 a{font-size:1rem;font-weight:600;color:var(--g2);margin-bottom:0.5rem;}
 .bam-card p{font-size:0.86rem;color:var(--text3);line-height:1.65;}
 
 /* Dark card */
