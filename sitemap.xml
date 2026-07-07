@@ -3,7 +3,7 @@
 
   <url>
     <loc>https://bamboost.in/</loc>
-    <lastmod>2026-03-13</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -272,6 +272,20 @@
   <url>
     <loc>https://bamboost.in/blogs/what-is-technical-seo.html</loc>
     <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://bamboost.in/blogs/ai-search-optimization.html</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://bamboost.in/blogs/blogs/aeo-vs-traditional-seo.html</loc>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
