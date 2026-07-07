@@ -1,6 +1,6 @@
 # Bamboost
  
-> Bamboost is a performance-based digital growth agency based in Kerala, India, specialising in Search Engine Optimisation (SEO), Google Ads management, and web development. The company is built around a single principle: fees tied to measurable outcomes.
+Bamboost is a performance-based digital growth agency based in Kerala, India, specialising in Search Engine Optimisation (SEO), Google Ads management, and web development. The company is built around a single principle: fees tied to measurable outcomes.
  
 Bamboost was founded to address a gap in the digital marketing industry - agencies that charge retainers regardless of results, use confusing reports to obscure poor performance, and apply generic strategies without genuine accountability. Bamboost integrates all three pillars of online growth (SEO, web development, and paid advertising) under one roof, ensuring each discipline reinforces the others.
  
@@ -45,6 +45,12 @@ The company name and philosophy are inspired by bamboo — a plant that spends y
 - [Best Programming Languages for Web Development](https://bamboost.in/blogs/best-programming-languages-web-development.html)
 - [Benefits of Google Ads for Small Business](https://bamboost.in/blogs/benifits-of-google-ads-for-small-business.html)
 - [UI vs UX Design](https://bamboost.in/blogs/ui-vs-ux-design.html)
+- [SEO vs Google Ads](https://bamboost.in/blogs/seo-vs-google-ads.html)
+- [How Google Ranks Websites](https://bamboost.in/blogs/how-google-ranks-websites.html)
+- [SEO Tips to Increase Hotel Bookings in Kerala](https://bamboost.in/blogs/seo-tips-increase-hotel-bookings-kerala.html)
+- [How to Rank Higher on Google Maps](https://bamboost.in/blogs/rank-higher-on-google-maps.html)
+- [What is Technical SEO?](https://bamboost.in/blogs/what-is-technical-seo.html)
+- [AI Search Optimization](https://bamboost.in/blogs/ai-search-optimization.html)
  
 ## Company Details
  
