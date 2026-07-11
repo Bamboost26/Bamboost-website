@@ -370,6 +370,18 @@ img{max-width:100%;height:auto;}
     flex:1;
 }
 
+.blog-card,
+.blog-card:hover,
+.blog-card:focus,
+.blog-card:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-card *{
+    text-decoration: none;
+}
+
 @media(max-width:575.98px){
 
     .blog-img{
