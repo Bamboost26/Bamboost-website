@@ -66,220 +66,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
-
-  <style>
-    :root {
-      --green-dark:   #1a3a2a;
-      --green-mid:    #1e4d35;
-      --green-accent: #3fb87a;
-      --cream:        #f5f2ec;
-      --white:        #ffffff;
-      --text-dark:    #1c2a22;
-      --text-muted:   #5a6e60;
-      --border:       #d8e8dc;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: 'DM Sans', sans-serif;
-      color: var(--text-dark);
-      background: var(--white);
-      font-size: 16px;
-      line-height: 1.7;
-    }
-
-    /* ── NAV ── */
-    .bam-nav {
-      background: rgba(15, 35, 22, 0.97);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid rgba(63,184,122,.15);
-      padding: 14px 0;
-    }
-    .bam-logo { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 900; color: #fff !important; text-decoration: none; letter-spacing: -.5px; }
-    .bam-logo span { color: var(--green-accent); }
-    .navbar-nav .nav-link { color: rgba(255,255,255,.75) !important; font-size: .9rem; font-weight: 500; transition: color .2s; padding: 6px 10px; }
-    .navbar-nav .nav-link:hover { color: var(--green-accent) !important; }
-    .bam-btn-primary { background: var(--green-accent); color: #fff !important; border-radius: 50px; font-weight: 600; font-size: .85rem; padding: 8px 20px; transition: background .2s, transform .15s; }
-    .bam-btn-primary:hover { background: #34a86a; transform: translateY(-1px); }
-    .bam-dropdown { background: #0f2d1c; border: 1px solid rgba(63,184,122,.2); border-radius: 10px; padding: 8px 0; }
-    .bam-dropdown .dropdown-item { color: rgba(255,255,255,.75); font-size: .88rem; padding: 8px 20px; }
-    .bam-dropdown .dropdown-item:hover { background: rgba(63,184,122,.1); color: var(--green-accent); }
-    .bam-dropdown .dropdown-divider { border-color: rgba(63,184,122,.15); }
-    .navbar-toggler { border-color: rgba(63,184,122,.4); }
-    .navbar-toggler-icon { filter: invert(1); }
-
-    /* ── HERO BANNER ── */
-    .blog-hero {
-      background: linear-gradient(135deg, #0f2d1c 0%, #1a4a2c 55%, #1e5535 100%);
-      padding: 72px 0 64px;
-      position: relative;
-      overflow: hidden;
-      margin-top: 65px;
-    }
-    .blog-hero::before {
-      content: '';
-      position: absolute;
-      width: 500px; height: 500px;
-      background: radial-gradient(circle, rgba(63,184,122,.15) 0%, transparent 70%);
-      top: -100px; right: -100px;
-      pointer-events: none;
-    }
-    .breadcrumb-bar { font-size: .82rem; color: rgba(255,255,255,.55); margin-bottom: 18px; }
-    .breadcrumb-bar a { color: rgba(255,255,255,.55); text-decoration: none; }
-    .breadcrumb-bar a:hover { color: var(--green-accent); }
-    .breadcrumb-bar span { color: rgba(255,255,255,.8); }
-    .hero-tag { display: inline-block; font-size: .72rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--green-accent); margin-bottom: 18px; }
-    .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900; color: #fff; line-height: 1.18; margin-bottom: 20px; }
-    .hero-title em { font-style: italic; color: var(--green-accent); }
-    .hero-meta { font-size: .84rem; color: rgba(255,255,255,.6); display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
-    .hero-meta span { display: flex; align-items: center; gap: 6px; }
-
-    /* ── LAYOUT ── */
-    .blog-layout { padding: 64px 0 80px; }
-
-    /* ── ARTICLE ── */
-    .article-body h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--green-dark); margin: 36px 0 14px; }
-    .article-body p { color: #374940; margin-bottom: 18px; font-size: 1rem; line-height: 1.8; }
-    .article-body strong { color: var(--green-dark); }
-    .article-body a { color: var(--green-accent); text-decoration: underline; text-underline-offset: 3px; }
-    .article-body a:hover { color: #1a3a2a; }
-
-    /* Tip cards */
-    .tip-card {
-      background: var(--cream);
-      border: 1px solid var(--border);
-      border-left: 4px solid var(--green-accent);
-      border-radius: 14px;
-      padding: 24px 28px;
-      margin-bottom: 24px;
-    }
-    .tip-card-header {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 12px;
-    }
-    .tip-number {
-      width: 38px; height: 38px;
-      background: var(--green-dark);
-      color: var(--green-accent);
-      border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-      font-family: 'Playfair Display', serif;
-      font-size: 1.1rem;
-      font-weight: 900;
-      flex-shrink: 0;
-    }
-    .tip-card h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--green-dark);
-      margin: 0;
-      line-height: 1.3;
-    }
-    .tip-card p { color: #374940; font-size: .97rem; margin-bottom: 10px; line-height: 1.75; }
-    .tip-card p:last-child { margin-bottom: 0; }
-
-    /* Pillar list */
-    .pillar-list { list-style: none; padding: 0; margin: 0 0 18px; }
-    .pillar-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; font-size: .97rem; color: #374940; }
-    .pillar-list li .icon-dot { width: 22px; height: 22px; background: var(--green-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
-    .pillar-list li .icon-dot i { color: #fff; font-size: .65rem; }
-
-    /* Inline CTA strip */
-    .inline-cta { background: linear-gradient(135deg, var(--green-dark), #1e5535); border-radius: 14px; padding: 32px 36px; color: #fff; margin: 36px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-    .inline-cta p { color: rgba(255,255,255,.85); margin: 0; font-size: .95rem; }
-    .inline-cta h4 { font-family: 'Playfair Display', serif; font-size: 1.25rem; margin-bottom: 6px; }
-    .btn-cta-white { background: #fff; color: var(--green-dark) !important; border-radius: 50px; padding: 10px 28px; font-weight: 700; font-size: .9rem; white-space: nowrap; text-decoration: none !important; display: inline-block; transition: background .2s, transform .15s; }
-    .btn-cta-white:hover { background: var(--green-accent); color: #fff !important; transform: translateY(-2px); }
-
-    /* Highlight / stat strip */
-    .stat-strip {
-      background: var(--green-dark);
-      border-radius: 14px;
-      padding: 24px 28px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin: 28px 0;
-    }
-    .stat-item { text-align: center; }
-    .stat-num { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 900; color: var(--green-accent); display: block; line-height: 1; margin-bottom: 6px; }
-    .stat-label { font-size: .78rem; color: rgba(255,255,255,.65); line-height: 1.4; }
-
-    /* FAQ */
-    .faq-item { background: var(--cream); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
-    .faq-item summary { padding: 16px 20px; font-weight: 600; font-size: .95rem; color: var(--green-dark); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-    .faq-item summary::-webkit-details-marker { display: none; }
-    .faq-item summary::after { content: '+'; font-size: 1.3rem; color: var(--green-accent); flex-shrink: 0; }
-    .faq-item[open] summary::after { content: '−'; }
-    .faq-body { padding: 4px 20px 16px; font-size: .92rem; color: #374940; line-height: 1.75; }
-
-    /* Author */
-    .author-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 24px 28px; display: flex; align-items: center; gap: 18px; margin-top: 40px; }
-    .author-avatar { width: 58px; height: 58px; background: var(--green-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--green-accent); font-size: 1.4rem; flex-shrink: 0; }
-    .author-name { font-weight: 700; font-size: .95rem; color: var(--text-dark); }
-    .author-role { font-size: .82rem; color: var(--text-muted); }
-
-    /* ── SIDEBAR ── */
-    .sidebar { position: sticky; top: 90px; }
-    .audit-card { background: linear-gradient(155deg, var(--green-dark) 0%, #226040 100%); border-radius: 18px; padding: 32px 28px; color: #fff; text-align: center; margin-bottom: 28px; }
-    .audit-card h4 { font-family: 'Playfair Display', serif; font-size: 1.3rem; line-height: 1.3; margin-bottom: 10px; }
-    .audit-card p { font-size: .88rem; color: rgba(255,255,255,.75); margin-bottom: 22px; }
-    .btn-audit { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 12px 28px; font-weight: 700; font-size: .9rem; width: 100%; cursor: pointer; transition: background .2s, transform .15s; text-decoration: none; display: inline-block; }
-    .btn-audit:hover { background: #34a86a; transform: translateY(-2px); color: #fff; }
-
-    .toc-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 28px; }
-    .toc-card h6 { font-size: .78rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 14px; }
-    .toc-list { list-style: none; padding: 0; margin: 0; }
-    .toc-list li { margin-bottom: 9px; }
-    .toc-list a { font-size: .88rem; color: var(--text-dark); text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: color .2s; }
-    .toc-list a::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--green-accent); flex-shrink: 0; }
-    .toc-list a:hover { color: var(--green-accent); }
-
-    .related-card { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 24px; }
-    .related-card h6 { font-size: .78rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 14px; }
-    .related-item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--border); text-decoration: none; }
-    .related-item:last-child { border-bottom: none; padding-bottom: 0; }
-    .related-thumb { width: 44px; height: 44px; background: var(--green-dark); border-radius: 8px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; color: var(--green-accent); font-size: 1.1rem; }
-    .related-title { font-size: .84rem; font-weight: 600; color: var(--text-dark); line-height: 1.3; }
-    .related-tag { font-size: .73rem; color: var(--text-muted); margin-top: 2px; }
-
-    /* ── BOTTOM CTA ── */
-    .bottom-cta { background: linear-gradient(135deg, #0f2d1c, #1e5535); padding: 80px 0; text-align: center; position: relative; overflow: hidden; }
-    .bottom-cta::before { content: ''; position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(63,184,122,.12) 0%, transparent 65%); top: 50%; left: 50%; transform: translate(-50%,-50%); pointer-events: none; }
-    .bottom-cta h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.8rem); color: #fff; margin-bottom: 14px; }
-    .bottom-cta h2 em { font-style: italic; color: var(--green-accent); }
-    .bottom-cta p { color: rgba(255,255,255,.7); max-width: 520px; margin: 0 auto 32px; }
-    .btn-cta-lg { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 15px 40px; font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-block; transition: background .2s, transform .15s, box-shadow .2s; box-shadow: 0 8px 32px rgba(63,184,122,.3); }
-    .btn-cta-lg:hover { background: #34a86a; transform: translateY(-3px); box-shadow: 0 14px 40px rgba(63,184,122,.4); color: #fff; }
-
-    /* ── FOOTER ── */
-    .bam-footer { background: #0a1f12; color: rgba(255,255,255,.65); }
-    .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 900; color: #fff !important; text-decoration: none; }
-    .footer-logo span { color: var(--green-accent); }
-    .footer-desc { font-size: .87rem; color: rgba(255,255,255,.5); line-height: 1.7; margin-top: 8px; }
-    .footer-heading { font-size: .78rem; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: rgba(255,255,255,.85); margin-bottom: 14px; }
-    .footer-links { list-style: none; padding: 0; margin: 0; }
-    .footer-links li { margin-bottom: 8px; }
-    .footer-links a, .footer-links span { font-size: .87rem; color: rgba(255,255,255,.5); text-decoration: none; transition: color .2s; }
-    .footer-links a:hover { color: var(--green-accent); }
-    .footer-hr { border-color: rgba(255,255,255,.08); }
-    .footer-copy { font-size: .8rem; color: rgba(255,255,255,.3); }
-    .footer-copy a { color: rgba(255,255,255,.3); text-decoration: none; }
-    .footer-copy a:hover { color: var(--green-accent); }
-    .social-btn { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; background: rgba(255,255,255,.07); border-radius: 8px; color: rgba(255,255,255,.6); font-size: .8rem; font-weight: 700; text-decoration: none; transition: background .2s, color .2s; }
-    .social-btn:hover { background: var(--green-accent); color: #fff; }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 768px) {
-      .blog-hero { padding: 48px 0 44px; }
-      .inline-cta { flex-direction: column; align-items: flex-start; }
-      .stat-strip { grid-template-columns: 1fr; }
-    }
-  </style>
+  <link href="blog-style (1).css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -324,7 +111,7 @@
 <section class="blog-hero">
   <div class="container">
     <div class="breadcrumb-bar">
-      <a href="/">Home</a> &rsaquo; <a href="../blog.html">Blog</a> &rsaquo; <span>How to Rank Higher on Google Maps: 10 Proven Tips</span>
+      <a href="/">Home</a> &rsaquo; <a href="../blog.html">Blog</a> &rsaquo; <span>How to Rank Higher on Google Maps</span>
     </div>
     <div class="hero-tag">Local SEO Tips</div>
     <h1 class="hero-title">How to <em>Rank Higher</em> on Google Maps:<br class="d-none d-md-block"/> 10 Proven Tips</h1>
@@ -352,67 +139,33 @@
 
           <p>Whether you run a restaurant in Kochi, a clinic in Thiruvananthapuram, or a retail shop in Thrissur, these 10 tips will help you <strong>rank higher on Google Maps</strong> and turn more map views into real customers - without spending a rupee on ads.</p>
 
-          <!-- Stat Strip -->
-          <div class="stat-strip">
-            <div class="stat-item">
-              <span class="stat-num">46%</span>
-              <span class="stat-label">of all Google searches have local intent</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-num">76%</span>
-              <span class="stat-label">of local searchers visit a business within 24 hours</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-num">44%</span>
-              <span class="stat-label">of local pack clicks go to the top 3 map results</span>
-            </div>
-          </div>
+          <ul class="pillar-list">
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>46%</strong> of all Google searches have local intent</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>76%</strong> of local searchers visit a business within 24 hours</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>44%</strong> of local pack clicks go to the top 3 map results</div></li>
+          </ul>
 
-          <!-- TIP 1 -->
-          <div class="tip-card" id="tip1">
-            <div class="tip-card-header">
-              <div class="tip-number">1</div>
-              <h3>Claim and Fully Complete Your Google Business Profile</h3>
-            </div>
-            <p>Your <strong>Google Business Profile (GBP)</strong> is the single most important asset for local visibility. An incomplete profile tells Google and potential customers - that you are not serious about your online presence. Fill in every field: business name, address, phone number, website, operating hours, and a detailed description with your primary keywords.</p>
-            <p>Verify your listing immediately if you have not already done so. Unverified listings rank significantly lower than verified ones. Also enable the booking link or WhatsApp button so customers can act instantly from your profile.</p>
-            <p>For step-by-step guidance, visit the <a href="https://support.google.com/business" target="_blank" rel="noopener noreferrer">official Google Business Profile Help Centre</a> - the most authoritative source on GBP optimisation.</p>
-          </div>
+          <h2 id="tip1">1. Claim and Fully Complete Your Google Business Profile</h2>
+          <p>Your <strong>Google Business Profile (GBP)</strong> is the single most important asset for local visibility. An incomplete profile tells Google and potential customers - that you are not serious about your online presence. Fill in every field: business name, address, phone number, website, operating hours, and a detailed description with your primary keywords.</p>
+          <p>Verify your listing immediately if you have not already done so. Unverified listings rank significantly lower than verified ones. Also enable the booking link or WhatsApp button so customers can act instantly from your profile.</p>
+          <p>For step-by-step guidance, visit the <a href="https://support.google.com/business" target="_blank" rel="noopener noreferrer">official Google Business Profile Help Centre</a> - the most authoritative source on GBP optimisation.</p>
 
-          <!-- TIP 2 -->
-          <div class="tip-card" id="tip2">
-            <div class="tip-card-header">
-              <div class="tip-number">2</div>
-              <h3>Choose the Right Primary and Secondary Categories</h3>
-            </div>
-            <p>Your business category is one of the strongest signals Google uses to match your listing with relevant searches. Be specific - if you run an ayurveda clinic, select "Ayurvedic Clinic" rather than the generic "Health Clinic." Then add secondary categories that describe your specialisations.</p>
-            <p>You can add up to 10 categories. Use as many as genuinely apply, and revisit them periodically as Google regularly adds new, more precise options. Research what categories top-ranking competitors in your area are using - it often reveals gaps you can fill.</p>
-          </div>
+          <h2 id="tip2">2. Choose the Right Primary and Secondary Categories</h2>
+          <p>Your business category is one of the strongest signals Google uses to match your listing with relevant searches. Be specific - if you run an ayurveda clinic, select "Ayurvedic Clinic" rather than the generic "Health Clinic." Then add secondary categories that describe your specialisations.</p>
+          <p>You can add up to 10 categories. Use as many as genuinely apply, and revisit them periodically as Google regularly adds new, more precise options. Research what categories top-ranking competitors in your area are using - it often reveals gaps you can fill.</p>
 
-          <!-- TIP 3 -->
-          <div class="tip-card" id="tip3">
-            <div class="tip-card-header">
-              <div class="tip-number">3</div>
-              <h3>Consistently Generate and Respond to Customer Reviews</h3>
-            </div>
-            <p><strong>Customer reviews</strong> are one of the top three ranking factors in Google's local search algorithm. Businesses with more recent, positive reviews consistently outrank competitors with similar profiles. Reviews also provide fresh, keyword-rich content that Google reads and indexes - at zero cost to you.</p>
-            <ul class="pillar-list">
-              <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Send a WhatsApp or SMS with your review link 24 hours after every service</div></li>
-              <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Place a QR code linking to your Google review page at checkout</div></li>
-              <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>Respond to every review</strong> - positive and negative - within 24 hours</div></li>
-              <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Never offer incentives for reviews - this violates Google's guidelines</div></li>
-            </ul>
-          </div>
+          <h2 id="tip3">3. Consistently Generate and Respond to Customer Reviews</h2>
+          <p><strong>Customer reviews</strong> are one of the top three ranking factors in Google's local search algorithm. Businesses with more recent, positive reviews consistently outrank competitors with similar profiles. Reviews also provide fresh, keyword-rich content that Google reads and indexes - at zero cost to you.</p>
+          <ul class="pillar-list">
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Send a WhatsApp or SMS with your review link 24 hours after every service</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Place a QR code linking to your Google review page at checkout</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>Respond to every review</strong> - positive and negative - within 24 hours</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Never offer incentives for reviews - this violates Google's guidelines</div></li>
+          </ul>
 
-          <!-- TIP 4 -->
-          <div class="tip-card" id="tip4">
-            <div class="tip-card-header">
-              <div class="tip-number">4</div>
-              <h3>Add Fresh, High-Quality Photos Regularly</h3>
-            </div>
-            <p>Businesses with photos receive 42% more direction requests and 35% more website clicks than those without. For local businesses competing in Kerala's growing digital market, this is a measurable competitive advantage.</p>
-            <p>Upload photos of your interior, exterior, team, products, and services. New uploads signal activity to Google, which correlates with higher rankings. Aim to add at least two to three new photos every week. Name your image files descriptively before uploading - for example, <strong>cafe-interior-fort-kochi.jpg</strong> and use natural lighting whenever possible.</p>
-          </div>
+          <h2 id="tip4">4. Add Fresh, High-Quality Photos Regularly</h2>
+          <p>Businesses with photos receive 42% more direction requests and 35% more website clicks than those without. For local businesses competing in Kerala's growing digital market, this is a measurable competitive advantage.</p>
+          <p>Upload photos of your interior, exterior, team, products, and services. New uploads signal activity to Google, which correlates with higher rankings. Aim to add at least two to three new photos every week. Name your image files descriptively before uploading - for example, <strong>cafe-interior-fort-kochi.jpg</strong> and use natural lighting whenever possible.</p>
 
           <!-- Mid-article CTA -->
           <div class="inline-cta">
@@ -423,99 +176,82 @@
             <a href="../contact.html" class="btn-cta-white">Get a Free SEO Audit &rarr;</a>
           </div>
 
-          <!-- TIP 5 -->
-          <div class="tip-card" id="tip5">
-            <div class="tip-card-header">
-              <div class="tip-number">5</div>
-              <h3>Maintain Strict NAP Consistency Across All Platforms</h3>
+          <h2 id="tip5">5. Maintain Strict NAP Consistency Across All Platforms</h2>
+          <p><strong>NAP</strong> - Name, Address, and Phone number - must match exactly across every online platform. Google cross-checks your NAP data across dozens of directories to verify your business is legitimate. Inconsistencies, even minor ones like "St." versus "Street," suppress your rankings.</p>
+          <p>Audit every directory, social media profile, and website footer where your information appears. Check Justdial, Sulekha, Indiamart, Facebook, Instagram, and your own website and ensure each matches your GBP exactly, character by character. If you move or change your number, update every listing within 48 hours.</p>
+
+          <h2 id="tip6">6. Post Regular Updates on Your Google Business Profile</h2>
+          <p>Most business owners set up their GBP once and never return. Google Posts - short updates published directly on your profile - signal that your business is active and engaged. Active listings consistently outrank dormant ones with similar authority.</p>
+          <p>Post about weekly offers, new services, seasonal promotions, or helpful tips. Each post stays active for seven days. Include a call-to-action button and a photo in every post - visual posts receive significantly higher engagement and reinforce your <strong>map visibility</strong>.</p>
+
+          <h2 id="tip7">7. Use Geo-Targeted and Local Keywords Throughout Your Profile</h2>
+          <p><strong>Near me searches</strong> have grown over 500% in the past five years. When someone searches "best biryani near me" or "electrician in Calicut," Google matches listings that contain relevant location signals. Your GBP description, posts, and services section are all opportunities to include these signals naturally.</p>
+          <p>Include neighbourhood or landmark references - "near Lulu Mall" or "opposite Medical College." Use geo-targeted keywords in your Google Posts and service descriptions. Write for your customer first, then ensure the key phrases appear naturally within the text.</p>
+
+          <h2 id="tip8">8. Build Local Citations in Trusted Business Directories</h2>
+          <p><strong>Local citations</strong> are online mentions of your business name, address, and phone number - even without a backlink. Every quality citation tells Google your business is established and trustworthy. More citations from reputable directories means higher local authority and better map visibility.</p>
+          <ul class="pillar-list">
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>National directories:</strong> Justdial, IndiaMART, Sulekha, Yellow Pages India</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>Industry-specific:</strong> Practo (healthcare), Zomato/Swiggy (restaurants), MagicBricks (real estate)</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>Global authority:</strong> Yelp, Foursquare, Apple Maps, Bing Places</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Ensure every citation matches your GBP NAP exactly</div></li>
+          </ul>
+          <p>According to <a href="https://moz.com/local-seo-guide" target="_blank" rel="noopener noreferrer">Moz's Local SEO Guide</a>, citation consistency is one of the most influential factors in local pack ranking - yet one of the most commonly neglected by small businesses.</p>
+
+          <h2 id="tip9">9. Optimise Your Website for Local SEO Signals</h2>
+          <p>Google's Maps algorithm considers your website as an important authority signal. A website that loads fast, is mobile-friendly, and is structured for local search directly reinforces your GBP and improves your overall <strong>local pack ranking</strong>.</p>
+          <ul class="pillar-list">
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Embed a Google Map on your Contact page - this strengthens geographic relevance</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Create dedicated landing pages for each service area or city you serve</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Add LocalBusiness schema markup with full NAP, hours, and service types</div></li>
+            <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Ensure your site loads in under 3 seconds on mobile - slow sites rank lower in local results</div></li>
+          </ul>
+          <p>Our <a href="../services/local-seo-services.html">local SEO services</a> include a complete website audit designed specifically to strengthen these on-site signals for Kerala businesses.</p>
+
+          <h2 id="tip10">10. Engage With Every Customer Interaction on Your Profile</h2>
+          <p>Google monitors engagement signals on your listing - how often customers click your phone number, request directions, visit your website, or ask questions via the Q&amp;A section. A listing that generates consistent engagement is seen as relevant and active, which directly supports higher rankings.</p>
+          <p>Proactively add 10–15 common questions to your Q&amp;A section and answer them with keyword-rich, helpful responses. Enable messaging so customers can contact you directly from your Maps listing. Monitor your GBP messages daily and respond within a few hours to maintain a fast-response badge - another trust signal Google rewards.</p>
+
+          <!-- FAQ -->
+          <h2 id="faq">FAQ</h2>
+
+          <div class="faq-accordion">
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                How long does it take to rank higher on Google Maps?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Most businesses see noticeable improvement in Google Maps ranking within 4–12 weeks of consistently applying local SEO best practices - especially Google Business Profile optimisation and review generation. Competitive categories in major Kerala cities may take 3–6 months to see significant local pack movement.
+              </div>
             </div>
-            <p><strong>NAP</strong> - Name, Address, and Phone number - must match exactly across every online platform. Google cross-checks your NAP data across dozens of directories to verify your business is legitimate. Inconsistencies, even minor ones like "St." versus "Street," suppress your rankings.</p>
-            <p>Audit every directory, social media profile, and website footer where your information appears. Check Justdial, Sulekha, Indiamart, Facebook, Instagram, and your own website and ensure each matches your GBP exactly, character by character. If you move or change your number, update every listing within 48 hours.</p>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Does NAP consistency really affect Google Maps ranking?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Yes, significantly. Inconsistent business name, address, or phone number across directories confuses Google and dilutes your local authority. Ensuring NAP consistency across all platforms - from Justdial to Facebook to your own website - is a foundational local SEO requirement that many businesses overlook.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Are customer reviews important for Google Maps SEO?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Absolutely. Google's local ranking algorithm weighs review quantity, recency, and average rating heavily. Businesses with a consistent flow of genuine positive reviews rank significantly higher in the local pack. Equally important: responding to reviews signals engagement to Google and builds trust with prospective customers.
+              </div>
+            </div>
+
           </div>
 
-          <!-- TIP 6 -->
-          <div class="tip-card" id="tip6">
-            <div class="tip-card-header">
-              <div class="tip-number">6</div>
-              <h3>Post Regular Updates on Your Google Business Profile</h3>
-            </div>
-            <p>Most business owners set up their GBP once and never return. Google Posts - short updates published directly on your profile - signal that your business is active and engaged. Active listings consistently outrank dormant ones with similar authority.</p>
-            <p>Post about weekly offers, new services, seasonal promotions, or helpful tips. Each post stays active for seven days. Include a call-to-action button and a photo in every post - visual posts receive significantly higher engagement and reinforce your <strong>map visibility</strong>.</p>
-          </div>
-
-          <!-- TIP 7 -->
-          <div class="tip-card" id="tip7">
-            <div class="tip-card-header">
-              <div class="tip-number">7</div>
-              <h3>Use Geo-Targeted and Local Keywords Throughout Your Profile</h3>
-            </div>
-            <p><strong>Near me searches</strong> have grown over 500% in the past five years. When someone searches "best biryani near me" or "electrician in Calicut," Google matches listings that contain relevant location signals. Your GBP description, posts, and services section are all opportunities to include these signals naturally.</p>
-            <p>Include neighbourhood or landmark references - "near Lulu Mall" or "opposite Medical College." Use geo-targeted keywords in your Google Posts and service descriptions. Write for your customer first, then ensure the key phrases appear naturally within the text.</p>
-          </div>
-
-          <!-- TIP 8 -->
-          <div class="tip-card" id="tip8">
-            <div class="tip-card-header">
-              <div class="tip-number">8</div>
-              <h3>Build Local Citations in Trusted Business Directories</h3>
-            </div>
-            <p><strong>Local citations</strong> are online mentions of your business name, address, and phone number - even without a backlink. Every quality citation tells Google your business is established and trustworthy. More citations from reputable directories means higher local authority and better map visibility.</p>
-            <ul class="pillar-list">
-              <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>National directories:</strong> Justdial, IndiaMART, Sulekha, Yellow Pages India</div></li>
-              <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>Industry-specific:</strong> Practo (healthcare), Zomato/Swiggy (restaurants), MagicBricks (real estate)</div></li>
-              <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div><strong>Global authority:</strong> Yelp, Foursquare, Apple Maps, Bing Places</div></li>
-              <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Ensure every citation matches your GBP NAP exactly</div></li>
-            </ul>
-            <p>According to <a href="https://moz.com/local-seo-guide" target="_blank" rel="noopener noreferrer">Moz's Local SEO Guide</a>, citation consistency is one of the most influential factors in local pack ranking - yet one of the most commonly neglected by small businesses.</p>
-          </div>
-
-          <!-- TIP 9 -->
-          <div class="tip-card" id="tip9">
-            <div class="tip-card-header">
-              <div class="tip-number">9</div>
-              <h3>Optimise Your Website for Local SEO Signals</h3>
-            </div>
-            <p>Google's Maps algorithm considers your website as an important authority signal. A website that loads fast, is mobile-friendly, and is structured for local search directly reinforces your GBP and improves your overall <strong>local pack ranking</strong>.</p>
-            <ul class="pillar-list">
-              <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Embed a Google Map on your Contact page - this strengthens geographic relevance</div></li>
-              <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Create dedicated landing pages for each service area or city you serve</div></li>
-              <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Add LocalBusiness schema markup with full NAP, hours, and service types</div></li>
-              <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Ensure your site loads in under 3 seconds on mobile - slow sites rank lower in local results</div></li>
-            </ul>
-            <p>Our <a href="../services/local-seo-services.html">local SEO services</a> include a complete website audit designed specifically to strengthen these on-site signals for Kerala businesses.</p>
-          </div>
-
-          <!-- TIP 10 -->
-          <div class="tip-card" id="tip10">
-            <div class="tip-card-header">
-              <div class="tip-number">10</div>
-              <h3>Engage With Every Customer Interaction on Your Profile</h3>
-            </div>
-            <p>Google monitors engagement signals on your listing - how often customers click your phone number, request directions, visit your website, or ask questions via the Q&amp;A section. A listing that generates consistent engagement is seen as relevant and active, which directly supports higher rankings.</p>
-            <p>Proactively add 10–15 common questions to your Q&amp;A section and answer them with keyword-rich, helpful responses. Enable messaging so customers can contact you directly from your Maps listing. Monitor your GBP messages daily and respond within a few hours to maintain a fast-response badge - another trust signal Google rewards.</p>
-          </div>
-
-          <!-- FAQ Section -->
-          <h2 id="faq">Frequently Asked Questions</h2>
-
-          <details class="faq-item">
-            <summary>How long does it take to rank higher on Google Maps?</summary>
-            <div class="faq-body">Most businesses see noticeable improvement in Google Maps ranking within 4–12 weeks of consistently applying local SEO best practices - especially Google Business Profile optimisation and review generation. Competitive categories in major Kerala cities may take 3–6 months to see significant local pack movement.</div>
-          </details>
-
-          <details class="faq-item">
-            <summary>Does NAP consistency really affect Google Maps ranking?</summary>
-            <div class="faq-body">Yes, significantly. Inconsistent business name, address, or phone number across directories confuses Google and dilutes your local authority. Ensuring NAP consistency across all platforms - from Justdial to Facebook to your own website - is a foundational local SEO requirement that many businesses overlook.</div>
-          </details>
-
-          <details class="faq-item">
-            <summary>Are customer reviews important for Google Maps SEO?</summary>
-            <div class="faq-body">Absolutely. Google's local ranking algorithm weighs review quantity, recency, and average rating heavily. Businesses with a consistent flow of genuine positive reviews rank significantly higher in the local pack. Equally important: responding to reviews signals engagement to Google and builds trust with prospective customers.</div>
-          </details>
-
-          <!-- Conclusion -->
           <h2 id="conclusion">Conclusion</h2>
           <p>Ranking higher on Google Maps does not require a big budget or deep technical knowledge. It requires consistency, attention to detail, and a genuine commitment to presenting your business well online. The 10 tips above - from completing your Google Business Profile and building local citations to generating reviews and using geo-targeted keywords - are the exact strategies that move businesses from invisible to unmissable in local search.</p>
+
         </article>
 
         <!-- Author card -->
@@ -561,27 +297,78 @@
           <!-- Related posts -->
           <div class="related-card">
             <h6>Related Articles</h6>
-            <a class="related-item" href="../blogs/what-is-seo-beginner-friendly-guide-2026.html">
-              <div class="related-thumb"><i class="bi bi-graph-up-arrow"></i></div>
-              <div>
-                <div class="related-title">What is SEO? A Beginner's Guide for Business Owners</div>
-                <div class="related-tag">5 min read</div>
-              </div>
-            </a>
-            <a class="related-item" href="../blogs/what-are-backlinks.html">
-              <div class="related-thumb"><i class="bi bi-link-45deg"></i></div>
-              <div>
-                <div class="related-title">What Are Backlinks and Why Do They Matter for SEO?</div>
-                <div class="related-tag">5 min read</div>
-              </div>
-            </a>
-            <a class="related-item" href="../blogs/keyword-research-tools.html">
-              <div class="related-thumb"><i class="bi bi-search"></i></div>
-              <div>
-                <div class="related-title">Best Keyword Research Tools for Small Business Owners</div>
-                <div class="related-tag">6 min read</div>
-              </div>
-            </a>
+            <div class="related-list">
+              <a class="related-item" href="../blogs/what-are-backlinks.html">
+                <div class="related-thumb"><i class="bi bi-link-45deg"></i></div>
+                <div>
+                  <div class="related-title">What Are Backlinks and Why Do They Matter for SEO in 2026</div>
+                  <div class="related-tag">5 min read</div>
+                </div>
+              </a>
+              <a class="related-item" href="../blogs/what-is-seo-beginner-friendly-guide-2026.html">
+                <div class="related-thumb"><i class="bi bi-graph-up-arrow"></i></div>
+                <div>
+                  <div class="related-title">What is SEO? Beginner's Guide to Search Engine Optimization</div>
+                  <div class="related-tag">5 min read</div>
+                </div>
+              </a>
+              <a class="related-item" href="../services/technical-seo-services.html">
+                <div class="related-thumb"><i class="bi bi-gear-fill"></i></div>
+                <div>
+                  <div class="related-title">Technical SEO Services - Build a Search-Ready Website</div>
+                  <div class="related-tag">Service Page</div>
+                </div>
+              </a>
+              <a class="related-item" href="../blogs/what-are-backlinks.html">
+                <div class="related-thumb"><i class="bi bi-link-45deg"></i></div>
+                <div>
+                  <div class="related-title">What Are Backlinks and Why Do They Matter for SEO in 2026</div>
+                  <div class="related-tag">5 min read</div>
+                </div>
+              </a>
+              <a class="related-item" href="../blogs/what-is-seo-beginner-friendly-guide-2026.html">
+                <div class="related-thumb"><i class="bi bi-graph-up-arrow"></i></div>
+                <div>
+                  <div class="related-title">What is SEO? Beginner's Guide to Search Engine Optimization</div>
+                  <div class="related-tag">5 min read</div>
+                </div>
+              </a>
+              <a class="related-item" href="../services/technical-seo-services.html">
+                <div class="related-thumb"><i class="bi bi-gear-fill"></i></div>
+                <div>
+                  <div class="related-title">Technical SEO Services - Build a Search-Ready Website</div>
+                  <div class="related-tag">Service Page</div>
+                </div>
+              </a>
+              <a class="related-item" href="../blogs/what-are-backlinks.html">
+                <div class="related-thumb"><i class="bi bi-link-45deg"></i></div>
+                <div>
+                  <div class="related-title">What Are Backlinks and Why Do They Matter for SEO in 2026</div>
+                  <div class="related-tag">5 min read</div>
+                </div>
+              </a>
+              <a class="related-item" href="../blogs/what-are-backlinks.html">
+                <div class="related-thumb"><i class="bi bi-link-45deg"></i></div>
+                <div>
+                  <div class="related-title">What Are Backlinks and Why Do They Matter for SEO in 2026</div>
+                  <div class="related-tag">5 min read</div>
+                </div>
+              </a>
+              <a class="related-item" href="../blogs/what-are-backlinks.html">
+                <div class="related-thumb"><i class="bi bi-link-45deg"></i></div>
+                <div>
+                  <div class="related-title">What Are Backlinks and Why Do They Matter for SEO in 2026</div>
+                  <div class="related-tag">5 min read</div>
+                </div>
+              </a>
+              <a class="related-item" href="../blogs/what-are-backlinks.html">
+                <div class="related-thumb"><i class="bi bi-link-45deg"></i></div>
+                <div>
+                  <div class="related-title">What Are Backlinks and Why Do They Matter for SEO in 2026</div>
+                  <div class="related-tag">5 min read</div>
+                </div>
+              </a>
+            </div>
           </div>
 
         </aside>
@@ -662,5 +449,14 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    document.querySelectorAll('.faq-item').forEach(el => {
+      if (el !== item) el.classList.remove('open');
+    });
+    item.classList.toggle('open');
+  }
+</script>
 </body>
 </html>
