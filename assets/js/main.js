@@ -34,3 +34,15 @@
       entries.forEach(function(e){ if(e.isIntersecting){ animCount(e.target); cio.unobserve(e.target); } });
     },{threshold:0.5});
     document.querySelectorAll('[data-count]').forEach(function(el){ cio.observe(el); });
+
+
+
+//FAQ accordion
+function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    // Close all open items
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    // Open clicked item if it wasn't already open
+    if (!isOpen) item.classList.add('open');
+  }
