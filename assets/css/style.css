@@ -137,6 +137,7 @@ img{max-width:100%;height:auto;}
 .bam-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--g4),var(--gold));border-radius:20px 20px 0 0;}
 .bam-card:hover{border-color:var(--g5);box-shadow:0 12px 40px rgba(13,43,26,0.1);transform:translateY(-4px);}
 .bam-card h3,.bam-card h4{font-size:1rem;font-weight:600;color:var(--g2);margin-bottom:0.5rem;}
+.bam-card h3,.bam-card h4 a{font-size:1rem;font-weight:600;color:var(--g2);margin-bottom:0.5rem;}
 .bam-card p{font-size:0.86rem;color:var(--text3);line-height:1.65;}
 
 /* Dark card */
@@ -289,18 +290,110 @@ img{max-width:100%;height:auto;}
 /* ============================================================
    BLOG CARDS
    ============================================================ */
-.blog-card{background:#fff;border:1px solid var(--cream2);border-radius:20px;overflow:hidden;height:100%;display:flex;flex-direction:column;transition:all 0.3s;}
-.blog-card:hover{border-color:var(--g5);box-shadow:0 12px 40px rgba(13,43,26,0.1);transform:translateY(-4px);}
-.blog-img{height:175px;display:flex;align-items:center;justify-content:center;font-size:3rem;flex-shrink:0;}
-.blog-body{padding:1.6rem;display:flex;flex-direction:column;flex:1;}
-.blog-cat{font-size:0.7rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--g4);margin-bottom:0.7rem;display:block;}
-.blog-title{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--g2);line-height:1.35;margin-bottom:0.5rem;}
-.blog-meta{font-size:0.76rem;color:var(--text3);margin-bottom:0.7rem;}
-.blog-excerpt{font-size:0.84rem;color:var(--text3);line-height:1.65;flex:1;}
-.blog-read-more{font-size:0.82rem;color:var(--g3);font-weight:600;margin-top:0.9rem;display:inline-block;text-decoration:none;transition:color 0.2s;}
-.blog-read-more:hover{color:var(--g2);}
 
-@media(max-width:575.98px){.blog-img{height:140px;font-size:2.4rem;}.blog-title{font-size:1.05rem;}}
+.blog-card{
+    background:#fff;
+    border:1px solid var(--cream2);
+    border-radius:20px;
+    overflow:hidden;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    transition:all .3s;
+    text-decoration:none;
+    color:inherit;
+}
+
+.blog-card:hover{
+    border-color:var(--g5);
+    box-shadow:0 12px 40px rgba(13,43,26,.1);
+    transform:translateY(-4px);
+    text-decoration:none;
+    color:inherit;
+}
+
+.blog-card:focus-visible{
+    outline:3px solid var(--g5);
+    outline-offset:4px;
+}
+
+.blog-img{
+    height:175px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:3rem;
+    flex-shrink:0;
+}
+
+.blog-body{
+    padding:1.6rem;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+.blog-cat{
+    font-size:.7rem;
+    font-weight:700;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    color:var(--g4);
+    margin-bottom:.7rem;
+    display:block;
+}
+
+.blog-title{
+    font-family:var(--serif);
+    font-size:1.15rem;
+    font-weight:700;
+    color:var(--g2);
+    line-height:1.35;
+    margin-bottom:.5rem;
+    transition:color .25s ease;
+}
+
+.blog-card:hover .blog-title{
+    color:var(--g3);
+}
+
+.blog-meta{
+    font-size:.76rem;
+    color:var(--text3);
+    margin-bottom:.7rem;
+}
+
+.blog-excerpt{
+    font-size:.84rem;
+    color:var(--text3);
+    line-height:1.65;
+    flex:1;
+}
+
+.blog-card,
+.blog-card:hover,
+.blog-card:focus,
+.blog-card:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-card *{
+    text-decoration: none;
+}
+
+@media(max-width:575.98px){
+
+    .blog-img{
+        height:140px;
+        font-size:2.4rem;
+    }
+
+    .blog-title{
+        font-size:1.05rem;
+    }
+
+}
 
 /* ============================================================
    SERVICE PAGES
