@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best SEO and Web Development Company in Kerala | Bamboost</title>
+<meta name="description" content="Bamboost is Kerala's SEO and web development company. We combine search engine optimization with high-performance websites to grow organic traffic, rankings and qualified leads.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons (single consistent icon library) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<style>
+:root{
+  --forest:#082D1A;
+  --growth:#15823E;
+  --growth-dark:#0E6530;
+  --natural:#536C52;
+  --sage:#99A698;
+  --pale-sage:#BCC5BC;
+  --ink:#1D1C19;
+  --white:#FFFFFF;
+  --cool-gray:#F2F3F4;
+  --light-gray:#E7E7EA;
+
+  --font-display:'Fraunces', serif;
+  --font-body:'Inter', sans-serif;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--font-body);
+  color:var(--ink);
+  background:var(--white);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+
+h1,h2,h3,h4,.font-display{
+  font-family:var(--font-display);
+  color:var(--forest);
+  font-weight:600;
+  letter-spacing:-0.01em;
+  margin:0;
+}
+p{margin:0;}
+a{text-decoration:none;color:inherit;}
+
+.container-narrow{max-width:1200px;margin:0 auto;padding:0 24px;}
+
+/* ---------- Utility type scale ---------- */
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:0.8125rem;
+  font-weight:600;
+  color:var(--growth-dark);
+  background:rgba(21,130,62,0.08);
+  border:1px solid rgba(21,130,62,0.18);
+  padding:6px 14px;
+  border-radius:100px;
+  margin-bottom:18px;
+}
+.eyebrow i{font-size:0.85em;}
+
+.section-head{
+  max-width:640px;
+  margin-bottom:48px;
+}
+.section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+.section-head h2{
+  font-size:clamp(1.8rem, 3vw, 2.5rem);
+  line-height:1.15;
+  margin-bottom:14px;
+}
+.section-head p{
+  color:var(--natural);
+  font-size:1.05rem;
+  max-width:56ch;
+}
+.section-head.center p{margin-left:auto;margin-right:auto;}
+
+section{padding:88px 0;}
+@media (max-width:767px){section{padding:56px 0;}}
+
+.bg-cool{background:var(--cool-gray);}
+.bg-forest{background:var(--forest); color:var(--white);}
+.bg-forest h2, .bg-forest h3, .bg-forest h4{color:var(--white);}
+.bg-forest p{color:var(--pale-sage);}
+
+/* ---------- Buttons ---------- */
+.btn-growth{
+  background:var(--growth);
+  color:var(--white);
+  border:1px solid var(--growth);
+  padding:13px 28px;
+  border-radius:100px;
+  font-weight:600;
+  font-size:0.95rem;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  transition:background .18s ease, border-color .18s ease, transform .18s ease;
+}
+.btn-growth:hover{background:var(--growth-dark); border-color:var(--growth-dark); color:var(--white); transform:translateY(-1px);}
+
+.btn-outline-forest{
+  background:transparent;
+  color:var(--forest);
+  border:1px solid var(--light-gray);
+  padding:13px 28px;
+  border-radius:100px;
+  font-weight:600;
+  font-size:0.95rem;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  transition:border-color .18s ease, background .18s ease;
+}
+.btn-outline-forest:hover{border-color:var(--forest); background:var(--cool-gray); color:var(--forest);}
+
+.btn-outline-light{
+  background:transparent;
+  color:var(--white);
+  border:1px solid rgba(255,255,255,0.35);
+  padding:13px 28px;
+  border-radius:100px;
+  font-weight:600;
+  font-size:0.95rem;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  transition:border-color .18s ease, background .18s ease;
+}
+.btn-outline-light:hover{border-color:#fff; background:rgba(255,255,255,0.08); color:#fff;}
+
+/* focus visibility */
+a:focus-visible, button:focus-visible{
+  outline:2px solid var(--growth);
+  outline-offset:3px;
+  border-radius:4px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-bamboost{
+  background:rgba(255,255,255,0.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--light-gray);
+  padding:16px 0;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+.brand-mark{
+  width:34px;height:34px;
+  border-radius:9px;
+  background:var(--forest);
+  display:inline-flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.brand-name{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:1.25rem;
+  color:var(--forest);
+  letter-spacing:-0.01em;
+}
+.nav-link-bb{
+  font-weight:500;
+  font-size:0.95rem;
+  color:var(--ink);
+  padding:10px 16px !important;
+  transition:color .15s ease;
+}
+.nav-link-bb:hover{color:var(--growth-dark);}
+.dropdown-menu-bb{
+  border:1px solid var(--light-gray);
+  border-radius:12px;
+  padding:8px;
+  box-shadow:0 12px 32px rgba(8,45,26,0.1);
+}
+.dropdown-menu-bb .dropdown-item{
+  border-radius:8px;
+  padding:9px 14px;
+  font-size:0.92rem;
+  font-weight:500;
+}
+.dropdown-menu-bb .dropdown-item:hover{background:var(--cool-gray); color:var(--growth-dark);}
+
+/* ---------- Hero ---------- */
+.hero{
+  padding:72px 0 0;
+  overflow:hidden;
+}
+.hero h1{
+  font-size:clamp(2.3rem, 4.4vw, 3.5rem);
+  line-height:1.08;
+  margin-bottom:22px;
+}
+.hero .lead-text{
+  font-size:1.15rem;
+  color:var(--natural);
+  max-width:50ch;
+  margin-bottom:32px;
+}
+.hero-cta-row{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:40px;}
+
+.hero-trust-row{
+  display:flex;
+  gap:28px;
+  flex-wrap:wrap;
+  padding-top:28px;
+  border-top:1px solid var(--light-gray);
+}
+.hero-trust-item{display:flex; align-items:baseline; gap:8px;}
+.hero-trust-item .num{font-family:var(--font-display); font-weight:600; font-size:1.5rem; color:var(--forest);}
+.hero-trust-item .lbl{font-size:0.85rem; color:var(--natural);}
+
+/* Growth ring signature graphic */
+.ring-graphic{
+  position:relative;
+  width:100%;
+  max-width:460px;
+  aspect-ratio:1/1;
+  margin-left:auto;
+}
+.ring-graphic svg{width:100%; height:100%;}
+.ring-float-card{
+  position:absolute;
+  background:var(--white);
+  border:1px solid var(--light-gray);
+  border-radius:16px;
+  padding:14px 18px;
+  box-shadow:0 16px 40px rgba(8,45,26,0.12);
+}
+.ring-float-card .val{font-family:var(--font-display); font-weight:600; font-size:1.35rem; color:var(--forest); line-height:1;}
+.ring-float-card .cap{font-size:0.75rem; color:var(--natural); margin-top:4px;}
+.ring-float-1{top:6%; left:-4%;}
+.ring-float-2{bottom:8%; right:-6%;}
+@media (max-width:991px){
+  .ring-graphic{margin:0 auto; max-width:340px;}
+  .ring-float-card{padding:10px 14px;}
+}
+
+@keyframes slow-spin{from{transform:rotate(0deg);} to{transform:rotate(360deg);}}
+.ring-rotate{transform-origin:center; animation:slow-spin 60s linear infinite;}
+@media (prefers-reduced-motion: reduce){
+  .ring-rotate{animation:none;}
+}
+
+/* ---------- Proof / stats strip ---------- */
+.proof-strip{
+  background:var(--forest);
+  padding:40px 0;
+}
+.proof-item{text-align:center; color:var(--white);}
+.proof-item .figure{font-family:var(--font-display); font-weight:600; font-size:2.1rem; color:var(--white); line-height:1;}
+.proof-item .caption{font-size:0.85rem; color:var(--pale-sage); margin-top:8px;}
+
+/* ---------- Icon tiles ---------- */
+.icon-tile{
+  width:52px;height:52px;
+  border-radius:12px;
+  background:rgba(21,130,62,0.08);
+  color:var(--growth);
+  display:inline-flex;align-items:center;justify-content:center;
+  font-size:1.35rem;
+  margin-bottom:18px;
+}
+.bg-forest .icon-tile{background:rgba(255,255,255,0.1); color:#fff;}
+
+.feature-card{
+  background:var(--white);
+  border:1px solid var(--light-gray);
+  border-radius:14px;
+  padding:30px 26px;
+  height:100%;
+}
+.feature-card h4{font-size:1.1rem; margin-bottom:10px;}
+.feature-card p{color:var(--natural); font-size:0.94rem;}
+
+.client-strip{
+  display:flex; gap:14px; flex-wrap:wrap; margin-top:36px;
+}
+.client-chip{
+  border:1px solid var(--light-gray);
+  border-radius:100px;
+  padding:9px 18px;
+  font-size:0.88rem;
+  font-weight:500;
+  color:var(--natural);
+  display:flex; align-items:center; gap:8px;
+  background:var(--white);
+}
+.client-chip i{color:var(--growth);}
+
+/* ---------- Problem / Solution ---------- */
+.problem-list{list-style:none; padding:0; margin:0;}
+.problem-list li{
+  display:flex; gap:14px;
+  padding:14px 0;
+  border-bottom:1px solid var(--light-gray);
+  color:var(--ink);
+  font-size:0.98rem;
+}
+.problem-list li:last-child{border-bottom:none;}
+.problem-list i{color:var(--natural); font-size:1.1rem; flex-shrink:0; margin-top:2px;}
+
+.solution-panel{
+  background:var(--forest);
+  border-radius:20px;
+  padding:44px 38px;
+  color:var(--white);
+  height:100%;
+}
+.solution-panel h3{color:#fff; font-size:1.5rem; margin-bottom:16px;}
+.solution-panel p{color:var(--pale-sage); margin-bottom:24px;}
+.solution-check{list-style:none; padding:0; margin:0; display:grid; gap:12px;}
+.solution-check li{display:flex; gap:10px; align-items:flex-start; font-size:0.93rem; color:#fff;}
+.solution-check i{color:var(--sage); margin-top:3px;}
+
+/* ---------- Core services ---------- */
+.service-panel{
+  background:var(--white);
+  border:1px solid var(--light-gray);
+  border-radius:20px;
+  padding:40px;
+  height:100%;
+}
+.service-panel .service-tag{
+  font-size:0.78rem;
+  font-weight:600;
+  color:var(--growth-dark);
+  text-transform:uppercase;
+  letter-spacing:0.06em;
+  margin-bottom:14px;
+  display:block;
+}
+.service-panel h3{font-size:1.55rem; margin-bottom:14px;}
+.service-panel > p{color:var(--natural); margin-bottom:22px;}
+.chip-grid{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:26px;}
+.chip{
+  border:1px solid var(--light-gray);
+  border-radius:100px;
+  padding:8px 16px;
+  font-size:0.85rem;
+  font-weight:500;
+  color:var(--ink);
+  background:var(--cool-gray);
+}
+.bundle-banner{
+  background:var(--cool-gray);
+  border-radius:20px;
+  padding:34px 36px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  flex-wrap:wrap;
+  margin-top:32px;
+}
+.bundle-banner h4{font-size:1.2rem; margin-bottom:6px;}
+.bundle-banner p{color:var(--natural); font-size:0.94rem;}
+
+/* ---------- Why bamboost ---------- */
+.diff-item{display:flex; gap:16px; padding:20px 0; border-bottom:1px solid var(--light-gray);}
+.diff-item:last-child{border-bottom:none;}
+.diff-num{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:1rem;
+  color:var(--growth);
+  min-width:30px;
+}
+.diff-item h4{font-size:1.02rem; margin-bottom:6px;}
+.diff-item p{color:var(--natural); font-size:0.92rem;}
+
+/* ---------- How it works ---------- */
+.process-track{position:relative;}
+.process-step{
+  position:relative;
+  padding-left:70px;
+  padding-bottom:44px;
+}
+.process-step:last-child{padding-bottom:0;}
+.process-step::before{
+  content:'';
+  position:absolute;
+  left:23px; top:48px; bottom:0;
+  width:1px;
+  background:var(--light-gray);
+}
+.process-step:last-child::before{display:none;}
+.step-ring{
+  position:absolute; left:0; top:0;
+  width:48px; height:48px;
+  border-radius:50%;
+  border:1.5px solid var(--growth);
+  color:var(--growth);
+  font-family:var(--font-display);
+  font-weight:600;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--white);
+  font-size:0.95rem;
+}
+.process-step h4{font-size:1.1rem; margin-bottom:6px;}
+.process-step p{color:var(--natural); font-size:0.94rem; max-width:52ch;}
+
+/* ---------- Case studies ---------- */
+.case-card{
+  border:1px solid var(--light-gray);
+  border-radius:18px;
+  overflow:hidden;
+  background:var(--white);
+  height:100%;
+}
+.case-img{height:190px; overflow:hidden;}
+.case-img img{width:100%; height:100%; object-fit:cover;}
+.case-body{padding:26px;}
+.case-tag{font-size:0.78rem; font-weight:600; color:var(--natural); text-transform:uppercase; letter-spacing:0.05em;}
+.case-figure{font-family:var(--font-display); font-weight:600; font-size:2rem; color:var(--growth-dark); margin:8px 0 4px;}
+.case-body ul{list-style:none; padding:0; margin:16px 0 0; display:grid; gap:8px;}
+.case-body ul li{font-size:0.88rem; color:var(--natural); display:flex; gap:8px;}
+.case-body ul li i{color:var(--growth); margin-top:3px;}
+
+/* ---------- Industries ---------- */
+.industry-card{
+  border:1px solid var(--light-gray);
+  border-radius:14px;
+  padding:26px;
+  height:100%;
+  background:var(--white);
+  transition:border-color .15s ease;
+}
+.industry-card:hover{border-color:var(--growth);}
+.industry-card h4{font-size:1.02rem; margin-bottom:8px;}
+.industry-card p{color:var(--natural); font-size:0.9rem;}
+
+/* ---------- Testimonials ---------- */
+.testimonial-card{
+  border:1px solid var(--light-gray);
+  border-radius:16px;
+  padding:28px;
+  background:var(--white);
+  height:100%;
+}
+.testimonial-stars{color:var(--growth); font-size:0.85rem; margin-bottom:14px;}
+.testimonial-card p.quote{font-size:0.98rem; color:var(--ink); margin-bottom:22px; line-height:1.6;}
+.testimonial-person{display:flex; align-items:center; gap:12px;}
+.testimonial-person img{width:44px; height:44px; border-radius:50%; object-fit:cover;}
+.testimonial-person .name{font-weight:600; font-size:0.92rem; color:var(--forest);}
+.testimonial-person .role{font-size:0.82rem; color:var(--natural);}
+
+/* ---------- FAQ ---------- */
+.faq-item{border-bottom:1px solid var(--light-gray);}
+.faq-q{
+  width:100%;
+  text-align:left;
+  background:none;
+  border:none;
+  padding:22px 4px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  font-family:var(--font-display);
+  font-weight:500;
+  font-size:1.05rem;
+  color:var(--forest);
+  cursor:pointer;
+}
+.faq-q i{
+  transition:transform .25s ease;
+  color:var(--growth);
+  flex-shrink:0;
+}
+.faq-item.open .faq-q i{transform:rotate(45deg);}
+.faq-a{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .3s ease;
+}
+.faq-a-inner{padding:0 4px 22px; color:var(--natural); font-size:0.95rem; max-width:70ch;}
+
+/* ---------- Final CTA ---------- */
+.final-cta{
+  background:var(--forest);
+  border-radius:0;
+  padding:80px 0;
+  text-align:center;
+}
+.final-cta h2{color:#fff; font-size:clamp(1.8rem,3.4vw,2.6rem); max-width:20ch; margin:0 auto 18px;}
+.final-cta p{color:var(--pale-sage); max-width:56ch; margin:0 auto 34px; font-size:1.05rem;}
+
+/* ---------- Footer ---------- */
+footer{background:var(--forest); color:var(--pale-sage); padding-top:64px;}
+footer h5{color:#fff; font-family:var(--font-body); font-weight:600; font-size:0.92rem; margin-bottom:18px;}
+footer .foot-brand-blurb{color:var(--pale-sage); font-size:0.92rem; max-width:34ch; margin:16px 0 22px;}
+footer ul{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
+footer ul li a{color:var(--pale-sage); font-size:0.9rem; transition:color .15s ease;}
+footer ul li a:hover{color:#fff;}
+.foot-social{display:flex; gap:10px; margin-top:8px;}
+.foot-social a{
+  width:36px; height:36px; border-radius:50%;
+  border:1px solid rgba(255,255,255,0.2);
+  display:flex; align-items:center; justify-content:center;
+  color:#fff; font-size:0.9rem;
+  transition:background .15s ease;
+}
+.foot-social a:hover{background:rgba(255,255,255,0.12);}
+.foot-bottom{
+  border-top:1px solid rgba(255,255,255,0.12);
+  margin-top:48px;
+  padding:22px 0;
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+  font-size:0.85rem;
+  color:var(--sage);
+}
+.foot-contact li{display:flex; gap:10px; align-items:flex-start; color:var(--pale-sage); font-size:0.9rem;}
+.foot-contact i{color:var(--sage); margin-top:3px;}
+
+/* skip link */
+.skip-link{
+  position:absolute; left:-999px; top:0;
+  background:var(--forest); color:#fff; padding:10px 16px; z-index:2000; border-radius:0 0 8px 0;
+}
+.skip-link:focus{left:0;}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-bamboost">
+  <div class="container-narrow d-flex align-items-center justify-content-between">
+    <a href="#" class="d-flex align-items-center gap-2 text-decoration-none">
+      <span class="brand-mark">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2C12 2 7 6 7 12C7 16 9 19 12 22C15 19 17 16 17 12C17 6 12 2 12 2Z" stroke="#F2F3F4" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M12 22V8" stroke="#F2F3F4" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-name">Bamboost</span>
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list fs-2" style="color:var(--forest);"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-1 mt-3 mt-lg-0">
+        <li class="nav-item"><a class="nav-link nav-link-bb" href="#home">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-link-bb dropdown-toggle" href="#services" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu dropdown-menu-bb">
+            <li><a class="dropdown-item" href="https://bamboost.in/best-seo-company-in-kerala.html">Search Engine Optimization</a></li>
+            <li><a class="dropdown-item" href="https://bamboost.in/best-web-development-company-in-kerala.html">Web Development</a></li>
+            <li><a class="dropdown-item" href="https://bamboost.in/services/ecommerce-seo-services.html">Ecommerce SEO</a></li>
+            <li><a class="dropdown-item" href="https://bamboost.in/services/seo-for-real-estate.html">Real Estate SEO</a></li>
+            <li><a class="dropdown-item" href="https://bamboost.in/services/seo-for-hotels.html">Hotel SEO</a></li>
+            <li><a class="dropdown-item" href="https://bamboost.in/services/seo-for-educational-institutes.html">Education SEO</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link nav-link-bb" href="#case-studies">Case Studies</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-bb" href="#industries">Industries</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-bb" href="#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-bb" href="https://bamboost.in/contact.html">Contact</a></li>
+      </ul>
+      <a href="https://bamboost.in/contact.html" class="btn-growth mt-3 mt-lg-0">Book a Strategy Call</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container-narrow">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="eyebrow"><i class="bi bi-geo-alt"></i> SEO &amp; Web Development, Kerala</span>
+        <h1>Websites and search strategies, built to grow from the same roots.</h1>
+        <p class="lead-text">Bamboost pairs SEO with high-performance web development under one accountable team, so your site ranks on Google, earns organic traffic, and turns visitors into customers.</p>
+        <div class="hero-cta-row">
+          <a href="https://bamboost.in/contact.html" class="btn-growth">Book a Strategy Call <i class="bi bi-arrow-up-right"></i></a>
+          <a href="#case-studies" class="btn-outline-forest">See Our Results</a>
+        </div>
+        <div class="hero-trust-row">
+          <div class="hero-trust-item"><span class="num" data-count="220" data-suffix="%">0%</span><span class="lbl">Avg. organic<br>traffic growth</span></div>
+          <div class="hero-trust-item"><span class="num" data-count="300" data-suffix="%">0%</span><span class="lbl">Monthly lead<br>growth</span></div>
+          <div class="hero-trust-item"><span class="num" data-count="100" data-suffix="%">0%</span><span class="lbl">White-hat<br>SEO, always</span></div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="ring-graphic">
+          <svg viewBox="0 0 460 460" xmlns="http://www.w3.org/2000/svg">
+            <g class="ring-rotate">
+              <circle cx="230" cy="230" r="210" stroke="#E7E7EA" stroke-width="1"/>
+              <circle cx="230" cy="230" r="210" stroke="#15823E" stroke-width="2" stroke-dasharray="120 1200" stroke-linecap="round"/>
+            </g>
+            <circle cx="230" cy="230" r="168" stroke="#BCC5BC" stroke-width="1"/>
+            <circle cx="230" cy="230" r="168" stroke="#082D1A" stroke-width="2" stroke-dasharray="260 1050" stroke-linecap="round" transform="rotate(-40 230 230)"/>
+            <circle cx="230" cy="230" r="126" stroke="#E7E7EA" stroke-width="1"/>
+            <circle cx="230" cy="230" r="84" fill="#F2F3F4"/>
+            <path d="M230 175 C230 175 190 210 190 250 C190 273 208 292 230 312 C252 292 270 273 270 250 C270 210 230 175 230 175Z" fill="#15823E" opacity="0.14"/>
+            <path d="M230 190 V300" stroke="#082D1A" stroke-width="2" stroke-linecap="round"/>
+            <path d="M230 300 L215 275" stroke="#082D1A" stroke-width="2" stroke-linecap="round"/>
+            <path d="M230 260 L248 238" stroke="#082D1A" stroke-width="2" stroke-linecap="round"/>
+            <path d="M230 220 L212 200" stroke="#082D1A" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <div class="ring-float-card ring-float-1">
+            <div class="val">Top 10</div>
+            <div class="cap">Keyword rankings achieved</div>
+          </div>
+          <div class="ring-float-card ring-float-2">
+            <div class="val">+45%</div>
+            <div class="cap">Organic sales, ecommerce client</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF STRIP -->
+<div class="proof-strip">
+  <div class="container-narrow">
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <div class="proof-item"><div class="figure">220%</div><div class="caption">Organic traffic growth</div></div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="proof-item"><div class="figure">300%</div><div class="caption">Monthly lead growth</div></div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="proof-item"><div class="figure">Top 10</div><div class="caption">Keywords ranked, multiple clients</div></div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="proof-item"><div class="figure">100%</div><div class="caption">White-hat SEO practices</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST & CREDIBILITY -->
+<section id="why">
+  <div class="container-narrow">
+    <div class="section-head">
+      <h2>Built for accountability, not guesswork</h2>
+      <p>Businesses across Kerala choose Bamboost because we're not just an SEO agency — we build every layer of your online visibility under one team, with transparent reporting tied to real outcomes.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-card">
+          <div class="icon-tile"><i class="bi bi-bar-chart-line"></i></div>
+          <h4>Transparent Reporting</h4>
+          <p>Clear monthly reports on keyword rankings, traffic, leads and ROI — no fluff, no surprises.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-card">
+          <div class="icon-tile"><i class="bi bi-search"></i></div>
+          <h4>Industry Keyword Strategy</h4>
+          <p>We research the exact search queries your ideal customers use and build strategy around real commercial intent.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-card">
+          <div class="icon-tile"><i class="bi bi-graph-up-arrow"></i></div>
+          <h4>Organic Rank Tracking</h4>
+          <p>Weekly ranking monitoring with monthly performance reviews, so you always know where your site stands.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-card">
+          <div class="icon-tile"><i class="bi bi-person-check"></i></div>
+          <h4>Dedicated Account Manager</h4>
+          <p>Every client gets a single dedicated SEO consultant in Kerala who knows their business inside out.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-card">
+          <div class="icon-tile"><i class="bi bi-shield-check"></i></div>
+          <h4>100% White-Hat SEO</h4>
+          <p>Only Google-compliant, ethical organic practices. No black-hat risk, no penalties.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-card">
+          <div class="icon-tile"><i class="bi bi-cash-coin"></i></div>
+          <h4>Performance-Based Pricing</h4>
+          <p>Our fee is tied to the measurable outcomes we deliver for your business.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="client-strip">
+      <span class="client-chip"><i class="bi bi-mortarboard"></i> RobotiX Institute — Education</span>
+      <span class="client-chip"><i class="bi bi-mortarboard"></i> MathsKarma — Education</span>
+      <span class="client-chip"><i class="bi bi-building"></i> Annavi Residency — Hospitality</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -> SOLUTION -->
+<section class="bg-cool">
+  <div class="container-narrow">
+    <div class="section-head">
+      <h2>Most business websites aren't the problem — the strategy behind them is</h2>
+      <p>Every day, customers in Kerala search Google for exactly what you offer. Without the right foundation, they find your competitors instead.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <ul class="problem-list">
+          <li><i class="bi bi-x-circle"></i> Poor visibility on Google Search</li>
+          <li><i class="bi bi-x-circle"></i> Low-quality traffic that doesn't convert</li>
+          <li><i class="bi bi-x-circle"></i> Weak, inconsistent search rankings</li>
+          <li><i class="bi bi-x-circle"></i> A website that doesn't turn visitors into customers</li>
+          <li><i class="bi bi-x-circle"></i> Weak technical foundations holding rankings back</li>
+          <li><i class="bi bi-x-circle"></i> Heavy, ongoing dependence on paid advertising</li>
+          <li><i class="bi bi-x-circle"></i> SEO and website handled by separate, disconnected vendors</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <div class="solution-panel">
+          <h3>One team. One integrated strategy.</h3>
+          <p>Bamboost builds your SEO and website as a single system — technical foundation, content and design working together from day one, instead of patched together after the fact.</p>
+          <ul class="solution-check">
+            <li><i class="bi bi-check-circle-fill"></i> SEO architecture built into the site from day one</li>
+            <li><i class="bi bi-check-circle-fill"></i> Technical SEO foundation before content and links</li>
+            <li><i class="bi bi-check-circle-fill"></i> One accountable team for search and web performance</li>
+            <li><i class="bi bi-check-circle-fill"></i> Long-term organic growth, less reliance on ads</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE SERVICES -->
+<section id="services">
+  <div class="container-narrow">
+    <div class="section-head">
+      <h2>Two core services, built to work as one</h2>
+      <p>SEO that ranks your business on Google, and a web development service that builds the fast, conversion-ready platform your marketing depends on.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="service-panel">
+          <span class="service-tag">Core Service 01</span>
+          <div class="icon-tile"><i class="bi bi-search"></i></div>
+          <h3>SEO Services in Kerala</h3>
+          <p>Improve your online visibility, rank for high-intent buyer keywords, and earn consistent organic traffic that converts — without relying on ongoing ad spend.</p>
+          <div class="chip-grid">
+            <span class="chip">Technical SEO</span>
+            <span class="chip">On-Page SEO</span>
+            <span class="chip">Off-Page SEO</span>
+            <span class="chip">Local SEO</span>
+            <span class="chip">Ecommerce SEO</span>
+            <span class="chip">GEO / AI Search</span>
+            <span class="chip">AEO</span>
+            <span class="chip">Keyword Research</span>
+          </div>
+          <a href="https://bamboost.in/best-seo-company-in-kerala.html" class="btn-outline-forest">Explore SEO Services</a>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="service-panel">
+          <span class="service-tag">Core Service 02</span>
+          <div class="icon-tile"><i class="bi bi-code-slash"></i></div>
+          <h3>Web Development Service</h3>
+          <p>Fast, SEO-friendly, mobile-first websites built to rank on Google and convert visitors into customers from the first line of code.</p>
+          <div class="chip-grid">
+            <span class="chip">Custom Websites</span>
+            <span class="chip">Ecommerce Development</span>
+            <span class="chip">CMS Development</span>
+            <span class="chip">Web Applications</span>
+            <span class="chip">Mobile-First Design</span>
+            <span class="chip">Performance Optimization</span>
+            <span class="chip">Conversion-Focused UI/UX</span>
+          </div>
+          <a href="https://bamboost.in/best-web-development-company-in-kerala.html" class="btn-outline-forest">Explore Web Development</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bundle-banner">
+      <div>
+        <h4>SEO + Web Development Bundle</h4>
+        <p>The most cost-effective way to launch a high-performance, search-ready online presence from day one.</p>
+      </div>
+      <a href="https://bamboost.in/contact.html" class="btn-growth">Get Bundle Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY BAMBOOST -->
+<section class="bg-cool">
+  <div class="container-narrow">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-5">
+        <div class="section-head" style="margin-bottom:0;">
+          <h2>Why businesses choose Bamboost over a typical agency</h2>
+          <p>Most agencies work on one or two pieces of the puzzle. We build every layer of your online visibility at once, under a single accountable team.</p>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="diff-item">
+          <span class="diff-num">01</span>
+          <div><h4>SEO and web development, one team</h4><p>No handoffs between vendors. Your site's architecture and your search strategy are built together.</p></div>
+        </div>
+        <div class="diff-item">
+          <span class="diff-num">02</span>
+          <div><h4>Technical foundation first</h4><p>Every campaign starts with the crawlability, speed and structure that rankings depend on.</p></div>
+        </div>
+        <div class="diff-item">
+          <span class="diff-num">03</span>
+          <div><h4>Data-driven, fully transparent</h4><p>Every decision is backed by data. Every result is reported monthly, in plain language.</p></div>
+        </div>
+        <div class="diff-item">
+          <span class="diff-num">04</span>
+          <div><h4>Built for long-term organic growth</h4><p>We aim to reduce your dependence on paid ads over time, not increase it.</p></div>
+        </div>
+        <div class="diff-item">
+          <span class="diff-num">05</span>
+          <div><h4>Ready for AI and generative search</h4><p>GEO and AEO built in, so your business shows up in ChatGPT, Gemini and Perplexity — not just Google.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="process">
+  <div class="container-narrow">
+    <div class="section-head center">
+      <h2>Our proven process for search growth</h2>
+      <p>Just like bamboo invests in its roots before growing rapidly, our framework builds a strong foundation before accelerating results — with full transparency at every stage.</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="process-track">
+          <div class="process-step">
+            <div class="step-ring">01</div>
+            <h4>Audit</h4>
+            <p>A deep analysis of your website, competitors and current rankings to find real growth opportunities.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-ring">02</div>
+            <h4>Strategize</h4>
+            <p>Keyword research and intent-driven content mapping, aligned to your website's architecture.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-ring">03</div>
+            <h4>Build &amp; Optimize</h4>
+            <p>On-page fixes, technical SEO, Core Web Vitals and site improvements, implemented end to end.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-ring">04</div>
+            <h4>Build Authority</h4>
+            <p>White-hat backlinks and targeted content that earn rankings and build trust with search engines.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-ring">05</div>
+            <h4>Measure</h4>
+            <p>A clear monthly report covering rankings, traffic, lead quality and ROI — so you know the value delivered.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-ring">06</div>
+            <h4>Scale with AI Search</h4>
+            <p>Ongoing GEO and AI-search optimization so your brand appears in ChatGPT, Gemini, Copilot and Perplexity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="bg-cool" id="case-studies">
+  <div class="container-narrow">
+    <div class="section-head">
+      <h2>Real results from real Kerala businesses</h2>
+      <p>Not projections — verified outcomes, tracked and reported monthly.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="case-card">
+          <div class="case-img"><img src="https://images.unsplash.com/photo-1739066598279-1297113f5c6a?w=700&h=467&fit=crop&auto=format&q=80" alt="Local neighbourhood storefront representing a Kerala local SEO client" loading="lazy"></div>
+          <div class="case-body">
+            <span class="case-tag">Local Business · Local SEO</span>
+            <div class="case-figure">+220%</div>
+            <p style="color:var(--natural); font-size:0.9rem;">Increase in organic traffic</p>
+            <ul>
+              <li><i class="bi bi-check2"></i> 18 keywords ranked in Top 10</li>
+              <li><i class="bi bi-check2"></i> Top-3 Google Business Profile ranking in 2 months</li>
+              <li><i class="bi bi-check2"></i> Consistent monthly lead growth</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="case-card">
+          <div class="case-img"><img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=700&h=467&fit=crop&auto=format&q=80" alt="Ecommerce warehouse shelving representing an online retail SEO client" loading="lazy"></div>
+          <div class="case-body">
+            <span class="case-tag">Ecommerce · Product SEO</span>
+            <div class="case-figure">+45%</div>
+            <p style="color:var(--natural); font-size:0.9rem;">Increase in organic sales</p>
+            <ul>
+              <li><i class="bi bi-check2"></i> 30+ high-intent product keywords ranked</li>
+              <li><i class="bi bi-check2"></i> Stable top-page positions maintained</li>
+              <li><i class="bi bi-check2"></i> Reduced paid ad dependency</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="case-card">
+          <div class="case-img"><img src="https://images.unsplash.com/photo-1758518731706-be5d5230e5a5?w=700&h=467&fit=crop&auto=format&q=80" alt="Service business team in a meeting representing a local services SEO client" loading="lazy"></div>
+          <div class="case-body">
+            <span class="case-tag">Service Business · GEO</span>
+            <div class="case-figure">+300%</div>
+            <p style="color:var(--natural); font-size:0.9rem;">Growth in monthly leads</p>
+            <ul>
+              <li><i class="bi bi-check2"></i> Appeared in AI search summaries via GEO</li>
+              <li><i class="bi bi-check2"></i> Dominated local service search results</li>
+              <li><i class="bi bi-check2"></i> Qualified inquiry pipeline built</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="https://bamboost.in/case-studies.html" class="btn-outline-forest">View All Case Studies</a>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section id="industries">
+  <div class="container-narrow">
+    <div class="section-head">
+      <h2>SEO and web development for every industry</h2>
+      <p>Deep experience across Kerala's most competitive sectors — we understand the buyer behaviour and keyword landscape of each.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="industry-card">
+          <div class="icon-tile"><i class="bi bi-heart-pulse"></i></div>
+          <h4>Healthcare &amp; Medical</h4>
+          <p>Ranking for appointment searches, specialist queries and local medical keywords that connect patients to your practice.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="industry-card">
+          <div class="icon-tile"><i class="bi bi-house-door"></i></div>
+          <h4>Real Estate &amp; Property</h4>
+          <p>Location-based property search rankings that reduce portal dependency and generate direct buyer enquiries.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="industry-card">
+          <div class="icon-tile"><i class="bi bi-mortarboard"></i></div>
+          <h4>Education &amp; EdTech</h4>
+          <p>Ranking for admission and course-related keywords to grow student enquiries and build institutional authority.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="industry-card">
+          <div class="icon-tile"><i class="bi bi-bag"></i></div>
+          <h4>Ecommerce &amp; Retail</h4>
+          <p>Product and category page SEO that drives organic product traffic and sales across every niche.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="industry-card">
+          <div class="icon-tile"><i class="bi bi-building"></i></div>
+          <h4>Hospitality &amp; Tourism</h4>
+          <p>Driving direct bookings through Google Search, Google Maps and AI travel recommendations, reducing OTA dependency.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="industry-card">
+          <div class="icon-tile"><i class="bi bi-rocket-takeoff"></i></div>
+          <h4>Startups &amp; Local Businesses</h4>
+          <p>Building the digital foundation and online visibility that fuel consistent, scalable growth from day one.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="bg-cool">
+  <div class="container-narrow">
+    <div class="section-head">
+      <h2>What businesses say about working with Bamboost</h2>
+      <p>Real feedback from real business owners across Kerala.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="testimonial-card">
+          <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="quote">"Our traffic doubled within three months, and most of our priority keywords now sit on page one."</p>
+          <div class="testimonial-person">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=120&h=120&fit=crop&auto=format&q=80" alt="Portrait of Rahul" loading="lazy">
+            <div><div class="name">Rahul</div><div class="role">Retail Owner, Kochi</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="testimonial-card">
+          <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="quote">"Genuinely transparent and performance-focused — their reporting sets them apart from every agency we tried before."</p>
+          <div class="testimonial-person">
+            <img src="https://images.unsplash.com/photo-1627161683077-e34782c24d81?w=120&h=120&fit=crop&auto=format&q=80" alt="Portrait of Aisha" loading="lazy">
+            <div><div class="name">Aisha</div><div class="role">Clinic Owner, Thiruvananthapuram</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="testimonial-card">
+          <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="quote">"Hands down the best SEO team we've worked with — top-3 rankings for competitive local searches within months."</p>
+          <div class="testimonial-person">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=120&h=120&fit=crop&auto=format&q=80" alt="Portrait of Daniel" loading="lazy">
+            <div><div class="name">Daniel</div><div class="role">Real Estate Consultant, Thrissur</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="testimonial-card">
+          <div class="testimonial-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+          <p class="quote">"Our store now ranks for 30+ product keywords. Organic sales grew 45% and we barely run paid ads anymore."</p>
+          <div class="testimonial-person">
+            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=120&h=120&fit=crop&auto=format&q=80" alt="Portrait of Meera" loading="lazy">
+            <div><div class="name">Meera</div><div class="role">Ecommerce Owner, Kozhikode</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container-narrow">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="section-head" style="margin-bottom:0;">
+          <h2>Frequently asked questions</h2>
+          <p>Everything you need to know about working with Kerala's SEO and web development company.</p>
+          <a href="https://bamboost.in/contact.html" class="btn-outline-forest mt-3">Ask Us Directly</a>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div id="faqAccordion">
+
+          <div class="faq-item open">
+            <button class="faq-q" aria-expanded="true">
+              <span>What does an SEO and web development company do?</span>
+              <i class="bi bi-plus-lg"></i>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">We build and improve both your website and your search visibility together — technical SEO, on-page and off-page optimization, and a fast, conversion-ready site — so rankings and performance grow as one system rather than two separate efforts.</div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>How long does SEO take to show results?</span>
+              <i class="bi bi-plus-lg"></i>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">SEO is a long-term strategy, not a quick fix. Most businesses see measurable ranking improvement within 3–6 months. Less competitive local niches can move faster, sometimes in 4–8 weeks, while competitive keywords may take 6–12 months to dominate consistently.</div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>Do you provide local SEO services in Kerala?</span>
+              <i class="bi bi-plus-lg"></i>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">Yes. We optimize Google Business Profiles, local citations and location-based keywords so your business appears in Google Maps and location-based searches across Kerala.</div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>What are GEO and AEO?</span>
+              <i class="bi bi-plus-lg"></i>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">Generative Engine Optimization (GEO) helps your content appear in AI-generated answers from platforms like ChatGPT and Gemini. Answer Engine Optimization (AEO) structures content so search engines and voice assistants can surface it as a direct answer or featured snippet.</div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>Can you guarantee #1 rankings on Google?</span>
+              <i class="bi bi-plus-lg"></i>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">No responsible SEO company can guarantee a #1 ranking — Google's algorithm depends on competition, site quality and ongoing updates. We focus on sustainable, long-term ranking improvement instead of empty promises.</div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>Why should SEO and web development happen together?</span>
+              <i class="bi bi-plus-lg"></i>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">Google's ranking factors include page speed, mobile-friendliness, Core Web Vitals and clean site architecture — all decided during development. Building both together means your SEO campaign starts on a solid technical foundation, instead of fixing structural issues later.</div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>Which industries do you work with?</span>
+              <i class="bi bi-plus-lg"></i>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">We work across healthcare, real estate, education, ecommerce, hospitality, and startups and local businesses — tailoring keyword strategy to each industry's search behaviour and competitive landscape.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<div class="final-cta">
+  <div class="container-narrow">
+    <h2>Ready to grow your search visibility and your website, together?</h2>
+    <p>Get a free growth strategy. Whether you need SEO, a new website, or both, we'll show you exactly what it takes to grow your business on Google.</p>
+    <a href="https://bamboost.in/contact.html" class="btn-growth">Book a Free Strategy Call</a>
+  </div>
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container-narrow">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="d-flex align-items-center gap-2">
+          <span class="brand-mark" style="background:rgba(255,255,255,0.1);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2C12 2 7 6 7 12C7 16 9 19 12 22C15 19 17 16 17 12C17 6 12 2 12 2Z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M12 22V8" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-name" style="color:#fff;">Bamboost</span>
+        </div>
+        <p class="foot-brand-blurb">Kerala's performance-based SEO and web development company. We build deep digital roots that drive rapid, sustainable growth.</p>
+        <div class="foot-social">
+          <a href="https://www.facebook.com/" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="https://bamboost.in/best-seo-company-in-kerala.html">SEO</a></li>
+          <li><a href="https://bamboost.in/services/local-seo-services.html">Local SEO</a></li>
+          <li><a href="https://bamboost.in/services/on-page-seo-services.html">On-Page SEO</a></li>
+          <li><a href="https://bamboost.in/services/off-page-seo-services.html">Off-Page SEO</a></li>
+          <li><a href="https://bamboost.in/services/technical-seo-services.html">Technical SEO</a></li>
+          <li><a href="https://bamboost.in/best-web-development-company-in-kerala.html">Web Development</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h5>Industries</h5>
+        <ul>
+          <li><a href="https://bamboost.in/services/seo-for-educational-institutes.html">Education</a></li>
+          <li><a href="https://bamboost.in/services/ecommerce-seo-services.html">Ecommerce</a></li>
+          <li><a href="https://bamboost.in/services/seo-for-real-estate.html">Real Estate</a></li>
+          <li><a href="https://bamboost.in/services/seo-for-hotels.html">Hotel</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="https://bamboost.in/about.html">About Us</a></li>
+          <li><a href="https://bamboost.in/case-studies.html">Case Studies</a></li>
+          <li><a href="https://bamboost.in/blog.html">Blog</a></li>
+          <li><a href="https://bamboost.in/frequently-asked-questions.html">FAQ</a></li>
+          <li><a href="https://bamboost.in/contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h5>Contact</h5>
+        <ul class="foot-contact">
+          <li><i class="bi bi-geo-alt"></i> C.M. Mathew Brothers Arcade, 5th Floor, Kannur Road, Chakkorathukulam, Kozhikode, Kerala 673006</li>
+          <li><i class="bi bi-envelope"></i> connect@bamboost.in</li>
+          <li><i class="bi bi-telephone"></i> +91 90902 09054</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© 2026 Bamboost. All rights reserved.</span>
+      <a href="#" style="color:var(--sage);">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// FAQ accordion
+document.querySelectorAll('.faq-item').forEach(function(item){
+  var btn = item.querySelector('.faq-q');
+  var panel = item.querySelector('.faq-a');
+  if(item.classList.contains('open')){
+    panel.style.maxHeight = panel.scrollHeight + 'px';
+  }
+  btn.addEventListener('click', function(){
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(function(openItem){
+      if(openItem !== item){
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-q').setAttribute('aria-expanded','false');
+        openItem.querySelector('.faq-a').style.maxHeight = null;
+      }
+    });
+    if(isOpen){
+      item.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+      panel.style.maxHeight = null;
+    } else {
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded','true');
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    }
+  });
+});
+
+// Count-up stats on scroll into view
+var counters = document.querySelectorAll('[data-count]');
+var counted = false;
+function animateCounters(){
+  if(counted) return;
+  counted = true;
+  counters.forEach(function(el){
+    var target = parseInt(el.getAttribute('data-count'), 10);
+    var suffix = el.getAttribute('data-suffix') || '';
+    var start = 0;
+    var duration = 1100;
+    var startTime = null;
+    function step(ts){
+      if(!startTime) startTime = ts;
+      var progress = Math.min((ts - startTime) / duration, 1);
+      var value = Math.floor(progress * target);
+      el.textContent = value + suffix;
+      if(progress < 1) requestAnimationFrame(step);
+      else el.textContent = target + suffix;
+    }
+    requestAnimationFrame(step);
+  });
+}
+var heroTrust = document.querySelector('.hero-trust-row');
+if(heroTrust){
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting) animateCounters();
+    });
+  }, {threshold:0.4});
+  obs.observe(heroTrust);
+}
+</script>
+</body>
+</html>
