@@ -182,24 +182,8 @@ img{max-width:100%;height:auto;}
 .bam-faq-a{display:none;padding:0 0 1.2rem;font-size:0.87rem;color:var(--text3);line-height:1.7;}
 .bam-faq-item.open .bam-faq-a{display:block;}
 
-/* CTA */
-.bam-cta{background:linear-gradient(135deg,var(--g1) 0%,#0a1e12 100%);padding:80px 0;position:relative;overflow:hidden;}
-.bam-cta::after{
-  content:'';position:absolute;pointer-events:none;
-  right:-12%;bottom:-35%;width:520px;height:520px;border-radius:50%;
-  background:radial-gradient(circle at 35% 35%,rgba(21,130,62,0.35),rgba(153,166,152,0.12) 55%,transparent 75%);
-  filter:blur(10px);
-}
-.bam-cta::before{
-  content:'';position:absolute;pointer-events:none;
-  left:-10%;top:-40%;width:360px;height:360px;border-radius:50%;
-  background:radial-gradient(circle at 65% 65%,rgba(21,130,62,0.18),transparent 70%);
-  filter:blur(10px);
-}
-.bam-cta h2{font-family:var(--serif);font-size:2.6rem;color:var(--cream);font-weight:700;line-height:1.2;margin-bottom:1rem;position:relative;z-index:2;}
-.bam-cta p{color:rgba(255,255,255,0.65);font-size:0.97rem;line-height:1.75;max-width:500px;margin:0 auto 2rem;}
-@media(max-width:767.98px){.bam-cta{padding:56px 0;}.bam-cta h2{font-size:2rem;}}
-@media(max-width:575.98px){.bam-cta{padding:44px 0;}.bam-cta h2{font-size:1.65rem;}}
+/* CTA — intentionally not duplicated here; .bam-cta is defined once
+   in style.css (loaded before this file) and applies as-is. */
 
 /* FOOTER */
 .bam-footer{background:var(--g1);border-top:1px solid rgba(21,130,62,0.1);}
