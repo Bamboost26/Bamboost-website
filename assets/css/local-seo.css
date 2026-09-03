@@ -93,8 +93,6 @@ img{max-width:100%;height:auto;}
 @media(max-width:575.98px){.section-title{font-size:1.65rem;}}
 
 /* CARDS — compact, glossy, service/feature/benefit cards */
-.row.g-3,.row.g-4{counter-reset:bamcard;}
-
 .bam-card{
   background:linear-gradient(165deg,#ffffff 0%,#ffffff 55%,#F0F5F1 100%);
   border:1px solid var(--border);border-radius:18px;
@@ -102,7 +100,6 @@ img{max-width:100%;height:auto;}
   transition:transform 0.25s ease,box-shadow 0.25s ease,border-color 0.25s ease;
   position:relative;overflow:hidden;height:100%;
   box-shadow:0 1px 2px rgba(8,45,26,0.04),0 8px 20px rgba(8,45,26,0.05);
-  counter-increment:bamcard;
 }
 .bam-card::before{
   content:'\2197';position:absolute;top:1rem;right:1rem;
@@ -111,12 +108,6 @@ img{max-width:100%;height:auto;}
   display:flex;align-items:center;justify-content:center;
   font-size:0.72rem;line-height:1;color:var(--g3);
   transition:all 0.25s ease;z-index:2;
-}
-.bam-card::after{
-  content:counter(bamcard,decimal-leading-zero);
-  position:absolute;right:0.9rem;bottom:0.3rem;
-  font-family:var(--serif);font-size:2.3rem;font-weight:700;
-  color:rgba(21,130,62,0.08);line-height:1;z-index:1;pointer-events:none;user-select:none;
 }
 .bam-card:hover{border-color:rgba(21,130,62,0.35);box-shadow:0 4px 10px rgba(8,45,26,0.06),0 14px 32px rgba(8,45,26,0.09);transform:translateY(-3px);}
 .bam-card:hover::before{background:var(--g3);border-color:var(--g3);color:#fff;transform:translate(2px,-2px);}
@@ -128,7 +119,7 @@ img{max-width:100%;height:auto;}
   border:1px solid rgba(255,255,255,0.1);border-radius:18px;
   padding:1.4rem 1.35rem 1.6rem;
   transition:transform 0.25s ease,box-shadow 0.25s ease,border-color 0.25s ease,background 0.25s ease;
-  height:100%;position:relative;overflow:hidden;counter-increment:bamcard;
+  height:100%;position:relative;overflow:hidden;
 }
 .bam-card-dark::before{
   content:'\2197';position:absolute;top:1rem;right:1rem;
@@ -136,12 +127,6 @@ img{max-width:100%;height:auto;}
   background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.16);
   display:flex;align-items:center;justify-content:center;
   font-size:0.72rem;line-height:1;color:var(--g5);transition:all 0.25s ease;z-index:2;
-}
-.bam-card-dark::after{
-  content:counter(bamcard,decimal-leading-zero);
-  position:absolute;right:0.9rem;bottom:0.3rem;
-  font-family:var(--serif);font-size:2.3rem;font-weight:700;
-  color:rgba(255,255,255,0.06);line-height:1;z-index:1;pointer-events:none;user-select:none;
 }
 .bam-card-dark:hover{background:linear-gradient(165deg,rgba(21,130,62,0.16),rgba(21,130,62,0.05));border-color:rgba(21,130,62,0.4);transform:translateY(-3px);}
 .bam-card-dark:hover::before{background:var(--g3);border-color:var(--g3);color:#fff;transform:translate(2px,-2px);}
@@ -199,8 +184,19 @@ img{max-width:100%;height:auto;}
 
 /* CTA */
 .bam-cta{background:linear-gradient(135deg,var(--g1) 0%,#0a1e12 100%);padding:80px 0;position:relative;overflow:hidden;}
-.bam-cta::after{content:'🎋';position:absolute;right:-3rem;bottom:-6rem;font-size:20rem;opacity:0.04;pointer-events:none;transform:rotate(10deg);}
-.bam-cta h2{font-family:var(--serif);font-size:2.6rem;color:var(--cream);font-weight:700;line-height:1.2;margin-bottom:1rem;}
+.bam-cta::after{
+  content:'';position:absolute;pointer-events:none;
+  right:-12%;bottom:-35%;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle at 35% 35%,rgba(21,130,62,0.35),rgba(153,166,152,0.12) 55%,transparent 75%);
+  filter:blur(10px);
+}
+.bam-cta::before{
+  content:'';position:absolute;pointer-events:none;
+  left:-10%;top:-40%;width:360px;height:360px;border-radius:50%;
+  background:radial-gradient(circle at 65% 65%,rgba(21,130,62,0.18),transparent 70%);
+  filter:blur(10px);
+}
+.bam-cta h2{font-family:var(--serif);font-size:2.6rem;color:var(--cream);font-weight:700;line-height:1.2;margin-bottom:1rem;position:relative;z-index:2;}
 .bam-cta p{color:rgba(255,255,255,0.65);font-size:0.97rem;line-height:1.75;max-width:500px;margin:0 auto 2rem;}
 @media(max-width:767.98px){.bam-cta{padding:56px 0;}.bam-cta h2{font-size:2rem;}}
 @media(max-width:575.98px){.bam-cta{padding:44px 0;}.bam-cta h2{font-size:1.65rem;}}
