@@ -1262,3 +1262,59 @@ img{max-width:100%;height:auto;}
 @media (max-width: 575.98px) {
   .offer-stat-row { grid-template-columns: 1fr 1fr; }
 }
+
+/* ============================================================
+   CONTACT PAGE — contact.html only
+   ============================================================ */
+.contact-top-section{padding-top:150px;}
+@media(max-width:767.98px){.contact-top-section{padding-top:118px;}}
+@media(max-width:575.98px){.contact-top-section{padding-top:104px;}}
+
+/* Form */
+.bam-contact-form .form-label{font-size:0.85rem;font-weight:600;color:var(--text1);margin-bottom:0.45rem;}
+.form-field-icon{position:relative;}
+.form-field-icon > i{
+  position:absolute;left:1rem;top:50%;transform:translateY(-50%);
+  color:var(--text3);font-size:0.95rem;pointer-events:none;
+}
+.form-field-icon-top > i{top:1.1rem;transform:none;}
+.bam-contact-form .form-control,
+.bam-contact-form .form-select{
+  border:1px solid var(--border);border-radius:10px;
+  padding:0.75rem 1rem 0.75rem 2.6rem;
+  font-size:0.92rem;background:#fff;color:var(--text1);
+  transition:border-color 0.2s,box-shadow 0.2s;
+}
+.bam-contact-form textarea.form-control{padding-top:0.75rem;}
+.bam-contact-form .form-control:focus,
+.bam-contact-form .form-select:focus{
+  border-color:var(--g3);box-shadow:0 0 0 3px rgba(21,130,62,0.12);outline:none;
+}
+.bam-contact-form .form-control::placeholder{color:var(--text3);opacity:0.75;}
+
+.contact-success-msg{
+  display:flex;align-items:center;gap:0.5rem;justify-content:center;
+  color:var(--g3);font-size:0.92rem;font-weight:600;
+  margin-top:1rem;
+}
+.contact-privacy-note{
+  display:flex;align-items:center;gap:0.45rem;
+  color:var(--text3);font-size:0.8rem;margin-top:1rem;margin-bottom:0;
+}
+.contact-privacy-note i{color:var(--g3);}
+
+/* Contact info panel */
+.contact-info-panel .section-label{color:var(--g5);}
+.contact-info-panel .serif-heading-cream{margin-bottom:0.9rem;}
+.divider-on-dark{background:var(--g5);margin-bottom:1.6rem;}
+.ci-item{display:flex;gap:1rem;align-items:flex-start;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.1);}
+.ci-item:last-child{border-bottom:none;padding-bottom:0;}
+.ci-item:first-of-type{padding-top:0;}
+.ci-icon{
+  flex-shrink:0;width:44px;height:44px;border-radius:50%;
+  background:rgba(21,130,62,0.15);border:1px solid rgba(21,130,62,0.3);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--g5);font-size:1.05rem;
+}
+.ci-item h6{font-size:0.68rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--g5);margin-bottom:0.35rem;}
+.ci-item p{font-size:0.88rem;color:rgba(255,255,255,0.75);line-height:1.6;margin:0;}
