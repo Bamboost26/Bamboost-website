@@ -385,6 +385,7 @@ img{max-width:100%;height:auto;}
 .process-step:hover{padding-left:0.5rem;}
 .step-icon-box{flex-shrink:0;width:48px;height:48px;border-radius:14px;background:var(--g6);border:1px solid rgba(21,130,62,0.2);display:flex;align-items:center;justify-content:center;font-size:1.25rem;transition:all 0.3s;}
 .process-step:hover .step-icon-box{background:var(--g3);}
+.process-step:hover .step-icon-box i{color:#fff!important;}
 .step-num-box{flex-shrink:0;width:42px;height:42px;border-radius:50%;background:var(--cream2);border:2px solid var(--g4);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:0.95rem;font-weight:700;color:var(--g2);}
 .process-step h5{font-size:0.95rem;font-weight:600;color:var(--g1);margin-bottom:0.3rem;}
 .process-step p{font-size:0.84rem;color:var(--text3);line-height:1.6;margin:0;}
@@ -487,6 +488,46 @@ img{max-width:100%;height:auto;}
 
 @media(max-width:767.98px){.bam-cta{padding:48px 0;}.bam-cta h2{font-size:1.9rem;}}
 @media(max-width:575.98px){.bam-cta{padding:36px 0;}.bam-cta h2{font-size:1.5rem;}}
+
+/* ============================================================
+   CTA STRIP v2 — HOMEPAGE TEST ONLY. Applied via an additional
+   .bam-cta-v2 class so the shared .bam-cta above (used by every
+   other page) is completely unaffected. A contained, rounded
+   dark-green card sits inside a light band, so there is always
+   visible breathing room between the card and the footer below —
+   solves the "CTA blends into footer" problem without an orb.
+   ============================================================ */
+.bam-cta-v2{background:var(--cream2);padding:90px 0;text-align:center;}
+.bam-cta-v2 .cta-card{
+  position:relative;overflow:hidden;
+  max-width:880px;margin:0 auto;
+  background:linear-gradient(180deg,var(--g1) 0%,#04140c 100%);
+  border-radius:28px;
+  padding:64px 3rem;
+}
+.bam-cta-v2 .cta-card::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse 640px 340px at 50% -15%,rgba(21,130,62,0.28) 0%,transparent 65%);
+}
+.bam-cta-v2 h2{
+  font-family:var(--serif);font-size:2.15rem;font-weight:700;color:var(--cream);
+  line-height:1.25;margin:0 auto 0.8rem;max-width:640px;position:relative;z-index:2;
+}
+.bam-cta-v2 h2 em{color:var(--g5);font-style:italic;}
+.bam-cta-v2 p{color:rgba(255,255,255,0.6);font-size:0.94rem;line-height:1.7;max-width:440px;margin:0 auto 1.7rem;position:relative;z-index:2;}
+.bam-cta-v2 .btn{background:var(--g3)!important;color:#fff!important;border:none!important;box-shadow:0 4px 16px rgba(21,130,62,0.3);position:relative;z-index:2;}
+.bam-cta-v2 .btn:hover{background:var(--g5)!important;color:var(--g1)!important;transform:translateY(-2px);}
+
+@media(max-width:767.98px){
+  .bam-cta-v2{padding:60px 0;}
+  .bam-cta-v2 .cta-card{padding:48px 2rem;border-radius:22px;}
+  .bam-cta-v2 h2{font-size:1.75rem;}
+}
+@media(max-width:575.98px){
+  .bam-cta-v2{padding:48px 0;}
+  .bam-cta-v2 .cta-card{padding:40px 1.4rem;border-radius:18px;}
+  .bam-cta-v2 h2{font-size:1.45rem;}
+}
 
 /* ============================================================
    FOOTER
