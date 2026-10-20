@@ -1,5 +1,5 @@
 
-    :root {
+    :root:where(:has(> body:not(.post-google-ads-landing-page-optimization, .post-seo-tips-increase-hotel-bookings-kerala, .post-shopify-vs-woocommerce))) {
       --green-dark:   #1a3a2a;
       --green-mid:    #1e4d35;
       --green-accent: #3fb87a;
@@ -32,7 +32,7 @@
     @media (max-width: 575.98px) { .bam-logo-img { width: 112px; } }
     .navbar-nav .nav-link { color: rgba(255,255,255,.75) !important; font-size: .9rem; font-weight: 500; transition: color .2s; padding: 6px 10px; }
     .navbar-nav .nav-link:hover { color: var(--green-accent) !important; }
-    .bam-btn-primary { background: var(--green-accent); color: #fff !important; border-radius: 50px; font-weight: 600; font-size: .85rem; padding: 8px 20px; transition: background .2s, transform .15s; }
+    :where(body:not(.post-benifits-of-google-ads-for-small-business, .post-seo-tips-increase-hotel-bookings-kerala, .post-what-is-generative-engine-optimization)) .bam-btn-primary { background: var(--green-accent); color: #fff !important; border-radius: 50px; font-weight: 600; font-size: .85rem; padding: 8px 20px; transition: background .2s, transform .15s; }
     .bam-btn-primary:hover { background: #34a86a; transform: translateY(-1px); }
     .bam-dropdown { background: #0f2d1c; border: 1px solid rgba(63,184,122,.2); border-radius: 10px; padding: 8px 0; }
     .bam-dropdown .dropdown-item { color: rgba(255,255,255,.75); font-size: .88rem; padding: 8px 20px; }
@@ -42,13 +42,13 @@
     .navbar-toggler-icon { filter: invert(1); }
 
     /* ── HERO BANNER ── */
-    .blog-hero {
+    :where(body:not(.post-benifits-of-google-ads-for-small-business, .post-best-programming-languages-web-development, .post-frontend-vs-backend-development, .post-full-stack-development, .post-google-ads-landing-page-optimization, .post-how-google-ranks-websites, .post-keyword-research-tools, .post-seo-tips-increase-hotel-bookings-kerala, .post-seo-vs-google-ads, .post-shopify-vs-woocommerce, .post-ui-vs-ux-design, .post-web-design-vs-web-development, .post-what-are-backlinks, .post-what-is-generative-engine-optimization, .post-what-is-technical-seo, .post-what-is-web-development)) .blog-hero {
       background: linear-gradient(135deg, #0f2d1c 0%, #1a4a2c 55%, #1e5535 100%);
       padding: 72px 0 64px;
       position: relative;
       overflow: hidden;
     }
-    .blog-hero::before {
+    :where(body:not(.post-seo-tips-increase-hotel-bookings-kerala)) .blog-hero::before {
       content: '';
       position: absolute;
       width: 500px; height: 500px;
@@ -61,44 +61,44 @@
     .breadcrumb-bar a:hover { color: var(--green-accent); }
     .breadcrumb-bar span { color: rgba(255,255,255,.8); }
     .hero-tag { display: inline-block; font-size: .72rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--green-accent); margin-bottom: 18px; }
-    .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900; color: #fff; line-height: 1.18; margin-bottom: 20px; }
+    :where(body:not(.post-on-page-seo-guide-2026, .post-seo-tips-increase-hotel-bookings-kerala)) .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900; color: #fff; line-height: 1.18; margin-bottom: 20px; }
     .hero-title em { font-style: italic; color: var(--green-accent); }
     .hero-meta { font-size: .84rem; color: rgba(255,255,255,.6); display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
     .hero-meta span { display: flex; align-items: center; gap: 6px; }
 
     /* ── LAYOUT ── */
-    .blog-layout { padding: 64px 0 80px; }
+    :where(body:not(.post-seo-tips-increase-hotel-bookings-kerala)) .blog-layout { padding: 64px 0 80px; }
 
     /* ── ARTICLE ── */
-    .article-body h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--green-dark); margin: 36px 0 14px; }
-    .article-body p { color: #374940; margin-bottom: 18px; font-size: 1rem; line-height: 1.8; }
+    :where(body:not(.post-best-programming-languages-web-development, .post-how-google-ranks-websites, .post-on-page-seo-guide-2026, .post-seo-tips-increase-hotel-bookings-kerala, .post-seo-vs-google-ads)) .article-body h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--green-dark); margin: 36px 0 14px; }
+    :where(body:not(.post-how-google-ranks-websites, .post-on-page-seo-guide-2026, .post-seo-tips-increase-hotel-bookings-kerala, .post-seo-vs-google-ads)) .article-body p { color: #374940; margin-bottom: 18px; font-size: 1rem; line-height: 1.8; }
     .article-body strong { color: var(--green-dark); }
-    .article-body a { color: var(--green-accent); text-decoration: underline; text-underline-offset: 3px; }
-    .article-body a:hover { color: #1a3a2a; }
+    :where(body:not(.post-on-page-seo-guide-2026)) .article-body a { color: var(--green-accent); text-decoration: underline; text-underline-offset: 3px; }
+    :where(body:not(.post-full-stack-development, .post-how-google-ranks-websites, .post-on-page-seo-guide-2026, .post-seo-vs-google-ads)) .article-body a:hover { color: #1a3a2a; }
 
     /* Inline CTA strip */
-    .inline-cta { background: linear-gradient(135deg, var(--green-dark), #1e5535); border-radius: 14px; padding: 32px 36px; color: #fff; margin: 36px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    :where(body:not(.post-best-programming-languages-web-development, .post-how-google-ranks-websites, .post-on-page-seo-guide-2026, .post-seo-tips-increase-hotel-bookings-kerala, .post-seo-vs-google-ads)) .inline-cta { background: linear-gradient(135deg, var(--green-dark), #1e5535); border-radius: 14px; padding: 32px 36px; color: #fff; margin: 36px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
     .inline-cta p { color: rgba(255,255,255,.85); margin: 0; font-size: .95rem; }
-    .inline-cta h4 { font-family: 'Playfair Display', serif; font-size: 1.25rem; margin-bottom: 6px; }
-    .btn-cta-white { background: #fff; color: var(--green-dark) !important; border-radius: 50px; padding: 10px 28px; font-weight: 700; font-size: .9rem; white-space: nowrap; text-decoration: none !important; display: inline-block; transition: background .2s, transform .15s; }
+    :where(body:not(.post-on-page-seo-guide-2026, .post-seo-tips-increase-hotel-bookings-kerala)) .inline-cta h4 { font-family: 'Playfair Display', serif; font-size: 1.25rem; margin-bottom: 6px; }
+    :where(body:not(.post-google-ads-how-it-works, .post-mobile-friendly-website-design, .post-on-page-seo-guide-2026, .post-seo-tips-increase-hotel-bookings-kerala, .post-types-of-google-ads-campaigns, .post-what-is-seo-beginner-friendly-guide-2026)) .btn-cta-white { background: #fff; color: var(--green-dark) !important; border-radius: 50px; padding: 10px 28px; font-weight: 700; font-size: .9rem; white-space: nowrap; text-decoration: none !important; display: inline-block; transition: background .2s, transform .15s; }
     .btn-cta-white:hover { background: var(--green-accent); color: #fff !important; transform: translateY(-2px); }
 
     /* Pillar list */
-    .pillar-list { list-style: none; padding: 0; margin: 0 0 18px; }
-    .pillar-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; font-size: .97rem; color: #374940; }
-    .pillar-list li .icon-dot { width: 22px; height: 22px; background: var(--green-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
-    .pillar-list li .icon-dot i { color: #fff; font-size: .65rem; }
+    :where(body:not(.post-full-stack-development, .post-how-google-ranks-websites, .post-seo-vs-google-ads)) .pillar-list { list-style: none; padding: 0; margin: 0 0 18px; }
+    :where(body:not(.post-full-stack-development, .post-how-google-ranks-websites, .post-seo-vs-google-ads)) .pillar-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; font-size: .97rem; color: #374940; }
+    :where(body:not(.post-full-stack-development)) .pillar-list li .icon-dot { width: 22px; height: 22px; background: var(--green-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    :where(body:not(.post-full-stack-development)) .pillar-list li .icon-dot i { color: #fff; font-size: .65rem; }
 
     /* Comparison table */
     .compare-table-wrap { overflow-x: auto; margin: 20px 0 30px; border-radius: 14px; border: 1px solid var(--border); }
-    .compare-table { width: 100%; border-collapse: collapse; font-size: .92rem; }
-    .compare-table th { background: var(--green-dark); color: #fff; text-align: left; padding: 14px 18px; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1rem; }
-    .compare-table td { padding: 14px 18px; border-top: 1px solid var(--border); color: #374940; }
-    .compare-table tr:nth-child(even) td { background: var(--cream); }
+    :where(body:not(.post-frontend-vs-backend-development, .post-on-page-seo-guide-2026, .post-shopify-vs-woocommerce, .post-ui-vs-ux-design, .post-web-design-vs-web-development, .post-what-is-generative-engine-optimization)) .compare-table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+    :where(body:not(.post-frontend-vs-backend-development, .post-how-google-ranks-websites, .post-seo-vs-google-ads, .post-shopify-vs-woocommerce, .post-ui-vs-ux-design, .post-web-design-vs-web-development, .post-what-is-generative-engine-optimization)) .compare-table th { background: var(--green-dark); color: #fff; text-align: left; padding: 14px 18px; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1rem; }
+    :where(body:not(.post-frontend-vs-backend-development, .post-how-google-ranks-websites, .post-seo-vs-google-ads, .post-shopify-vs-woocommerce, .post-ui-vs-ux-design, .post-web-design-vs-web-development, .post-what-is-generative-engine-optimization)) .compare-table td { padding: 14px 18px; border-top: 1px solid var(--border); color: #374940; }
+    :where(body:not(.post-frontend-vs-backend-development, .post-shopify-vs-woocommerce, .post-web-design-vs-web-development, .post-what-is-generative-engine-optimization)) .compare-table tr:nth-child(even) td { background: var(--cream); }
 
     /* ── FAQ ACCORDION ── */
     .faq-accordion { margin: 0 0 18px; }
-    .faq-item { border: 1px solid var(--border); border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
+    :where(body:not(.post-seo-tips-increase-hotel-bookings-kerala, .post-what-is-technical-seo)) .faq-item { border: 1px solid var(--border); border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
     .faq-question {
       width: 100%; background: var(--cream); border: none; outline: none; cursor: pointer;
       padding: 16px 20px; display: flex; align-items: center; justify-content: space-between;
@@ -128,43 +128,43 @@
     }
 
     /* Author */
-    .author-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 24px 28px; display: flex; align-items: center; gap: 18px; margin-top: 40px; }
-    .author-avatar { width: 58px; height: 58px; background: var(--green-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--green-accent); font-size: 1.4rem; flex-shrink: 0; }
+    :where(body:not(.post-how-google-ranks-websites, .post-on-page-seo-guide-2026, .post-seo-tips-increase-hotel-bookings-kerala, .post-seo-vs-google-ads)) .author-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 24px 28px; display: flex; align-items: center; gap: 18px; margin-top: 40px; }
+    :where(body:not(.post-seo-tips-increase-hotel-bookings-kerala)) .author-avatar { width: 58px; height: 58px; background: var(--green-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--green-accent); font-size: 1.4rem; flex-shrink: 0; }
     .author-name { font-weight: 700; font-size: .95rem; color: var(--text-dark); }
     .author-role { font-size: .82rem; color: var(--text-muted); }
 
     /* ── SIDEBAR ── */
-    .sidebar { position: sticky; top: 90px; }
-    .audit-card { background: linear-gradient(155deg, var(--green-dark) 0%, #226040 100%); border-radius: 18px; padding: 32px 28px; color: #fff; text-align: center; margin-bottom: 28px; }
-    .audit-card h4 { font-family: 'Playfair Display', serif; font-size: 1.3rem; line-height: 1.3; margin-bottom: 10px; }
-    .audit-card p { font-size: .88rem; color: rgba(255,255,255,.75); margin-bottom: 22px; }
-    .btn-audit { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 12px 28px; font-weight: 700; font-size: .9rem; width: 100%; cursor: pointer; transition: background .2s, transform .15s; text-decoration: none; display: inline-block; }
-    .btn-audit:hover { background: #34a86a; transform: translateY(-2px); color: #fff; }
+    :where(body:not(.post-google-ads-how-it-works, .post-mobile-friendly-website-design, .post-on-page-seo-guide-2026, .post-types-of-google-ads-campaigns, .post-what-is-seo-beginner-friendly-guide-2026)) .sidebar { position: sticky; top: 90px; }
+    :where(body:not(.post-seo-tips-increase-hotel-bookings-kerala)) .audit-card { background: linear-gradient(155deg, var(--green-dark) 0%, #226040 100%); border-radius: 18px; padding: 32px 28px; color: #fff; text-align: center; margin-bottom: 28px; }
+    :where(body:not(.post-on-page-seo-guide-2026, .post-seo-tips-increase-hotel-bookings-kerala)) .audit-card h4 { font-family: 'Playfair Display', serif; font-size: 1.3rem; line-height: 1.3; margin-bottom: 10px; }
+    :where(body:not(.post-seo-tips-increase-hotel-bookings-kerala)) .audit-card p { font-size: .88rem; color: rgba(255,255,255,.75); margin-bottom: 22px; }
+    :where(body:not(.post-benifits-of-google-ads-for-small-business, .post-google-ads-how-it-works, .post-mobile-friendly-website-design, .post-on-page-seo-guide-2026, .post-seo-tips-increase-hotel-bookings-kerala, .post-types-of-google-ads-campaigns, .post-what-is-generative-engine-optimization, .post-what-is-seo-beginner-friendly-guide-2026)) .btn-audit { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 12px 28px; font-weight: 700; font-size: .9rem; width: 100%; cursor: pointer; transition: background .2s, transform .15s; text-decoration: none; display: inline-block; }
+    :where(body:not(.post-google-ads-how-it-works, .post-mobile-friendly-website-design, .post-on-page-seo-guide-2026, .post-types-of-google-ads-campaigns, .post-what-is-seo-beginner-friendly-guide-2026)) .btn-audit:hover { background: #34a86a; transform: translateY(-2px); color: #fff; }
 
-    .toc-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 28px; }
-    .toc-card h6 { font-size: .78rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 14px; }
+    :where(body:not(.post-google-ads-how-it-works, .post-mobile-friendly-website-design, .post-seo-tips-increase-hotel-bookings-kerala, .post-types-of-google-ads-campaigns, .post-what-is-seo-beginner-friendly-guide-2026)) .toc-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin-bottom: 28px; }
+    :where(body:not(.post-seo-tips-increase-hotel-bookings-kerala)) .toc-card h6 { font-size: .78rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 14px; }
     .toc-list { list-style: none; padding: 0; margin: 0; }
-    .toc-list li { margin-bottom: 9px; }
-    .toc-list a { font-size: .88rem; color: var(--text-dark); text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: color .2s; }
+    :where(body:not(.post-seo-tips-increase-hotel-bookings-kerala)) .toc-list li { margin-bottom: 9px; }
+    :where(body:not(.post-on-page-seo-guide-2026, .post-seo-tips-increase-hotel-bookings-kerala)) .toc-list a { font-size: .88rem; color: var(--text-dark); text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: color .2s; }
     .toc-list a::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--green-accent); flex-shrink: 0; }
     .toc-list a:hover { color: var(--green-accent); }
 
-    .related-card { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 24px; }
-    .related-card h6 { font-size: .78rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 14px; }
+    :where(body:not(.post-seo-tips-increase-hotel-bookings-kerala)) .related-card { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 24px; }
+    :where(body:not(.post-seo-tips-increase-hotel-bookings-kerala)) .related-card h6 { font-size: .78rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 14px; }
     .related-list {max-height: 340px;overflow-y: auto;padding-right: 6px;}
     .related-item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--border); text-decoration: none; }
     .related-item:last-child { border-bottom: none; padding-bottom: 0; }
-    .related-thumb { width: 44px; height: 44px; background: var(--green-dark); border-radius: 8px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; color: var(--green-accent); font-size: 1.1rem; }
-    .related-title { font-size: .84rem; font-weight: 600; color: var(--text-dark); line-height: 1.3; }
-    .related-tag { font-size: .73rem; color: var(--text-muted); margin-top: 2px; }
+    :where(body:not(.post-seo-tips-increase-hotel-bookings-kerala)) .related-thumb { width: 44px; height: 44px; background: var(--green-dark); border-radius: 8px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; color: var(--green-accent); font-size: 1.1rem; }
+    :where(body:not(.post-seo-tips-increase-hotel-bookings-kerala)) .related-title { font-size: .84rem; font-weight: 600; color: var(--text-dark); line-height: 1.3; }
+    :where(body:not(.post-seo-tips-increase-hotel-bookings-kerala)) .related-tag { font-size: .73rem; color: var(--text-muted); margin-top: 2px; }
 
     /* ── BOTTOM CTA ── */
     .bottom-cta { background: linear-gradient(135deg, #0f2d1c, #1e5535); padding: 80px 0; text-align: center; position: relative; overflow: hidden; }
     .bottom-cta::before { content: ''; position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(63,184,122,.12) 0%, transparent 65%); top: 50%; left: 50%; transform: translate(-50%,-50%); pointer-events: none; }
-    .bottom-cta h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.8rem); color: #fff; margin-bottom: 14px; }
+    :where(body:not(.post-full-stack-development, .post-how-google-ranks-websites, .post-seo-tips-increase-hotel-bookings-kerala, .post-seo-vs-google-ads)) .bottom-cta h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.8rem); color: #fff; margin-bottom: 14px; }
     .bottom-cta h2 em { font-style: italic; color: var(--green-accent); }
-    .bottom-cta p { color: rgba(255,255,255,.7); max-width: 520px; margin: 0 auto 32px; }
-    .btn-cta-lg { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 15px 40px; font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-block; transition: background .2s, transform .15s, box-shadow .2s; box-shadow: 0 8px 32px rgba(63,184,122,.3); }
+    :where(body:not(.post-benifits-of-google-ads-for-small-business, .post-best-programming-languages-web-development, .post-full-stack-development, .post-how-google-ranks-websites, .post-seo-tips-increase-hotel-bookings-kerala, .post-seo-vs-google-ads)) .bottom-cta p { color: rgba(255,255,255,.7); max-width: 520px; margin: 0 auto 32px; }
+    :where(body:not(.post-full-stack-development, .post-how-google-ranks-websites, .post-seo-vs-google-ads)) .btn-cta-lg { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 15px 40px; font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-block; transition: background .2s, transform .15s, box-shadow .2s; box-shadow: 0 8px 32px rgba(63,184,122,.3); }
     .btn-cta-lg:hover { background: #34a86a; transform: translateY(-3px); box-shadow: 0 14px 40px rgba(63,184,122,.4); color: #fff; }
 
     /* ── FOOTER ── */
@@ -188,4 +188,860 @@
     @media (max-width: 768px) {
       .blog-hero { padding: 48px 0 44px; }
       .inline-cta { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* ── ARTICLE IMAGES ── */
+    .article-img { width: 100%; height: auto; border-radius: 14px; margin-bottom: 24px; }
+
+    /* ── SHARED BLOG COMPONENTS (moved from individual blog pages) ── */
+    .stat-item:last-child { border-right: none; }
+    @media (max-width: 768px) {
+      .stat-strip { flex-direction: column; }
+      .stat-item { border-right: none; border-bottom: 1px solid var(--border); }
+      .stat-item:last-child { border-bottom: none; }
+    }
+    .element-card { background: var(--cream); border: 1px solid var(--border); border-left: 4px solid var(--green-accent); border-radius: 14px; padding: 22px 26px; margin-bottom: 20px; }
+    .element-card p { font-size: .95rem; color: #374940; margin-bottom: 8px; line-height: 1.75; }
+    .element-card p:last-child { margin-bottom: 0; }
+    .element-label { display: inline-block; background: rgba(63,184,122,.12); color: var(--green-mid); font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; padding: .2rem .65rem; border-radius: 4px; margin-bottom: 10px; }
+    .mistake-list { list-style: none; padding: 0; margin: 0 0 18px; }
+    .mistake-icon { width: 22px; height: 22px; background: #fde8d8; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .mistake-icon i { color: #c0522a; font-size: .65rem; }
+    .split-boxes { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0 28px; }
+    .split-box { border-radius: 12px; padding: 22px; }
+    .split-box h5 { font-size: .95rem; font-weight: 700; margin-bottom: 10px; }
+    .split-box ul { list-style: none; padding: 0; margin: 0; }
+    .split-box ul li { font-size: .88rem; color: #374940; padding: 4px 0; display: flex; align-items: center; gap: 8px; }
+    .split-box ul li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+    @media (max-width: 576px) {
+      .split-boxes { grid-template-columns: 1fr; }
+    }
+    .callout-box { background: var(--cream); border-left: 4px solid var(--green-accent); border-radius: 0 12px 12px 0; padding: 20px 24px; margin: 28px 0; }
+    .callout-box p { color: var(--text-dark); font-size: .97rem; margin: 0; line-height: 1.75; }
+    .answer-block { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; position: relative; }
+    .answer-block-label { display: inline-flex; align-items: center; gap: 8px; font-size: .72rem; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: var(--green-accent); margin-bottom: 14px; }
+    .answer-block-label i { font-size: .85rem; }
+    .answer-block h3 { font-family: 'Playfair Display',serif; font-size: 1.2rem; font-weight: 700; color: var(--green-dark); margin-bottom: 12px; }
+    .answer-block p { color: #374940; font-size: .97rem; line-height: 1.8; margin-bottom: 0; }
+    .answer-block p + p { margin-top: 12px; }
+    .compare-wrap { border-radius: 14px; overflow: hidden; border: 1px solid var(--border); margin: 28px 0; }
+    @media (max-width: 768px) {
+      .answer-block { padding: 22px 20px; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/benifits-of-google-ads-for-small-business.html (scoped to body.post-benifits-of-google-ads-for-small-business) ── */
+    :where(body.post-benifits-of-google-ads-for-small-business) .bam-btn-primary { background: var(--green-accent); color: #fff !important; border-radius: 50px; font-weight: 600; font-size: .85rem; padding: 8px 20px; transition: background .2s,transform .15s; text-decoration: none; display: inline-block; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .bam-btn-primary:hover { background: #34a86a; transform: translateY(-1px); }
+    :where(body.post-benifits-of-google-ads-for-small-business) .blog-hero { background: linear-gradient(135deg,#0f2d1c 0%,#1a4a2c 55%,#1e5535 100%); padding: 72px 0 64px; position: relative; overflow: hidden; margin-top: 65px; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .blog-hero::after { content: ''; position: absolute; width: 280px; height: 280px; background: radial-gradient(circle,rgba(63,184,122,.07) 0%,transparent 70%); bottom: -50px; left: 60px; pointer-events: none; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .breadcrumb-bar a { color: rgba(255,255,255,.55); text-decoration: none; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .breadcrumb-bar a:hover { color: var(--green-accent); }
+    :where(body.post-benifits-of-google-ads-for-small-business) .article-body a { color: var(--green-accent); text-decoration: underline; text-underline-offset: 3px; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .article-body a:hover { color: #1a3a2a; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .benefit-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 24px 26px; margin-bottom: 18px; display: flex; gap: 20px; align-items: flex-start; transition: box-shadow .2s,transform .2s; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .benefit-card:hover { box-shadow: 0 6px 28px rgba(26,58,42,.1); transform: translateY(-2px); }
+    :where(body.post-benifits-of-google-ads-for-small-business) .benefit-num { font-family: 'Playfair Display',serif; font-size: 2rem; font-weight: 900; color: var(--green-accent); line-height: 1; min-width: 36px; opacity: .55; flex-shrink: 0; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .benefit-title { font-family: 'Playfair Display',serif; font-size: 1.05rem; font-weight: 700; color: var(--green-dark); margin-bottom: 6px; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .benefit-body { font-size: .94rem; color: #374940; line-height: 1.72; margin: 0; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .highlight-box { background: linear-gradient(135deg,rgba(63,184,122,.08) 0%,rgba(63,184,122,.03) 100%); border-left: 4px solid var(--green-accent); border-radius: 0 12px 12px 0; padding: 20px 24px; margin: 24px 0 28px; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .highlight-box p { margin: 0; color: var(--green-dark); font-size: .97rem; font-weight: 500; line-height: 1.7; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .highlight-box p em { font-style: italic; color: var(--text-muted); font-weight: 400; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .stat-strip { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 28px 32px; margin: 32px 0; display: flex; gap: 0; flex-wrap: wrap; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .stat-item { flex: 1; min-width: 120px; text-align: center; padding: 10px 16px; border-right: 1px solid var(--border); }
+    :where(body.post-benifits-of-google-ads-for-small-business) .stat-item:last-child { border-right: none; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .stat-num { font-family: 'Playfair Display',serif; font-size: 2rem; font-weight: 900; color: var(--green-dark); line-height: 1; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .stat-label { font-size: .78rem; color: var(--text-muted); margin-top: 4px; font-weight: 500; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .inline-cta p { color: rgba(255,255,255,.85); margin: 0; font-size: .95rem; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .audit-card p { font-size: .88rem; color: rgba(255,255,255,.75); margin-bottom: 22px; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .btn-audit { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 12px 28px; font-weight: 700; font-size: .9rem; width: 100%; cursor: pointer; transition: background .2s,transform .15s; text-decoration: none; display: inline-block; text-align: center; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .btn-audit:hover { background: #34a86a; transform: translateY(-2px); color: #fff; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .toc-list a { font-size: .88rem; color: var(--text-dark); text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: color .2s; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .toc-list a:hover { color: var(--green-accent); }
+    :where(body.post-benifits-of-google-ads-for-small-business) .related-item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--border); text-decoration: none; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .related-item:last-child { border-bottom: none; padding-bottom: 0; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .bottom-cta h2 em { font-style: italic; color: var(--green-accent); }
+    :where(body.post-benifits-of-google-ads-for-small-business) .bottom-cta p { color: rgba(255,255,255,.7); max-width: 540px; margin: 0 auto 32px; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .btn-cta-lg { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 15px 40px; font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-block; transition: background .2s,transform .15s,box-shadow .2s; box-shadow: 0 8px 32px rgba(63,184,122,.3); }
+    :where(body.post-benifits-of-google-ads-for-small-business) .btn-cta-lg:hover { background: #34a86a; transform: translateY(-3px); box-shadow: 0 14px 40px rgba(63,184,122,.4); color: #fff; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .footer-logo { display: inline-block; background: #fff; padding: 10px 16px; border-radius: 12px; line-height: 0; text-decoration: none; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .footer-desc { font-size: .87rem; color: rgba(255,255,255,.5); line-height: 1.7; margin-top: 8px; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .footer-links a, :where(body.post-benifits-of-google-ads-for-small-business) .footer-links span { font-size: .87rem; color: rgba(255,255,255,.5); text-decoration: none; transition: color .2s; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .footer-links a:hover { color: var(--green-accent); }
+    :where(body.post-benifits-of-google-ads-for-small-business) .footer-copy { font-size: .8rem; color: rgba(255,255,255,.3); }
+    :where(body.post-benifits-of-google-ads-for-small-business) .footer-copy a { color: rgba(255,255,255,.3); text-decoration: none; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .footer-copy a:hover { color: var(--green-accent); }
+    :where(body.post-benifits-of-google-ads-for-small-business) .social-btn { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; background: rgba(255,255,255,.07); border-radius: 8px; color: rgba(255,255,255,.6); font-size: .8rem; font-weight: 700; text-decoration: none; transition: background .2s,color .2s; }
+    :where(body.post-benifits-of-google-ads-for-small-business) .social-btn:hover { background: var(--green-accent); color: #fff; }
+    @media (max-width: 768px) {
+      :where(body.post-benifits-of-google-ads-for-small-business) .blog-hero { padding: 48px 0 44px; }
+      :where(body.post-benifits-of-google-ads-for-small-business) .stat-strip { flex-direction: column; }
+      :where(body.post-benifits-of-google-ads-for-small-business) .stat-item { border-right: none; border-bottom: 1px solid var(--border); }
+      :where(body.post-benifits-of-google-ads-for-small-business) .stat-item:last-child { border-bottom: none; }
+      :where(body.post-benifits-of-google-ads-for-small-business) .benefit-card { flex-direction: column; gap: 10px; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/best-programming-languages-web-development.html (scoped to body.post-best-programming-languages-web-development) ── */
+    :where(body.post-best-programming-languages-web-development) .blog-hero { background: linear-gradient(135deg,#0f2d1c 0%,#1a4a2c 55%,#1e5535 100%); padding: 72px 0 64px; position: relative; overflow: hidden; margin-top: 65px; }
+    :where(body.post-best-programming-languages-web-development) .article-body h2 { font-family: 'Playfair Display',serif; font-size: 1.6rem; font-weight: 700; color: var(--green-dark); margin: 40px 0 14px; }
+    :where(body.post-best-programming-languages-web-development) .lang-card { border: 1px solid var(--border); border-radius: 14px; padding: 24px 26px; margin-bottom: 20px; background: #fff; position: relative; overflow: hidden; transition: box-shadow .2s,transform .2s; }
+    :where(body.post-best-programming-languages-web-development) .lang-card:hover { box-shadow: 0 6px 28px rgba(63,184,122,.12); transform: translateY(-2px); }
+    :where(body.post-best-programming-languages-web-development) .lang-card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--green-accent); border-radius: 4px 0 0 4px; }
+    :where(body.post-best-programming-languages-web-development) .lang-card-header { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+    :where(body.post-best-programming-languages-web-development) .lang-badge { width: 44px; height: 44px; background: linear-gradient(135deg,var(--green-dark),#226040); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--green-accent); font-size: .75rem; font-weight: 700; letter-spacing: .5px; flex-shrink: 0; }
+    :where(body.post-best-programming-languages-web-development) .lang-name { font-family: 'Playfair Display',serif; font-size: 1.15rem; font-weight: 700; color: var(--green-dark); margin: 0; }
+    :where(body.post-best-programming-languages-web-development) .lang-subtitle { font-size: .8rem; color: var(--text-muted); margin: 0; }
+    :where(body.post-best-programming-languages-web-development) .lang-card p { margin-bottom: 10px; font-size: .95rem; }
+    :where(body.post-best-programming-languages-web-development) .lang-card p:last-child { margin-bottom: 0; }
+    :where(body.post-best-programming-languages-web-development) .tag-row { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
+    :where(body.post-best-programming-languages-web-development) .tag { display: inline-block; background: var(--cream); border: 1px solid var(--border); border-radius: 50px; font-size: .75rem; font-weight: 600; color: var(--text-muted); padding: 3px 12px; }
+    :where(body.post-best-programming-languages-web-development) .tag.highlight { background: rgba(63,184,122,.1); border-color: rgba(63,184,122,.3); color: var(--green-dark); }
+    :where(body.post-best-programming-languages-web-development) .factor-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 18px 0 24px; }
+    :where(body.post-best-programming-languages-web-development) .factor-item { background: var(--cream); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; }
+    :where(body.post-best-programming-languages-web-development) .factor-item i { color: var(--green-accent); font-size: 1.2rem; margin-bottom: 8px; display: block; }
+    :where(body.post-best-programming-languages-web-development) .factor-item strong { display: block; font-size: .95rem; color: var(--green-dark); margin-bottom: 4px; }
+    :where(body.post-best-programming-languages-web-development) .factor-item span { font-size: .85rem; color: var(--text-muted); }
+    :where(body.post-best-programming-languages-web-development) .chooser-table { width: 100%; border-collapse: collapse; margin: 18px 0 24px; font-size: .9rem; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
+    :where(body.post-best-programming-languages-web-development) .chooser-table thead tr { background: var(--green-dark); color: #fff; }
+    :where(body.post-best-programming-languages-web-development) .chooser-table th { padding: 12px 16px; font-weight: 600; font-size: .82rem; letter-spacing: .5px; text-transform: uppercase; }
+    :where(body.post-best-programming-languages-web-development) .chooser-table td { padding: 11px 16px; border-bottom: 1px solid var(--border); color: #374940; }
+    :where(body.post-best-programming-languages-web-development) .chooser-table tbody tr:last-child td { border-bottom: none; }
+    :where(body.post-best-programming-languages-web-development) .chooser-table tbody tr:nth-child(even) { background: var(--cream); }
+    :where(body.post-best-programming-languages-web-development) .chooser-table tbody tr:hover { background: rgba(63,184,122,.05); }
+    :where(body.post-best-programming-languages-web-development) .inline-cta { background: linear-gradient(135deg,var(--green-dark),#1e5535); border-radius: 14px; padding: 32px 36px; color: #fff; margin: 40px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    :where(body.post-best-programming-languages-web-development) .inline-cta p { color: rgba(255,255,255,.85); margin: 0; font-size: .95rem; }
+    :where(body.post-best-programming-languages-web-development) .pillar-list li .icon-dot i { color: #fff; font-size: .65rem; }
+    :where(body.post-best-programming-languages-web-development) .audit-card p { font-size: .88rem; color: rgba(255,255,255,.75); margin-bottom: 22px; }
+    :where(body.post-best-programming-languages-web-development) .bottom-cta h2 { font-family: 'Playfair Display',serif; font-size: clamp(1.8rem,4vw,2.8rem); color: #fff; margin-bottom: 14px; }
+    :where(body.post-best-programming-languages-web-development) .bottom-cta p { color: rgba(255,255,255,.7); max-width: 560px; margin: 0 auto 32px; }
+    :where(body.post-best-programming-languages-web-development) .footer-desc { font-size: .87rem; color: rgba(255,255,255,.5); line-height: 1.7; margin-top: 8px; }
+    :where(body.post-best-programming-languages-web-development) .footer-links a, :where(body.post-best-programming-languages-web-development) .footer-links span { font-size: .87rem; color: rgba(255,255,255,.5); text-decoration: none; transition: color .2s; }
+    :where(body.post-best-programming-languages-web-development) .footer-links a:hover { color: var(--green-accent); }
+    :where(body.post-best-programming-languages-web-development) .footer-copy { font-size: .8rem; color: rgba(255,255,255,.3); }
+    :where(body.post-best-programming-languages-web-development) .footer-copy a { color: rgba(255,255,255,.3); text-decoration: none; }
+    :where(body.post-best-programming-languages-web-development) .footer-copy a:hover { color: var(--green-accent); }
+    :where(body.post-best-programming-languages-web-development) .social-btn { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; background: rgba(255,255,255,.07); border-radius: 8px; color: rgba(255,255,255,.6); font-size: .8rem; font-weight: 700; text-decoration: none; transition: background .2s,color .2s; }
+    :where(body.post-best-programming-languages-web-development) .social-btn:hover { background: var(--green-accent); color: #fff; }
+    @media (max-width: 768px) {
+      :where(body.post-best-programming-languages-web-development) .blog-hero { padding: 48px 0 44px; }
+      :where(body.post-best-programming-languages-web-development) .inline-cta { flex-direction: column; align-items: flex-start; }
+      :where(body.post-best-programming-languages-web-development) .factor-grid { grid-template-columns: 1fr; }
+      :where(body.post-best-programming-languages-web-development) .chooser-table { font-size: .8rem; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/business-not-showing-on-google.html (scoped to body.post-business-not-showing-on-google) ── */
+    :where(body.post-business-not-showing-on-google) .article-body h3 { font-family: 'Playfair Display',serif; font-size: 1.15rem; font-weight: 700; color: var(--green-mid); margin: 24px 0 10px; }
+    :where(body.post-business-not-showing-on-google) .mistake-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; font-size: .97rem; color: #374940; }
+
+    /* ── PAGE-SPECIFIC: blogs/frontend-vs-backend-development.html (scoped to body.post-frontend-vs-backend-development) ── */
+    :where(body.post-frontend-vs-backend-development) .blog-hero { background: linear-gradient(135deg,#0f2d1c 0%,#1a4a2c 55%,#1e5535 100%); padding: 72px 0 64px; position: relative; overflow: hidden; margin-top: 65px; }
+    :where(body.post-frontend-vs-backend-development) .compare-table { width: 100%; border-collapse: collapse; margin: 28px 0 24px; border-radius: 12px; overflow: hidden; font-size: .93rem; }
+    :where(body.post-frontend-vs-backend-development) .compare-table thead tr { background: var(--green-dark); color: #fff; }
+    :where(body.post-frontend-vs-backend-development) .compare-table thead th { padding: 14px 18px; font-weight: 600; font-size: .88rem; letter-spacing: .5px; }
+    :where(body.post-frontend-vs-backend-development) .compare-table thead th:first-child { color: rgba(255,255,255,.5); }
+    :where(body.post-frontend-vs-backend-development) .compare-table thead th:nth-child(2) { color: var(--green-accent); }
+    :where(body.post-frontend-vs-backend-development) .compare-table thead th:nth-child(3) { color: #7ec8ff; }
+    :where(body.post-frontend-vs-backend-development) .compare-table tbody tr { border-bottom: 1px solid var(--border); }
+    :where(body.post-frontend-vs-backend-development) .compare-table tbody tr:last-child { border-bottom: none; }
+    :where(body.post-frontend-vs-backend-development) .compare-table tbody tr:nth-child(even) { background: var(--cream); }
+    :where(body.post-frontend-vs-backend-development) .compare-table tbody td { padding: 12px 18px; color: #374940; vertical-align: top; }
+    :where(body.post-frontend-vs-backend-development) .compare-table tbody td:first-child { font-weight: 600; color: var(--text-dark); font-size: .86rem; }
+    :where(body.post-frontend-vs-backend-development) .split-box.front { background: #edf7f2; border: 1px solid #b6e4cc; }
+    :where(body.post-frontend-vs-backend-development) .split-box.back { background: #eaf1fa; border: 1px solid #b3cfe8; }
+    :where(body.post-frontend-vs-backend-development) .split-box.front h5 { color: var(--green-dark); }
+    :where(body.post-frontend-vs-backend-development) .split-box.back h5 { color: #1a3056; }
+    :where(body.post-frontend-vs-backend-development) .split-box.front ul li::before { background: var(--green-accent); }
+    :where(body.post-frontend-vs-backend-development) .split-box.back ul li::before { background: #5a9fd4; }
+    :where(body.post-frontend-vs-backend-development) .toc-list { list-style: none; padding: 0; margin: 0; }
+    :where(body.post-frontend-vs-backend-development) .footer-links { list-style: none; padding: 0; margin: 0; }
+    @media (max-width: 768px) {
+      :where(body.post-frontend-vs-backend-development) .blog-hero { padding: 48px 0 44px; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/full-stack-development.html (scoped to body.post-full-stack-development) ── */
+    :where(body.post-full-stack-development) .blog-hero { background: linear-gradient(135deg,#0f2d1c 0%,#1a4a2c 55%,#1e5535 100%); padding: 72px 0 64px; position: relative; overflow: hidden; margin-top: 65px; }
+    :where(body.post-full-stack-development) .hero-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 20px; }
+    :where(body.post-full-stack-development) .hero-tag-chip { background: rgba(63,184,122,.15); border: 1px solid rgba(63,184,122,.3); color: rgba(255,255,255,.8); font-size: .72rem; font-weight: 500; padding: 4px 12px; border-radius: 20px; }
+    :where(body.post-full-stack-development) .article-body h3 { font-family: 'Playfair Display',serif; font-size: 1.15rem; font-weight: 700; color: var(--green-mid); margin: 28px 0 10px; }
+    :where(body.post-full-stack-development) .article-body a:hover { color: var(--green-dark); }
+    :where(body.post-full-stack-development) .article-body ul { padding-left: 0; margin-bottom: 20px; list-style: none; }
+    :where(body.post-full-stack-development) .article-body ul li { position: relative; padding-left: 22px; margin-bottom: 10px; color: #374940; font-size: 1rem; line-height: 1.7; }
+    :where(body.post-full-stack-development) .article-body ul li::before { content: ''; position: absolute; left: 0; top: 10px; width: 8px; height: 8px; background: var(--green-accent); border-radius: 50%; }
+    :where(body.post-full-stack-development) .skill-card { background: var(--white); border: 1px solid var(--border); border-left: 4px solid var(--green-accent); border-radius: 12px; padding: 20px 24px; margin-bottom: 16px; }
+    :where(body.post-full-stack-development) .skill-card-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+    :where(body.post-full-stack-development) .skill-card-name { font-family: 'Playfair Display',serif; font-size: 1.05rem; font-weight: 700; color: var(--green-dark); }
+    :where(body.post-full-stack-development) .skill-badge { font-size: .71rem; font-weight: 600; padding: 3px 10px; border-radius: 20px; }
+    :where(body.post-full-stack-development) .badge-frontend { background: #dbeafe; color: #1e40af; }
+    :where(body.post-full-stack-development) .badge-backend { background: #fce7f3; color: #9d174d; }
+    :where(body.post-full-stack-development) .badge-db { background: #fef3c7; color: #92400e; }
+    :where(body.post-full-stack-development) .badge-devops { background: #ede9fe; color: #5b21b6; }
+    :where(body.post-full-stack-development) .skill-card p { font-size: .92rem; color: var(--text-muted); margin: 0; line-height: 1.65; }
+    :where(body.post-full-stack-development) .inline-cta p { color: rgba(255,255,255,.85); margin: 0; font-size: .95rem; }
+    :where(body.post-full-stack-development) .btn-cta-white { background: #fff; color: var(--green-dark) !important; border-radius: 50px; padding: 10px 28px; font-weight: 700; font-size: .9rem; white-space: nowrap; text-decoration: none !important; display: inline-block; transition: background .2s,transform .15s; }
+    :where(body.post-full-stack-development) .btn-cta-white:hover { background: var(--green-accent); color: #fff !important; transform: translateY(-2px); }
+    :where(body.post-full-stack-development) .pillar-list { list-style: none !important; padding: 0 !important; margin: 0 0 18px !important; }
+    :where(body.post-full-stack-development) .pillar-list li { display: flex !important; align-items: flex-start; gap: 12px; margin-bottom: 12px !important; font-size: .97rem; color: #374940; padding-left: 0 !important; }
+    :where(body.post-full-stack-development) .pillar-list li::before { display: none !important; }
+    :where(body.post-full-stack-development) .icon-dot { width: 22px; height: 22px; background: var(--green-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    :where(body.post-full-stack-development) .icon-dot i { color: #fff; font-size: .65rem; }
+    :where(body.post-full-stack-development) .audit-card p { font-size: .88rem; color: rgba(255,255,255,.75); margin-bottom: 22px; }
+    :where(body.post-full-stack-development) .btn-audit { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 12px 28px; font-weight: 700; font-size: .9rem; width: 100%; cursor: pointer; transition: background .2s,transform .15s; text-decoration: none; display: inline-block; }
+    :where(body.post-full-stack-development) .btn-audit:hover { background: #34a86a; transform: translateY(-2px); color: #fff; }
+    :where(body.post-full-stack-development) .toc-list { list-style: none; padding: 0; margin: 0; }
+    :where(body.post-full-stack-development) .toc-list li { margin-bottom: 9px; }
+    :where(body.post-full-stack-development) .toc-list a { font-size: .88rem; color: var(--text-dark); text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: color .2s; }
+    :where(body.post-full-stack-development) .toc-list a:hover { color: var(--green-accent); }
+    :where(body.post-full-stack-development) .related-item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--border); text-decoration: none; }
+    :where(body.post-full-stack-development) .related-item:last-child { border-bottom: none; padding-bottom: 0; }
+    :where(body.post-full-stack-development) .bottom-cta h2 { font-family: 'Playfair Display',serif; font-size: clamp(1.8rem,4vw,2.8rem); color: #fff; margin-bottom: 14px; position: relative; }
+    :where(body.post-full-stack-development) .bottom-cta p { color: rgba(255,255,255,.7); max-width: 520px; margin: 0 auto 32px; position: relative; }
+    :where(body.post-full-stack-development) .btn-cta-lg { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 15px 40px; font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-block; transition: background .2s,transform .15s,box-shadow .2s; box-shadow: 0 8px 32px rgba(63,184,122,.3); position: relative; }
+    :where(body.post-full-stack-development) .btn-cta-lg:hover { background: #34a86a; transform: translateY(-3px); box-shadow: 0 14px 40px rgba(63,184,122,.4); color: #fff; }
+    :where(body.post-full-stack-development) .footer-logo { display: inline-block; background: #fff; padding: 10px 16px; border-radius: 12px; line-height: 0; text-decoration: none; }
+    :where(body.post-full-stack-development) .footer-desc { font-size: .87rem; color: rgba(255,255,255,.5); line-height: 1.7; margin-top: 8px; }
+    :where(body.post-full-stack-development) .footer-links { list-style: none; padding: 0; margin: 0; }
+    :where(body.post-full-stack-development) .footer-links li { margin-bottom: 8px; }
+    :where(body.post-full-stack-development) .footer-links a, :where(body.post-full-stack-development) .footer-links span { font-size: .87rem; color: rgba(255,255,255,.5); text-decoration: none; transition: color .2s; }
+    :where(body.post-full-stack-development) .footer-links a:hover { color: var(--green-accent); }
+    :where(body.post-full-stack-development) .footer-copy { font-size: .8rem; color: rgba(255,255,255,.3); }
+    :where(body.post-full-stack-development) .footer-copy a { color: rgba(255,255,255,.3); text-decoration: none; }
+    :where(body.post-full-stack-development) .footer-copy a:hover { color: var(--green-accent); }
+    :where(body.post-full-stack-development) .social-btn { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; background: rgba(255,255,255,.07); border-radius: 8px; color: rgba(255,255,255,.6); font-size: .8rem; font-weight: 700; text-decoration: none; transition: background .2s,color .2s; }
+    :where(body.post-full-stack-development) .social-btn:hover { background: var(--green-accent); color: #fff; }
+    @media (max-width: 768px) {
+      :where(body.post-full-stack-development) .blog-hero { padding: 48px 0 44px; }
+      :where(body.post-full-stack-development) .skill-card-header { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/google-ads-how-it-works.html (scoped to body.post-google-ads-how-it-works) ── */
+    :where(body.post-google-ads-how-it-works) .sidebar { position: sticky; top: 32px; }
+    :where(body.post-google-ads-how-it-works) .toc-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 24px 24px; margin-bottom: 28px; }
+
+    /* ── PAGE-SPECIFIC: blogs/google-ads-landing-page-optimization.html (scoped to body.post-google-ads-landing-page-optimization) ── */
+    :root:where(:has(> body.post-google-ads-landing-page-optimization)) { --green-dark: #1a3a2a; --green-mid: #1e4d35; --green-accent: #3fb87a; --cream: #f5f2ec; --white: #ffffff; --text-dark: #1c2a22; --text-muted: #5a6e60; --border: #d8e8dc; --ads-blue: #1a73e8; --ads-yellow: #fbbc04; }
+    :where(body.post-google-ads-landing-page-optimization) .blog-hero { background: linear-gradient(135deg,#0f2d1c 0%,#1a4a2c 55%,#1e5535 100%); padding: 72px 0 64px; position: relative; overflow: hidden; margin-top: 65px; }
+    :where(body.post-google-ads-landing-page-optimization) .qs-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin: 24px 0 28px; }
+    :where(body.post-google-ads-landing-page-optimization) .qs-card { background: var(--cream); border: 1px solid var(--border); border-radius: 12px; padding: 18px 16px; text-align: center; }
+    :where(body.post-google-ads-landing-page-optimization) .qs-card .qs-icon { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 1.1rem; }
+    :where(body.post-google-ads-landing-page-optimization) .qs-card .qs-icon.blue { background: rgba(26,115,232,.12); color: var(--ads-blue); }
+    :where(body.post-google-ads-landing-page-optimization) .qs-card .qs-icon.green { background: rgba(63,184,122,.14); color: var(--green-accent); }
+    :where(body.post-google-ads-landing-page-optimization) .qs-card .qs-icon.amber { background: rgba(251,188,4,.14); color: #c8960a; }
+    :where(body.post-google-ads-landing-page-optimization) .qs-card h6 { font-size: .82rem; font-weight: 700; color: var(--text-dark); margin-bottom: 4px; }
+    :where(body.post-google-ads-landing-page-optimization) .qs-card p { font-size: .78rem; color: var(--text-muted); margin: 0; line-height: 1.5; }
+    @media (max-width: 576px) {
+      :where(body.post-google-ads-landing-page-optimization) .qs-grid { grid-template-columns: 1fr; }
+    }
+    :where(body.post-google-ads-landing-page-optimization) .tip-box { background: #edf7f2; border-left: 4px solid var(--green-accent); border-radius: 0 10px 10px 0; padding: 18px 22px; margin: 22px 0; }
+    :where(body.post-google-ads-landing-page-optimization) .tip-box strong { color: var(--green-dark); font-size: .88rem; display: block; margin-bottom: 4px; letter-spacing: .4px; text-transform: uppercase; }
+    :where(body.post-google-ads-landing-page-optimization) .tip-box p { color: #374940; margin: 0; font-size: .93rem; line-height: 1.7; }
+    :where(body.post-google-ads-landing-page-optimization) .audit-card p { font-size: .88rem; color: rgba(255,255,255,.75); margin-bottom: 22px; }
+    :where(body.post-google-ads-landing-page-optimization) .toc-card h6 { font-size: .78rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 14px; }
+    :where(body.post-google-ads-landing-page-optimization) .related-card h6 { font-size: .78rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 14px; }
+    :where(body.post-google-ads-landing-page-optimization) .bottom-cta p { color: rgba(255,255,255,.7); max-width: 520px; margin: 0 auto 32px; }
+    :where(body.post-google-ads-landing-page-optimization) .footer-desc { font-size: .87rem; color: rgba(255,255,255,.5); line-height: 1.7; margin-top: 8px; }
+    :where(body.post-google-ads-landing-page-optimization) .footer-heading { font-size: .78rem; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: rgba(255,255,255,.85); margin-bottom: 14px; }
+    :where(body.post-google-ads-landing-page-optimization) .footer-copy { font-size: .8rem; color: rgba(255,255,255,.3); }
+    @media (max-width: 768px) {
+      :where(body.post-google-ads-landing-page-optimization) .blog-hero { padding: 48px 0 44px; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/google-ai-overviews-ai-mode-seo-2026.html (scoped to body.post-google-ai-overviews-ai-mode-seo-2026) ── */
+    :where(body.post-google-ai-overviews-ai-mode-seo-2026) .article-body h3 { font-family: 'Playfair Display',serif; font-size: 1.22rem; font-weight: 700; color: var(--green-dark); margin: 28px 0 10px; }
+    :where(body.post-google-ai-overviews-ai-mode-seo-2026) .article-body ol, :where(body.post-google-ai-overviews-ai-mode-seo-2026) .article-body ul:not(.pillar-list) { padding-left: 22px; margin-bottom: 18px; color: #374940; }
+    :where(body.post-google-ai-overviews-ai-mode-seo-2026) .article-body ol li, :where(body.post-google-ai-overviews-ai-mode-seo-2026) .article-body ul:not(.pillar-list) li { margin-bottom: 8px; line-height: 1.75; }
+    :where(body.post-google-ai-overviews-ai-mode-seo-2026) .callout-box p + p { margin-top: 10px; }
+    :where(body.post-google-ai-overviews-ai-mode-seo-2026) .takeaway-box { background: linear-gradient(135deg,var(--green-dark),#1e5535); border-radius: 14px; padding: 28px 32px; color: #fff; margin: 28px 0; }
+    :where(body.post-google-ai-overviews-ai-mode-seo-2026) .takeaway-box .takeaway-label { font-size: .72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--green-accent); margin-bottom: 10px; }
+    :where(body.post-google-ai-overviews-ai-mode-seo-2026) .takeaway-box p { color: rgba(255,255,255,.88); font-size: .97rem; line-height: 1.8; margin: 0; }
+    :where(body.post-google-ai-overviews-ai-mode-seo-2026) .takeaway-box strong { color: #fff; }
+    :where(body.post-google-ai-overviews-ai-mode-seo-2026) .example-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0 24px; }
+    :where(body.post-google-ai-overviews-ai-mode-seo-2026) .example-grid > div { border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; font-size: .95rem; color: #374940; }
+    :where(body.post-google-ai-overviews-ai-mode-seo-2026) .example-grid .ex-label { font-size: .72rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; display: block; }
+    :where(body.post-google-ai-overviews-ai-mode-seo-2026) .example-grid .ex-before .ex-label { color: #b5523b; }
+    :where(body.post-google-ai-overviews-ai-mode-seo-2026) .example-grid .ex-after .ex-label { color: var(--green-accent); }
+    :where(body.post-google-ai-overviews-ai-mode-seo-2026) .sources-list { font-size: .9rem; }
+    :where(body.post-google-ai-overviews-ai-mode-seo-2026) .sources-list li { margin-bottom: 6px; }
+    @media (max-width: 640px) {
+      :where(body.post-google-ai-overviews-ai-mode-seo-2026) .example-grid { grid-template-columns: 1fr; }
+      :where(body.post-google-ai-overviews-ai-mode-seo-2026) .takeaway-box { padding: 22px 20px; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/how-google-ranks-websites.html (scoped to body.post-how-google-ranks-websites) ── */
+    :where(body.post-how-google-ranks-websites) .blog-hero { background: linear-gradient(135deg,#0f2d1c 0%,#1a4a2c 55%,#1e5535 100%); padding: 72px 0 64px; position: relative; overflow: hidden; margin-top: 65px; }
+    :where(body.post-how-google-ranks-websites) .article-body h2 { font-family: 'Playfair Display',serif; font-size: 1.5rem; font-weight: 700; color: var(--green-dark); margin: 40px 0 14px; padding-bottom: 10px; border-bottom: 2px solid var(--border); }
+    :where(body.post-how-google-ranks-websites) .article-body h2:first-of-type { margin-top: 0; }
+    :where(body.post-how-google-ranks-websites) .article-body p { color: #374940; margin-bottom: 16px; font-size: 1rem; line-height: 1.85; }
+    :where(body.post-how-google-ranks-websites) .article-body a:hover { color: var(--green-dark); }
+    :where(body.post-how-google-ranks-websites) .answer-block p { color: #374940; font-size: .97rem; line-height: 1.8; margin-bottom: 0; }
+    :where(body.post-how-google-ranks-websites) .answer-block p + p { margin-top: 12px; }
+    :where(body.post-how-google-ranks-websites) .pillar-list { list-style: none; padding: 0; margin: 16px 0 4px; }
+    :where(body.post-how-google-ranks-websites) .pillar-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 11px; font-size: .97rem; color: #374940; line-height: 1.65; }
+    :where(body.post-how-google-ranks-websites) .pillar-list li .icon-dot i { color: #fff; font-size: .65rem; }
+    :where(body.post-how-google-ranks-websites) .factors-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0 32px; }
+    :where(body.post-how-google-ranks-websites) .factor-card { background: var(--white); border: 1px solid var(--border); border-top: 3px solid var(--green-accent); border-radius: 12px; padding: 20px 22px; }
+    :where(body.post-how-google-ranks-websites) .factor-card-icon { width: 36px; height: 36px; background: var(--cream); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--green-accent); font-size: 1rem; margin-bottom: 12px; }
+    :where(body.post-how-google-ranks-websites) .factor-card h4 { font-family: 'Playfair Display',serif; font-size: 1rem; font-weight: 700; color: var(--green-dark); margin-bottom: 6px; }
+    :where(body.post-how-google-ranks-websites) .factor-card p { font-size: .88rem; color: var(--text-muted); line-height: 1.6; margin: 0; }
+    @media (max-width: 576px) {
+      :where(body.post-how-google-ranks-websites) .factors-grid { grid-template-columns: 1fr; }
+    }
+    :where(body.post-how-google-ranks-websites) .compare-table thead tr { background: var(--green-dark); }
+    :where(body.post-how-google-ranks-websites) .compare-table thead th { color: #fff; font-weight: 600; padding: 14px 18px; text-align: left; }
+    :where(body.post-how-google-ranks-websites) .compare-table td { padding: 13px 18px; border-bottom: 1px solid var(--border); color: #374940; vertical-align: middle; }
+    :where(body.post-how-google-ranks-websites) .compare-table tr:last-child td { border-bottom: none; }
+    :where(body.post-how-google-ranks-websites) .compare-table .row-label { font-weight: 600; color: var(--green-dark); font-size: .9rem; width: 32%; }
+    :where(body.post-how-google-ranks-websites) .compare-table .impact { font-weight: 600; color: #1e6a3e; }
+    :where(body.post-how-google-ranks-websites) .callout-box p { color: var(--text-dark); font-size: .97rem; margin: 0; line-height: 1.75; }
+    :where(body.post-how-google-ranks-websites) .callout-box strong { color: var(--green-dark); }
+    :where(body.post-how-google-ranks-websites) .takeaway-box { background: linear-gradient(135deg,var(--green-dark),#1e5535); border-radius: 14px; padding: 28px 32px; color: #fff; margin: 36px 0 0; }
+    :where(body.post-how-google-ranks-websites) .takeaway-box .takeaway-label { font-size: .72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--green-accent); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+    :where(body.post-how-google-ranks-websites) .takeaway-box h3 { font-family: 'Playfair Display',serif; font-size: 1.2rem; font-weight: 700; color: #fff; margin-bottom: 12px; }
+    :where(body.post-how-google-ranks-websites) .takeaway-box p { color: rgba(255,255,255,.85); font-size: .97rem; line-height: 1.8; margin: 0; }
+    :where(body.post-how-google-ranks-websites) .takeaway-box p + p { margin-top: 10px; }
+    :where(body.post-how-google-ranks-websites) .inline-cta { background: linear-gradient(135deg,var(--green-dark),#1e5535); border-radius: 14px; padding: 32px 36px; color: #fff; margin: 40px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    :where(body.post-how-google-ranks-websites) .inline-cta p { color: rgba(255,255,255,.85); margin: 0; font-size: .95rem; }
+    :where(body.post-how-google-ranks-websites) .inline-cta h4 { font-family: 'Playfair Display',serif; font-size: 1.25rem; margin-bottom: 6px; }
+    :where(body.post-how-google-ranks-websites) .btn-cta-white { background: #fff; color: var(--green-dark) !important; border-radius: 50px; padding: 10px 28px; font-weight: 700; font-size: .9rem; white-space: nowrap; text-decoration: none !important; display: inline-block; transition: background .2s,transform .15s; }
+    :where(body.post-how-google-ranks-websites) .btn-cta-white:hover { background: var(--green-accent); color: #fff !important; transform: translateY(-2px); }
+    :where(body.post-how-google-ranks-websites) .author-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 24px 28px; display: flex; align-items: center; gap: 18px; margin-top: 44px; }
+    :where(body.post-how-google-ranks-websites) .audit-card h4 { font-family: 'Playfair Display',serif; font-size: 1.3rem; line-height: 1.3; margin-bottom: 10px; }
+    :where(body.post-how-google-ranks-websites) .audit-card p { font-size: .88rem; color: rgba(255,255,255,.75); margin-bottom: 22px; }
+    :where(body.post-how-google-ranks-websites) .btn-audit { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 12px 28px; font-weight: 700; font-size: .9rem; width: 100%; cursor: pointer; transition: background .2s,transform .15s; text-decoration: none; display: inline-block; }
+    :where(body.post-how-google-ranks-websites) .btn-audit:hover { background: #34a86a; transform: translateY(-2px); color: #fff; }
+    :where(body.post-how-google-ranks-websites) .toc-list li { margin-bottom: 9px; }
+    :where(body.post-how-google-ranks-websites) .toc-list a { font-size: .88rem; color: var(--text-dark); text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: color .2s; }
+    :where(body.post-how-google-ranks-websites) .toc-list a:hover { color: var(--green-accent); }
+    :where(body.post-how-google-ranks-websites) .related-item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--border); text-decoration: none; }
+    :where(body.post-how-google-ranks-websites) .related-item:last-child { border-bottom: none; padding-bottom: 0; }
+    :where(body.post-how-google-ranks-websites) .bottom-cta h2 { font-family: 'Playfair Display',serif; font-size: clamp(1.8rem,4vw,2.8rem); color: #fff; margin-bottom: 14px; position: relative; }
+    :where(body.post-how-google-ranks-websites) .bottom-cta p { color: rgba(255,255,255,.7); max-width: 520px; margin: 0 auto 32px; position: relative; }
+    :where(body.post-how-google-ranks-websites) .btn-cta-lg { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 15px 40px; font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-block; transition: background .2s,transform .15s,box-shadow .2s; box-shadow: 0 8px 32px rgba(63,184,122,.3); position: relative; }
+    :where(body.post-how-google-ranks-websites) .btn-cta-lg:hover { background: #34a86a; transform: translateY(-3px); box-shadow: 0 14px 40px rgba(63,184,122,.4); color: #fff; }
+    :where(body.post-how-google-ranks-websites) .footer-logo { display: inline-block; background: #fff; padding: 10px 16px; border-radius: 12px; line-height: 0; text-decoration: none; }
+    :where(body.post-how-google-ranks-websites) .footer-desc { font-size: .87rem; color: rgba(255,255,255,.5); line-height: 1.7; margin-top: 8px; }
+    :where(body.post-how-google-ranks-websites) .footer-links li { margin-bottom: 8px; }
+    :where(body.post-how-google-ranks-websites) .footer-links a, :where(body.post-how-google-ranks-websites) .footer-links span { font-size: .87rem; color: rgba(255,255,255,.5); text-decoration: none; transition: color .2s; }
+    :where(body.post-how-google-ranks-websites) .footer-links a:hover { color: var(--green-accent); }
+    :where(body.post-how-google-ranks-websites) .footer-copy { font-size: .8rem; color: rgba(255,255,255,.3); }
+    :where(body.post-how-google-ranks-websites) .footer-copy a { color: rgba(255,255,255,.3); text-decoration: none; }
+    :where(body.post-how-google-ranks-websites) .footer-copy a:hover { color: var(--green-accent); }
+    :where(body.post-how-google-ranks-websites) .social-btn { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; background: rgba(255,255,255,.07); border-radius: 8px; color: rgba(255,255,255,.6); font-size: .8rem; font-weight: 700; text-decoration: none; transition: background .2s,color .2s; }
+    :where(body.post-how-google-ranks-websites) .social-btn:hover { background: var(--green-accent); color: #fff; }
+    @media (max-width: 768px) {
+      :where(body.post-how-google-ranks-websites) .blog-hero { padding: 48px 0 44px; }
+      :where(body.post-how-google-ranks-websites) .inline-cta { flex-direction: column; align-items: flex-start; }
+      :where(body.post-how-google-ranks-websites) .takeaway-box { padding: 24px 20px; }
+      :where(body.post-how-google-ranks-websites) .compare-table { font-size: .82rem; }
+      :where(body.post-how-google-ranks-websites) .compare-table td, :where(body.post-how-google-ranks-websites) .compare-table th { padding: 11px 12px; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/keyword-research-tools.html (scoped to body.post-keyword-research-tools) ── */
+    :where(body.post-keyword-research-tools) .blog-hero { background: linear-gradient(135deg,#0f2d1c 0%,#1a4a2c 55%,#1e5535 100%); padding: 72px 0 64px; position: relative; overflow: hidden; margin-top: 65px; }
+    :where(body.post-keyword-research-tools) .tool-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 22px 24px; margin-bottom: 16px; display: flex; gap: 18px; align-items: flex-start; }
+    :where(body.post-keyword-research-tools) .tool-icon { width: 46px; height: 46px; background: var(--green-dark); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--green-accent); font-size: 1.2rem; flex-shrink: 0; }
+    :where(body.post-keyword-research-tools) .tool-name { font-family: 'Playfair Display',serif; font-size: 1.05rem; font-weight: 700; color: var(--green-dark); margin-bottom: 4px; }
+    :where(body.post-keyword-research-tools) .tool-name a { color: var(--green-dark) !important; text-decoration: none !important; }
+    :where(body.post-keyword-research-tools) .tool-name a:hover { color: var(--green-accent) !important; }
+    :where(body.post-keyword-research-tools) .tool-badge { display: inline-block; font-size: .68rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 2px 10px; border-radius: 50px; margin-left: 8px; vertical-align: middle; }
+    :where(body.post-keyword-research-tools) .badge-free { background: rgba(63,184,122,.15); color: var(--green-accent); }
+    :where(body.post-keyword-research-tools) .badge-paid { background: rgba(26,58,42,.1); color: var(--green-dark); }
+    :where(body.post-keyword-research-tools) .tool-desc { font-size: .92rem; color: #374940; line-height: 1.65; margin: 0; }
+    :where(body.post-keyword-research-tools) .inline-cta p { color: rgba(255,255,255,.85); margin: 0; font-size: .95rem; }
+    :where(body.post-keyword-research-tools) .btn-cta-white { background: #fff; color: var(--green-dark) !important; border-radius: 50px; padding: 10px 28px; font-weight: 700; font-size: .9rem; white-space: nowrap; text-decoration: none !important; display: inline-block; transition: background .2s,transform .15s; }
+    :where(body.post-keyword-research-tools) .btn-cta-white:hover { background: var(--green-accent); color: #fff !important; transform: translateY(-2px); }
+    :where(body.post-keyword-research-tools) .audit-card p { font-size: .88rem; color: rgba(255,255,255,.75); margin-bottom: 22px; }
+    :where(body.post-keyword-research-tools) .btn-audit { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 12px 28px; font-weight: 700; font-size: .9rem; width: 100%; cursor: pointer; transition: background .2s,transform .15s; text-decoration: none; display: inline-block; }
+    :where(body.post-keyword-research-tools) .btn-audit:hover { background: #34a86a; transform: translateY(-2px); color: #fff; }
+    :where(body.post-keyword-research-tools) .toc-list a { font-size: .88rem; color: var(--text-dark); text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: color .2s; }
+    :where(body.post-keyword-research-tools) .toc-list a:hover { color: var(--green-accent); }
+    :where(body.post-keyword-research-tools) .related-item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--border); text-decoration: none; }
+    :where(body.post-keyword-research-tools) .related-item:last-child { border-bottom: none; padding-bottom: 0; }
+    :where(body.post-keyword-research-tools) .bottom-cta p { color: rgba(255,255,255,.7); max-width: 520px; margin: 0 auto 32px; }
+    :where(body.post-keyword-research-tools) .btn-cta-lg { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 15px 40px; font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-block; transition: background .2s,transform .15s,box-shadow .2s; box-shadow: 0 8px 32px rgba(63,184,122,.3); }
+    :where(body.post-keyword-research-tools) .btn-cta-lg:hover { background: #34a86a; transform: translateY(-3px); box-shadow: 0 14px 40px rgba(63,184,122,.4); color: #fff; }
+    :where(body.post-keyword-research-tools) .footer-logo { display: inline-block; background: #fff; padding: 10px 16px; border-radius: 12px; line-height: 0; text-decoration: none; }
+    :where(body.post-keyword-research-tools) .footer-desc { font-size: .87rem; color: rgba(255,255,255,.5); line-height: 1.7; margin-top: 8px; }
+    :where(body.post-keyword-research-tools) .footer-links a, :where(body.post-keyword-research-tools) .footer-links span { font-size: .87rem; color: rgba(255,255,255,.5); text-decoration: none; transition: color .2s; }
+    :where(body.post-keyword-research-tools) .footer-links a:hover { color: var(--green-accent); }
+    :where(body.post-keyword-research-tools) .footer-copy { font-size: .8rem; color: rgba(255,255,255,.3); }
+    :where(body.post-keyword-research-tools) .footer-copy a { color: rgba(255,255,255,.3); text-decoration: none; }
+    :where(body.post-keyword-research-tools) .footer-copy a:hover { color: var(--green-accent); }
+    :where(body.post-keyword-research-tools) .social-btn { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; background: rgba(255,255,255,.07); border-radius: 8px; color: rgba(255,255,255,.6); font-size: .8rem; font-weight: 700; text-decoration: none; transition: background .2s,color .2s; }
+    :where(body.post-keyword-research-tools) .social-btn:hover { background: var(--green-accent); color: #fff; }
+    @media (max-width: 768px) {
+      :where(body.post-keyword-research-tools) .blog-hero { padding: 48px 0 44px; }
+      :where(body.post-keyword-research-tools) .tool-card { flex-direction: column; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/measure-ai-search-visibility.html (scoped to body.post-measure-ai-search-visibility) ── */
+    :where(body.post-measure-ai-search-visibility) .article-body h3 { font-family: 'Playfair Display',serif; font-size: 1.22rem; font-weight: 700; color: var(--green-dark); margin: 28px 0 10px; }
+    :where(body.post-measure-ai-search-visibility) .article-body ol, :where(body.post-measure-ai-search-visibility) .article-body ul:not(.pillar-list) { padding-left: 22px; margin-bottom: 18px; color: #374940; }
+    :where(body.post-measure-ai-search-visibility) .article-body ol li, :where(body.post-measure-ai-search-visibility) .article-body ul:not(.pillar-list) li { margin-bottom: 8px; line-height: 1.75; }
+    :where(body.post-measure-ai-search-visibility) .callout-box p + p { margin-top: 10px; }
+    :where(body.post-measure-ai-search-visibility) .takeaway-box { background: linear-gradient(135deg,var(--green-dark),#1e5535); border-radius: 14px; padding: 28px 32px; color: #fff; margin: 28px 0; }
+    :where(body.post-measure-ai-search-visibility) .takeaway-box .takeaway-label { font-size: .72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--green-accent); margin-bottom: 10px; }
+    :where(body.post-measure-ai-search-visibility) .takeaway-box p, :where(body.post-measure-ai-search-visibility) .takeaway-box li { color: rgba(255,255,255,.88); font-size: .97rem; line-height: 1.8; margin: 0; }
+    :where(body.post-measure-ai-search-visibility) .takeaway-box ul { padding-left: 20px; margin: 0; }
+    :where(body.post-measure-ai-search-visibility) .takeaway-box li + li { margin-top: 6px; }
+    :where(body.post-measure-ai-search-visibility) .takeaway-box strong { color: #fff; }
+    @media (max-width: 640px) {
+      :where(body.post-measure-ai-search-visibility) .takeaway-box { padding: 22px 20px; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/mobile-friendly-website-design.html (scoped to body.post-mobile-friendly-website-design) ── */
+    :where(body.post-mobile-friendly-website-design) .btn-cta-white { background: #fff; color: var(--green-dark) !important; border-radius: 50px; padding: 10px 28px; font-weight: 700; font-size: .9rem; white-space: nowrap; text-decoration: none; display: inline-block; transition: background .2s,transform .15s; }
+    :where(body.post-mobile-friendly-website-design) .btn-cta-white:hover { background: var(--green-accent); color: #fff !important; transform: translateY(-2px); }
+    :where(body.post-mobile-friendly-website-design) .sidebar { position: sticky; top: 32px; }
+    :where(body.post-mobile-friendly-website-design) .toc-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 24px 24px; margin-bottom: 28px; }
+    :where(body.post-mobile-friendly-website-design) .toc-list a { font-size: .88rem; color: var(--text-dark); text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: color .2s; }
+    :where(body.post-mobile-friendly-website-design) .toc-list a:hover { color: var(--green-accent); }
+    :where(body.post-mobile-friendly-website-design) .related-item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--border); text-decoration: none; }
+    :where(body.post-mobile-friendly-website-design) .related-item:last-child { border-bottom: none; padding-bottom: 0; }
+    :where(body.post-mobile-friendly-website-design) .btn-cta-lg { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 15px 40px; font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-block; transition: background .2s,transform .15s,box-shadow .2s; box-shadow: 0 8px 32px rgba(63,184,122,.3); }
+    :where(body.post-mobile-friendly-website-design) .btn-cta-lg:hover { background: #34a86a; transform: translateY(-3px); box-shadow: 0 14px 40px rgba(63,184,122,.4); color: #fff; }
+
+    /* ── PAGE-SPECIFIC: blogs/on-page-seo-guide-2026.html (scoped to body.post-on-page-seo-guide-2026) ── */
+    :where(body.post-on-page-seo-guide-2026) .blog-hero::after { content: ''; position: absolute; width: 300px; height: 300px; background: radial-gradient(circle,rgba(63,184,122,.08) 0%,transparent 70%); bottom: -60px; left: 5%; pointer-events: none; }
+    :where(body.post-on-page-seo-guide-2026) .hero-title { font-family: 'Playfair Display',serif; font-size: clamp(1.9rem,4.5vw,3rem); font-weight: 900; color: #fff; line-height: 1.18; margin-bottom: 20px; }
+    :where(body.post-on-page-seo-guide-2026) .article-body h2 { font-family: 'Playfair Display',serif; font-size: 1.55rem; font-weight: 700; color: var(--green-dark); margin: 40px 0 14px; padding-top: 8px; }
+    :where(body.post-on-page-seo-guide-2026) .article-body h3 { font-family: 'DM Sans',sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--green-dark); margin: 26px 0 10px; }
+    :where(body.post-on-page-seo-guide-2026) .article-body p { color: #374940; margin-bottom: 18px; font-size: 1rem; line-height: 1.85; }
+    :where(body.post-on-page-seo-guide-2026) .article-body a { color: var(--green-accent); text-decoration: none; font-weight: 600; }
+    :where(body.post-on-page-seo-guide-2026) .article-body a:hover { text-decoration: underline; }
+    :where(body.post-on-page-seo-guide-2026) .intro-box { border-left: 4px solid var(--green-accent); background: var(--cream); border-radius: 0 12px 12px 0; padding: 22px 24px; margin-bottom: 28px; }
+    :where(body.post-on-page-seo-guide-2026) .intro-box p { margin: 0; font-size: .97rem; color: #374940; }
+    :where(body.post-on-page-seo-guide-2026) .inline-cta { background: linear-gradient(135deg,var(--green-dark),#1e5535); border-radius: 14px; padding: 32px 36px; color: #fff; margin: 40px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    :where(body.post-on-page-seo-guide-2026) .inline-cta p { color: rgba(255,255,255,.85); margin: 0; font-size: .95rem; }
+    :where(body.post-on-page-seo-guide-2026) .inline-cta h4 { font-family: 'Playfair Display',serif; font-size: 1.25rem; margin-bottom: 6px; color: #fff; }
+    :where(body.post-on-page-seo-guide-2026) .btn-cta-white { background: #fff; color: var(--green-dark) !important; border-radius: 50px; padding: 11px 28px; font-weight: 700; font-size: .9rem; white-space: nowrap; text-decoration: none !important; display: inline-block; transition: background .2s,transform .15s; }
+    :where(body.post-on-page-seo-guide-2026) .btn-cta-white:hover { background: var(--green-accent); color: #fff !important; transform: translateY(-2px); }
+    :where(body.post-on-page-seo-guide-2026) .steps-grid { display: flex; flex-direction: column; gap: 18px; margin: 24px 0 32px; }
+    :where(body.post-on-page-seo-guide-2026) .step-card { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 22px 24px; display: flex; gap: 18px; align-items: flex-start; transition: box-shadow .2s,transform .2s; }
+    :where(body.post-on-page-seo-guide-2026) .step-card:hover { box-shadow: 0 8px 28px rgba(26,58,42,.08); transform: translateY(-2px); }
+    :where(body.post-on-page-seo-guide-2026) .step-num { width: 40px; height: 40px; background: var(--green-dark); color: var(--green-accent); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display',serif; font-weight: 900; font-size: 1.1rem; flex-shrink: 0; }
+    :where(body.post-on-page-seo-guide-2026) .step-card h5 { font-size: 1rem; font-weight: 700; color: var(--green-dark); margin-bottom: 6px; }
+    :where(body.post-on-page-seo-guide-2026) .step-card p { font-size: .9rem; color: #5a6e60; margin: 0; line-height: 1.6; }
+    :where(body.post-on-page-seo-guide-2026) .check-list { list-style: none; padding: 0; margin: 0 0 20px; }
+    :where(body.post-on-page-seo-guide-2026) .check-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 11px; font-size: .97rem; color: #374940; line-height: 1.6; }
+    :where(body.post-on-page-seo-guide-2026) .check-list li .icon-dot { width: 22px; height: 22px; background: var(--green-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    :where(body.post-on-page-seo-guide-2026) .check-list li .icon-dot i { color: #fff; font-size: .65rem; }
+    :where(body.post-on-page-seo-guide-2026) .tip-box { background: #edf7f2; border: 1px solid #b6dfc8; border-radius: 12px; padding: 18px 22px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
+    :where(body.post-on-page-seo-guide-2026) .tip-box .tip-icon { color: var(--green-accent); font-size: 1.3rem; flex-shrink: 0; margin-top: 1px; }
+    :where(body.post-on-page-seo-guide-2026) .tip-box p { font-size: .9rem; color: #2d5440; margin: 0; line-height: 1.65; }
+    :where(body.post-on-page-seo-guide-2026) .tip-box strong { color: var(--green-dark); }
+    :where(body.post-on-page-seo-guide-2026) .warn-box { background: #fff8ec; border: 1px solid #f5d87e; border-radius: 12px; padding: 18px 22px; margin: 20px 0; display: flex; gap: 14px; align-items: flex-start; }
+    :where(body.post-on-page-seo-guide-2026) .warn-box .warn-icon { color: #c49a00; font-size: 1.3rem; flex-shrink: 0; margin-top: 1px; }
+    :where(body.post-on-page-seo-guide-2026) .warn-box p { font-size: .9rem; color: #5a4a00; margin: 0; line-height: 1.65; }
+    :where(body.post-on-page-seo-guide-2026) .compare-table { width: 100%; border-collapse: collapse; margin: 24px 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); font-size: .92rem; }
+    :where(body.post-on-page-seo-guide-2026) .compare-table thead { background: var(--green-dark); color: #fff; }
+    :where(body.post-on-page-seo-guide-2026) .compare-table thead th { padding: 14px 18px; font-weight: 600; text-align: left; }
+    :where(body.post-on-page-seo-guide-2026) .compare-table tbody tr:nth-child(even) { background: var(--cream); }
+    :where(body.post-on-page-seo-guide-2026) .compare-table tbody tr:hover { background: #e6f4ec; }
+    :where(body.post-on-page-seo-guide-2026) .compare-table tbody td { padding: 13px 18px; color: #374940; border-bottom: 1px solid var(--border); }
+    :where(body.post-on-page-seo-guide-2026) .compare-table tbody tr:last-child td { border-bottom: none; }
+    :where(body.post-on-page-seo-guide-2026) .badge-good { background: #d4f0e2; color: #1a5c35; border-radius: 6px; padding: 3px 10px; font-size: .78rem; font-weight: 600; }
+    :where(body.post-on-page-seo-guide-2026) .badge-bad { background: #fde8e8; color: #8b1c1c; border-radius: 6px; padding: 3px 10px; font-size: .78rem; font-weight: 600; }
+    :where(body.post-on-page-seo-guide-2026) .author-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 24px 28px; display: flex; align-items: center; gap: 18px; margin-top: 48px; }
+    :where(body.post-on-page-seo-guide-2026) .sidebar { position: sticky; top: 32px; }
+    :where(body.post-on-page-seo-guide-2026) .audit-card h4 { font-family: 'Playfair Display',serif; font-size: 1.3rem; line-height: 1.3; margin-bottom: 10px; color: #fff; }
+    :where(body.post-on-page-seo-guide-2026) .audit-card p { font-size: .88rem; color: rgba(255,255,255,.75); margin-bottom: 22px; }
+    :where(body.post-on-page-seo-guide-2026) .toc-list li { margin-bottom: 9px; }
+    :where(body.post-on-page-seo-guide-2026) .toc-list a { font-size: .87rem; color: var(--text-dark); text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: color .2s; line-height: 1.4; }
+    :where(body.post-on-page-seo-guide-2026) .toc-list a:hover { color: var(--green-accent); }
+    :where(body.post-on-page-seo-guide-2026) .related-item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--border); text-decoration: none; }
+    :where(body.post-on-page-seo-guide-2026) .related-item:last-child { border-bottom: none; padding-bottom: 0; }
+    :where(body.post-on-page-seo-guide-2026) .bottom-cta h2 { font-family: 'Playfair Display',serif; font-size: clamp(1.8rem,4vw,2.8rem); color: #fff; margin-bottom: 14px; }
+    :where(body.post-on-page-seo-guide-2026) .bottom-cta p { color: rgba(255,255,255,.7); max-width: 520px; margin: 0 auto 32px; }
+    :where(body.post-on-page-seo-guide-2026) .btn-cta-lg { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 15px 40px; font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-block; transition: background .2s,transform .15s,box-shadow .2s; box-shadow: 0 8px 32px rgba(63,184,122,.3); }
+    :where(body.post-on-page-seo-guide-2026) .btn-cta-lg:hover { background: #34a86a; transform: translateY(-3px); box-shadow: 0 14px 40px rgba(63,184,122,.4); color: #fff; }
+    @media (max-width: 768px) {
+      :where(body.post-on-page-seo-guide-2026) .inline-cta { flex-direction: column; align-items: flex-start; }
+      :where(body.post-on-page-seo-guide-2026) .step-card { flex-direction: column; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/real-estate-seo-strategy-kerala-builders.html (scoped to body.post-real-estate-seo-strategy-kerala-builders) ── */
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .article-body h3 { font-family: 'Playfair Display',serif; font-size: 1.22rem; font-weight: 700; color: var(--green-dark); margin: 28px 0 10px; }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .article-body ol, :where(body.post-real-estate-seo-strategy-kerala-builders) .article-body ul:not(.pillar-list) { padding-left: 22px; margin-bottom: 18px; color: #374940; }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .article-body ol li, :where(body.post-real-estate-seo-strategy-kerala-builders) .article-body ul:not(.pillar-list) li { margin-bottom: 8px; line-height: 1.75; }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .callout-box p + p { margin-top: 10px; }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .takeaway-box { background: linear-gradient(135deg,var(--green-dark),#1e5535); border-radius: 14px; padding: 28px 32px; color: #fff; margin: 28px 0; }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .takeaway-box .takeaway-label { font-size: .72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--green-accent); margin-bottom: 10px; }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .takeaway-box p, :where(body.post-real-estate-seo-strategy-kerala-builders) .takeaway-box li { color: rgba(255,255,255,.88); font-size: .97rem; line-height: 1.8; margin: 0; }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .takeaway-box p { margin-bottom: 10px; }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .article-body .takeaway-box ol { padding-left: 20px; margin: 0; color: rgba(255,255,255,.88); }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .article-body .takeaway-box ol li { margin-bottom: 2px; }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .takeaway-box strong { color: #fff; }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .step-no { font-family: 'Playfair Display',serif; font-size: 3rem; font-weight: 900; line-height: 1; color: var(--green-accent); margin: 48px 0 6px; }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .step-no + h2 { margin-top: 0; }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .meta-template { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; margin: 16px 0; }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .meta-template .mt-label { font-size: .72rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px; }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .meta-template p { margin: 0 0 6px; font-size: .95rem; line-height: 1.6; }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .meta-template code, :where(body.post-real-estate-seo-strategy-kerala-builders) .article-body pre { font-size: .86rem; }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .meta-template code { color: var(--green-mid); background: var(--cream); padding: 2px 6px; border-radius: 4px; white-space: normal; }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .article-body pre { background: var(--green-dark); color: #e6f2ea; border-radius: 12px; padding: 18px 20px; margin: 20px 0; overflow-x: auto; line-height: 1.6; }
+    :where(body.post-real-estate-seo-strategy-kerala-builders) .faq-standalone { margin-top: 28px; }
+    @media (max-width: 640px) {
+      :where(body.post-real-estate-seo-strategy-kerala-builders) .takeaway-box { padding: 22px 20px; }
+      :where(body.post-real-estate-seo-strategy-kerala-builders) .step-no { font-size: 2.4rem; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/seo-tips-increase-hotel-bookings-kerala.html (scoped to body.post-seo-tips-increase-hotel-bookings-kerala) ── */
+    :root:where(:has(> body.post-seo-tips-increase-hotel-bookings-kerala)) { --green-dark: #1a3a2a; --green-mid: #1e4d35; --green-accent: #3fb87a; --cream: #f5f2ec; --white: #ffffff; --text-dark: #1c2a22; --text-muted: #5a6e60; --border: #d8e8dc; --amber: #f59e0b; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .bam-btn-primary { background: var(--green-accent); color: #fff !important; border-radius: 50px; font-weight: 600; font-size: .85rem; padding: 8px 20px; transition: background .2s,transform .15s; text-decoration: none; display: inline-block; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .bam-btn-primary:hover { background: #34a86a; transform: translateY(-1px); }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .blog-hero { background: linear-gradient(135deg,#0a1e10 0%,#0f2d1c 50%,#1a4a2c 100%); padding: 72px 0 64px; position: relative; overflow: hidden; margin-top: 65px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .blog-hero::before { content: ''; position: absolute; width: 520px; height: 520px; background: radial-gradient(circle,rgba(63,184,122,.16) 0%,transparent 70%); top: -110px; right: -110px; pointer-events: none; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .blog-hero::after { content: ''; position: absolute; width: 300px; height: 300px; background: radial-gradient(circle,rgba(63,184,122,.07) 0%,transparent 70%); bottom: -60px; left: 40px; pointer-events: none; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .breadcrumb-bar a { color: rgba(255,255,255,.55); text-decoration: none; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .breadcrumb-bar a:hover { color: var(--green-accent); }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .hero-title { font-family: 'Playfair Display',serif; font-size: clamp(1.9rem,4.5vw,3.1rem); font-weight: 900; color: #fff; line-height: 1.18; margin-bottom: 20px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .blog-layout { padding: 60px 0 80px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .article-body a { color: var(--green-accent); text-decoration: underline; text-underline-offset: 3px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .article-body a:hover { color: #1a3a2a; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .toc-inline { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 28px 32px; margin: 28px 0 36px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .toc-inline h6 { font-size: .78rem; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 16px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .toc-inline ol { padding-left: 18px; margin: 0; columns: 2; column-gap: 32px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .toc-inline ol li { margin-bottom: 8px; break-inside: avoid; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .toc-inline ol li a { font-size: .9rem; color: var(--green-dark); text-decoration: none; font-weight: 500; transition: color .2s; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .toc-inline ol li a:hover { color: var(--green-accent); text-decoration: underline; text-underline-offset: 3px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .tip-block { border: 1px solid var(--border); border-radius: 16px; overflow: hidden; margin-bottom: 28px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .tip-header { background: var(--green-dark); padding: 16px 24px; display: flex; align-items: center; gap: 16px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .tip-num { font-family: 'Playfair Display',serif; font-size: 1.7rem; font-weight: 900; color: rgba(63,184,122,.45); line-height: 1; min-width: 38px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .tip-title { font-family: 'Playfair Display',serif; font-size: 1.1rem; font-weight: 700; color: #fff; line-height: 1.3; margin: 0; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .tip-body { padding: 22px 24px; background: #fff; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .tip-body p { color: #374940; font-size: .97rem; line-height: 1.8; margin-bottom: 12px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .tip-body p:last-child { margin-bottom: 0; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .tip-body strong { color: var(--green-dark); }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .tip-body a { color: var(--green-accent); text-decoration: underline; text-underline-offset: 3px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .tip-body a:hover { color: #1a3a2a; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .tip-example { background: var(--cream); border-left: 3px solid var(--green-accent); border-radius: 0 8px 8px 0; padding: 12px 16px; margin-top: 12px; font-size: .9rem; color: var(--text-muted); }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .tip-example strong { color: var(--green-dark); font-size: .82rem; text-transform: uppercase; letter-spacing: .8px; display: block; margin-bottom: 4px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .tip-steps { list-style: none; padding: 0; margin: 12px 0 0; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .tip-steps li { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: .93rem; color: #374940; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .tip-steps li::before { content: '→'; color: var(--green-accent); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .stat-strip { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 26px 28px; margin: 28px 0; display: flex; gap: 0; flex-wrap: wrap; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .stat-item { flex: 1; min-width: 110px; text-align: center; padding: 10px 14px; border-right: 1px solid var(--border); }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .stat-item:last-child { border-right: none; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .stat-num { font-family: 'Playfair Display',serif; font-size: 1.9rem; font-weight: 900; color: var(--green-dark); line-height: 1; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .stat-label { font-size: .77rem; color: var(--text-muted); margin-top: 4px; font-weight: 500; line-height: 1.4; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .highlight-box { background: linear-gradient(135deg,rgba(63,184,122,.09) 0%,rgba(63,184,122,.03) 100%); border-left: 4px solid var(--green-accent); border-radius: 0 12px 12px 0; padding: 18px 22px; margin: 22px 0 26px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .highlight-box p { margin: 0; color: var(--green-dark); font-size: .97rem; font-weight: 500; line-height: 1.7; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .highlight-box p em { font-style: italic; color: var(--text-muted); font-weight: 400; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .warning-box { background: rgba(245,158,11,.07); border-left: 4px solid var(--amber); border-radius: 0 12px 12px 0; padding: 18px 22px; margin: 22px 0 26px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .warning-box p { margin: 0; color: #6b4a00; font-size: .96rem; line-height: 1.7; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .warning-box .warn-label { font-size: .75rem; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: var(--amber); display: block; margin-bottom: 5px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .mistake-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 13px; font-size: .97rem; color: #374940; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .mistake-list li .x-dot { width: 22px; height: 22px; background: #e74c3c; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .mistake-list li .x-dot i { color: #fff; font-size: .65rem; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .pillar-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; font-size: .97rem; color: #374940; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .pillar-list li .icon-dot i { color: #fff; font-size: .65rem; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .faq-section { margin-top: 12px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .faq-item { border: 1px solid var(--border); border-radius: 12px; margin-bottom: 12px; overflow: hidden; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .faq-q { background: var(--cream); padding: 16px 20px; font-weight: 600; font-size: .97rem; color: var(--green-dark); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .faq-q i { color: var(--green-accent); flex-shrink: 0; font-size: 1rem; transition: transform .3s; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .faq-a { padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height .35s ease,padding .35s ease; font-size: .95rem; color: #374940; line-height: 1.75; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .faq-item.open .faq-a { max-height: 200px; padding: 14px 20px 18px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .faq-item.open .faq-q i { transform: rotate(45deg); }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .inline-cta { background: linear-gradient(135deg,var(--green-dark),#1e5535); border-radius: 14px; padding: 30px 34px; color: #fff; margin: 36px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .inline-cta p { color: rgba(255,255,255,.85); margin: 0; font-size: .95rem; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .inline-cta h4 { font-family: 'Playfair Display',serif; font-size: 1.2rem; margin-bottom: 6px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .btn-cta-white { background: #fff; color: var(--green-dark) !important; border-radius: 50px; padding: 10px 26px; font-weight: 700; font-size: .9rem; white-space: nowrap; text-decoration: none !important; display: inline-block; transition: background .2s,transform .15s; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .btn-cta-white:hover { background: var(--green-accent); color: #fff !important; transform: translateY(-2px); }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .author-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 22px 26px; display: flex; align-items: center; gap: 18px; margin-top: 40px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .author-avatar { width: 56px; height: 56px; background: var(--green-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--green-accent); font-size: 1.3rem; flex-shrink: 0; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .audit-card { background: linear-gradient(155deg,var(--green-dark) 0%,#226040 100%); border-radius: 18px; padding: 30px 26px; color: #fff; text-align: center; margin-bottom: 26px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .audit-card h4 { font-family: 'Playfair Display',serif; font-size: 1.25rem; line-height: 1.3; margin-bottom: 10px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .audit-card p { font-size: .87rem; color: rgba(255,255,255,.75); margin-bottom: 20px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .btn-audit { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 11px 24px; font-weight: 700; font-size: .88rem; width: 100%; cursor: pointer; transition: background .2s,transform .15s; text-decoration: none; display: inline-block; text-align: center; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .btn-audit:hover { background: #34a86a; transform: translateY(-2px); color: #fff; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .toc-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 22px; margin-bottom: 26px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .toc-card h6 { font-size: .77rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 13px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .toc-list li { margin-bottom: 8px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .toc-list a { font-size: .86rem; color: var(--text-dark); text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: color .2s; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .toc-list a:hover { color: var(--green-accent); }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .related-card { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 22px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .related-card h6 { font-size: .77rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 13px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .related-item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--border); text-decoration: none; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .related-item:last-child { border-bottom: none; padding-bottom: 0; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .related-thumb { width: 42px; height: 42px; background: var(--green-dark); border-radius: 8px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; color: var(--green-accent); font-size: 1rem; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .related-title { font-size: .83rem; font-weight: 600; color: var(--text-dark); line-height: 1.3; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .related-tag { font-size: .72rem; color: var(--text-muted); margin-top: 2px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .bottom-cta h2 { font-family: 'Playfair Display',serif; font-size: clamp(1.8rem,4vw,2.7rem); color: #fff; margin-bottom: 14px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .bottom-cta h2 em { font-style: italic; color: var(--green-accent); }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .bottom-cta p { color: rgba(255,255,255,.7); max-width: 540px; margin: 0 auto 32px; font-size: .98rem; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .btn-cta-lg { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 15px 40px; font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-block; transition: background .2s,transform .15s,box-shadow .2s; box-shadow: 0 8px 32px rgba(63,184,122,.3); }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .btn-cta-lg:hover { background: #34a86a; transform: translateY(-3px); box-shadow: 0 14px 40px rgba(63,184,122,.4); color: #fff; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .footer-logo { display: inline-block; background: #fff; padding: 10px 16px; border-radius: 12px; line-height: 0; text-decoration: none; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .footer-desc { font-size: .87rem; color: rgba(255,255,255,.5); line-height: 1.7; margin-top: 8px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .footer-heading { font-size: .78rem; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: rgba(255,255,255,.85); margin-bottom: 14px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .footer-links li { margin-bottom: 8px; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .footer-links a, :where(body.post-seo-tips-increase-hotel-bookings-kerala) .footer-links span { font-size: .87rem; color: rgba(255,255,255,.5); text-decoration: none; transition: color .2s; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .footer-links a:hover { color: var(--green-accent); }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .footer-copy { font-size: .8rem; color: rgba(255,255,255,.3); }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .footer-copy a { color: rgba(255,255,255,.3); text-decoration: none; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .footer-copy a:hover { color: var(--green-accent); }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .social-btn { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; background: rgba(255,255,255,.07); border-radius: 8px; color: rgba(255,255,255,.6); font-size: .8rem; font-weight: 700; text-decoration: none; transition: background .2s,color .2s; }
+    :where(body.post-seo-tips-increase-hotel-bookings-kerala) .social-btn:hover { background: var(--green-accent); color: #fff; }
+    @media (max-width: 991px) {
+      :where(body.post-seo-tips-increase-hotel-bookings-kerala) .toc-inline ol { columns: 1; }
+    }
+    @media (max-width: 768px) {
+      :where(body.post-seo-tips-increase-hotel-bookings-kerala) .blog-hero { padding: 48px 0 44px; }
+      :where(body.post-seo-tips-increase-hotel-bookings-kerala) .inline-cta { flex-direction: column; align-items: flex-start; }
+      :where(body.post-seo-tips-increase-hotel-bookings-kerala) .stat-strip { flex-direction: column; }
+      :where(body.post-seo-tips-increase-hotel-bookings-kerala) .stat-item { border-right: none; border-bottom: 1px solid var(--border); }
+      :where(body.post-seo-tips-increase-hotel-bookings-kerala) .stat-item:last-child { border-bottom: none; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/seo-vs-google-ads.html (scoped to body.post-seo-vs-google-ads) ── */
+    :where(body.post-seo-vs-google-ads) .blog-hero { background: linear-gradient(135deg,#0f2d1c 0%,#1a4a2c 55%,#1e5535 100%); padding: 72px 0 64px; position: relative; overflow: hidden; margin-top: 65px; }
+    :where(body.post-seo-vs-google-ads) .article-body h2 { font-family: 'Playfair Display',serif; font-size: 1.5rem; font-weight: 700; color: var(--green-dark); margin: 40px 0 14px; padding-bottom: 10px; border-bottom: 2px solid var(--border); }
+    :where(body.post-seo-vs-google-ads) .article-body h2:first-of-type { margin-top: 0; }
+    :where(body.post-seo-vs-google-ads) .article-body p { color: #374940; margin-bottom: 16px; font-size: 1rem; line-height: 1.85; }
+    :where(body.post-seo-vs-google-ads) .article-body a:hover { color: var(--green-dark); }
+    :where(body.post-seo-vs-google-ads) .answer-block p { color: #374940; font-size: .97rem; line-height: 1.8; margin-bottom: 0; }
+    :where(body.post-seo-vs-google-ads) .answer-block p + p { margin-top: 12px; }
+    :where(body.post-seo-vs-google-ads) .pillar-list { list-style: none; padding: 0; margin: 16px 0 4px; }
+    :where(body.post-seo-vs-google-ads) .pillar-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 11px; font-size: .97rem; color: #374940; line-height: 1.65; }
+    :where(body.post-seo-vs-google-ads) .pillar-list li .icon-dot i { color: #fff; font-size: .65rem; }
+    :where(body.post-seo-vs-google-ads) .compare-table thead tr { background: var(--green-dark); }
+    :where(body.post-seo-vs-google-ads) .compare-table thead th { color: #fff; font-weight: 600; padding: 14px 18px; text-align: left; font-family: 'DM Sans',sans-serif; }
+    :where(body.post-seo-vs-google-ads) .compare-table thead th:first-child { width: 28%; }
+    :where(body.post-seo-vs-google-ads) .compare-table td { padding: 13px 18px; border-bottom: 1px solid var(--border); color: #374940; vertical-align: middle; }
+    :where(body.post-seo-vs-google-ads) .compare-table tr:last-child td { border-bottom: none; }
+    :where(body.post-seo-vs-google-ads) .compare-table .row-label { font-weight: 600; color: var(--green-dark); font-size: .9rem; }
+    :where(body.post-seo-vs-google-ads) .col-seo { color: #1e6a3e; font-weight: 500; }
+    :where(body.post-seo-vs-google-ads) .col-ads { color: #9d174d; font-weight: 500; }
+    :where(body.post-seo-vs-google-ads) .compare-table thead th.col-seo-h { color: #a7f3c5; }
+    :where(body.post-seo-vs-google-ads) .compare-table thead th.col-ads-h { color: #fbb6ce; }
+    :where(body.post-seo-vs-google-ads) .callout-box p { color: var(--text-dark); font-size: .97rem; margin: 0; line-height: 1.75; }
+    :where(body.post-seo-vs-google-ads) .callout-box strong { color: var(--green-dark); }
+    :where(body.post-seo-vs-google-ads) .takeaway-box { background: linear-gradient(135deg,var(--green-dark),#1e5535); border-radius: 14px; padding: 28px 32px; color: #fff; margin: 36px 0 0; }
+    :where(body.post-seo-vs-google-ads) .takeaway-box .takeaway-label { font-size: .72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--green-accent); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+    :where(body.post-seo-vs-google-ads) .takeaway-box h3 { font-family: 'Playfair Display',serif; font-size: 1.2rem; font-weight: 700; color: #fff; margin-bottom: 12px; }
+    :where(body.post-seo-vs-google-ads) .takeaway-box p { color: rgba(255,255,255,.85); font-size: .97rem; line-height: 1.8; margin: 0; }
+    :where(body.post-seo-vs-google-ads) .takeaway-box p + p { margin-top: 10px; }
+    :where(body.post-seo-vs-google-ads) .inline-cta { background: linear-gradient(135deg,var(--green-dark),#1e5535); border-radius: 14px; padding: 32px 36px; color: #fff; margin: 40px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    :where(body.post-seo-vs-google-ads) .inline-cta p { color: rgba(255,255,255,.85); margin: 0; font-size: .95rem; }
+    :where(body.post-seo-vs-google-ads) .btn-cta-white { background: #fff; color: var(--green-dark) !important; border-radius: 50px; padding: 10px 28px; font-weight: 700; font-size: .9rem; white-space: nowrap; text-decoration: none !important; display: inline-block; transition: background .2s,transform .15s; }
+    :where(body.post-seo-vs-google-ads) .btn-cta-white:hover { background: var(--green-accent); color: #fff !important; transform: translateY(-2px); }
+    :where(body.post-seo-vs-google-ads) .author-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 24px 28px; display: flex; align-items: center; gap: 18px; margin-top: 44px; }
+    :where(body.post-seo-vs-google-ads) .audit-card p { font-size: .88rem; color: rgba(255,255,255,.75); margin-bottom: 22px; }
+    :where(body.post-seo-vs-google-ads) .btn-audit { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 12px 28px; font-weight: 700; font-size: .9rem; width: 100%; cursor: pointer; transition: background .2s,transform .15s; text-decoration: none; display: inline-block; }
+    :where(body.post-seo-vs-google-ads) .btn-audit:hover { background: #34a86a; transform: translateY(-2px); color: #fff; }
+    :where(body.post-seo-vs-google-ads) .toc-list li { margin-bottom: 9px; }
+    :where(body.post-seo-vs-google-ads) .toc-list a { font-size: .88rem; color: var(--text-dark); text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: color .2s; }
+    :where(body.post-seo-vs-google-ads) .toc-list a:hover { color: var(--green-accent); }
+    :where(body.post-seo-vs-google-ads) .related-item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--border); text-decoration: none; }
+    :where(body.post-seo-vs-google-ads) .related-item:last-child { border-bottom: none; padding-bottom: 0; }
+    :where(body.post-seo-vs-google-ads) .bottom-cta h2 { font-family: 'Playfair Display',serif; font-size: clamp(1.8rem,4vw,2.8rem); color: #fff; margin-bottom: 14px; position: relative; }
+    :where(body.post-seo-vs-google-ads) .bottom-cta p { color: rgba(255,255,255,.7); max-width: 520px; margin: 0 auto 32px; position: relative; }
+    :where(body.post-seo-vs-google-ads) .btn-cta-lg { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 15px 40px; font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-block; transition: background .2s,transform .15s,box-shadow .2s; box-shadow: 0 8px 32px rgba(63,184,122,.3); position: relative; }
+    :where(body.post-seo-vs-google-ads) .btn-cta-lg:hover { background: #34a86a; transform: translateY(-3px); box-shadow: 0 14px 40px rgba(63,184,122,.4); color: #fff; }
+    :where(body.post-seo-vs-google-ads) .footer-logo { display: inline-block; background: #fff; padding: 10px 16px; border-radius: 12px; line-height: 0; text-decoration: none; }
+    :where(body.post-seo-vs-google-ads) .footer-desc { font-size: .87rem; color: rgba(255,255,255,.5); line-height: 1.7; margin-top: 8px; }
+    :where(body.post-seo-vs-google-ads) .footer-links li { margin-bottom: 8px; }
+    :where(body.post-seo-vs-google-ads) .footer-links a, :where(body.post-seo-vs-google-ads) .footer-links span { font-size: .87rem; color: rgba(255,255,255,.5); text-decoration: none; transition: color .2s; }
+    :where(body.post-seo-vs-google-ads) .footer-links a:hover { color: var(--green-accent); }
+    :where(body.post-seo-vs-google-ads) .footer-copy { font-size: .8rem; color: rgba(255,255,255,.3); }
+    :where(body.post-seo-vs-google-ads) .footer-copy a { color: rgba(255,255,255,.3); text-decoration: none; }
+    :where(body.post-seo-vs-google-ads) .footer-copy a:hover { color: var(--green-accent); }
+    :where(body.post-seo-vs-google-ads) .social-btn { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; background: rgba(255,255,255,.07); border-radius: 8px; color: rgba(255,255,255,.6); font-size: .8rem; font-weight: 700; text-decoration: none; transition: background .2s,color .2s; }
+    :where(body.post-seo-vs-google-ads) .social-btn:hover { background: var(--green-accent); color: #fff; }
+    @media (max-width: 768px) {
+      :where(body.post-seo-vs-google-ads) .blog-hero { padding: 48px 0 44px; }
+      :where(body.post-seo-vs-google-ads) .inline-cta { flex-direction: column; align-items: flex-start; }
+      :where(body.post-seo-vs-google-ads) .takeaway-box { padding: 24px 20px; }
+      :where(body.post-seo-vs-google-ads) .compare-table { font-size: .82rem; }
+      :where(body.post-seo-vs-google-ads) .compare-table td, :where(body.post-seo-vs-google-ads) .compare-table th { padding: 11px 12px; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/shopify-vs-woocommerce.html (scoped to body.post-shopify-vs-woocommerce) ── */
+    :root:where(:has(> body.post-shopify-vs-woocommerce)) { --green-dark: #1a3a2a; --green-mid: #1e4d35; --green-accent: #3fb87a; --cream: #f5f2ec; --white: #ffffff; --text-dark: #1c2a22; --text-muted: #5a6e60; --border: #d8e8dc; --shopify: #96bf48; --woo: #7f54b3; }
+    :where(body.post-shopify-vs-woocommerce) .blog-hero { background: linear-gradient(135deg,#0f2d1c 0%,#1a4a2c 55%,#1e5535 100%); padding: 72px 0 64px; position: relative; overflow: hidden; margin-top: 65px; }
+    :where(body.post-shopify-vs-woocommerce) .split-box.shopify { background: #f3f8ec; border: 1px solid #c6df96; }
+    :where(body.post-shopify-vs-woocommerce) .split-box.woo { background: #f5f0fb; border: 1px solid #c8aee8; }
+    :where(body.post-shopify-vs-woocommerce) .split-box.shopify h5 { color: #3a5a0a; }
+    :where(body.post-shopify-vs-woocommerce) .split-box.woo h5 { color: #4a2d7a; }
+    :where(body.post-shopify-vs-woocommerce) .split-box.shopify ul li::before { background: var(--shopify); }
+    :where(body.post-shopify-vs-woocommerce) .split-box.woo ul li::before { background: var(--woo); }
+    :where(body.post-shopify-vs-woocommerce) .verdict-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--cream); border: 1px solid var(--border); border-radius: 50px; padding: 6px 16px; font-size: .82rem; font-weight: 600; color: var(--text-muted); margin-bottom: 8px; }
+    :where(body.post-shopify-vs-woocommerce) .verdict-badge.shopify { border-color: #c6df96; color: #3a5a0a; background: #f3f8ec; }
+    :where(body.post-shopify-vs-woocommerce) .verdict-badge.woo { border-color: #c8aee8; color: #4a2d7a; background: #f5f0fb; }
+    :where(body.post-shopify-vs-woocommerce) .compare-table { width: 100%; border-collapse: collapse; margin: 28px 0 24px; border-radius: 12px; overflow: hidden; font-size: .93rem; }
+    :where(body.post-shopify-vs-woocommerce) .compare-table thead tr { background: var(--green-dark); color: #fff; }
+    :where(body.post-shopify-vs-woocommerce) .compare-table thead th { padding: 14px 18px; font-weight: 600; font-size: .88rem; letter-spacing: .4px; }
+    :where(body.post-shopify-vs-woocommerce) .compare-table thead th:first-child { color: rgba(255,255,255,.5); }
+    :where(body.post-shopify-vs-woocommerce) .compare-table thead th:nth-child(2) { color: #c6df96; }
+    :where(body.post-shopify-vs-woocommerce) .compare-table thead th:nth-child(3) { color: #c8aee8; }
+    :where(body.post-shopify-vs-woocommerce) .compare-table tbody tr { border-bottom: 1px solid var(--border); }
+    :where(body.post-shopify-vs-woocommerce) .compare-table tbody tr:last-child { border-bottom: none; }
+    :where(body.post-shopify-vs-woocommerce) .compare-table tbody tr:nth-child(even) { background: var(--cream); }
+    :where(body.post-shopify-vs-woocommerce) .compare-table tbody td { padding: 12px 18px; color: #374940; vertical-align: top; }
+    :where(body.post-shopify-vs-woocommerce) .compare-table tbody td:first-child { font-weight: 600; color: var(--text-dark); font-size: .86rem; }
+    :where(body.post-shopify-vs-woocommerce) .toc-list { list-style: none; padding: 0; margin: 0; }
+    :where(body.post-shopify-vs-woocommerce) .footer-links { list-style: none; padding: 0; margin: 0; }
+    :where(body.post-shopify-vs-woocommerce) .footer-links a, :where(body.post-shopify-vs-woocommerce) .footer-links span { font-size: .87rem; color: rgba(255,255,255,.5); text-decoration: none; transition: color .2s; }
+    :where(body.post-shopify-vs-woocommerce) .footer-links a:hover { color: var(--green-accent); }
+    :where(body.post-shopify-vs-woocommerce) .footer-copy a { color: rgba(255,255,255,.3); text-decoration: none; }
+    :where(body.post-shopify-vs-woocommerce) .footer-copy a:hover { color: var(--green-accent); }
+    :where(body.post-shopify-vs-woocommerce) .social-btn { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; background: rgba(255,255,255,.07); border-radius: 8px; color: rgba(255,255,255,.6); font-size: .8rem; font-weight: 700; text-decoration: none; transition: background .2s,color .2s; }
+    :where(body.post-shopify-vs-woocommerce) .social-btn:hover { background: var(--green-accent); color: #fff; }
+    @media (max-width: 768px) {
+      :where(body.post-shopify-vs-woocommerce) .blog-hero { padding: 48px 0 44px; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/types-of-google-ads-campaigns.html (scoped to body.post-types-of-google-ads-campaigns) ── */
+    :where(body.post-types-of-google-ads-campaigns) .sidebar { position: sticky; top: 32px; }
+    :where(body.post-types-of-google-ads-campaigns) .toc-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 24px 24px; margin-bottom: 28px; }
+
+    /* ── PAGE-SPECIFIC: blogs/ui-vs-ux-design.html (scoped to body.post-ui-vs-ux-design) ── */
+    :where(body.post-ui-vs-ux-design) .blog-hero { background: linear-gradient(135deg,#0f2d1c 0%,#1a4a2c 55%,#1e5535 100%); padding: 72px 0 64px; position: relative; overflow: hidden; margin-top: 65px; }
+    :where(body.post-ui-vs-ux-design) .article-body h3 { font-family: 'Playfair Display',serif; font-size: 1.2rem; font-weight: 700; color: var(--green-mid); margin: 24px 0 10px; }
+    :where(body.post-ui-vs-ux-design) .compare-table { width: 100%; border-collapse: collapse; margin: 24px 0 28px; font-size: .95rem; }
+    :where(body.post-ui-vs-ux-design) .compare-table th { background: var(--green-dark); color: #fff; font-weight: 600; padding: 14px 18px; text-align: left; }
+    :where(body.post-ui-vs-ux-design) .compare-table th:first-child { border-radius: 10px 0 0 0; }
+    :where(body.post-ui-vs-ux-design) .compare-table th:last-child { border-radius: 0 10px 0 0; }
+    :where(body.post-ui-vs-ux-design) .compare-table td { padding: 12px 18px; border-bottom: 1px solid var(--border); color: #374940; vertical-align: top; }
+    :where(body.post-ui-vs-ux-design) .compare-table tr:last-child td { border-bottom: none; }
+    :where(body.post-ui-vs-ux-design) .compare-table .label-col { font-weight: 600; color: var(--green-dark); width: 28%; }
+    :where(body.post-ui-vs-ux-design) .highlight-box { background: var(--cream); border-left: 4px solid var(--green-accent); border-radius: 0 10px 10px 0; padding: 20px 24px; margin: 24px 0; }
+    :where(body.post-ui-vs-ux-design) .highlight-box p { margin: 0; font-size: .97rem; color: var(--text-dark); }
+    :where(body.post-ui-vs-ux-design) .audit-card p { font-size: .88rem; color: rgba(255,255,255,.75); margin-bottom: 22px; }
+    :where(body.post-ui-vs-ux-design) .bottom-cta p { color: rgba(255,255,255,.7); max-width: 520px; margin: 0 auto 32px; }
+    :where(body.post-ui-vs-ux-design) .footer-desc { font-size: .87rem; color: rgba(255,255,255,.5); line-height: 1.7; margin-top: 8px; }
+    :where(body.post-ui-vs-ux-design) .footer-copy { font-size: .8rem; color: rgba(255,255,255,.3); }
+    @media (max-width: 768px) {
+      :where(body.post-ui-vs-ux-design) .blog-hero { padding: 48px 0 44px; }
+      :where(body.post-ui-vs-ux-design) .compare-table { font-size: .85rem; }
+      :where(body.post-ui-vs-ux-design) .compare-table th, :where(body.post-ui-vs-ux-design) .compare-table td { padding: 10px 12px; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/web-design-vs-web-development.html (scoped to body.post-web-design-vs-web-development) ── */
+    :where(body.post-web-design-vs-web-development) .blog-hero { background: linear-gradient(135deg,#0f2d1c 0%,#1a4a2c 55%,#1e5535 100%); padding: 72px 0 64px; position: relative; overflow: hidden; margin-top: 65px; }
+    :where(body.post-web-design-vs-web-development) .split-box.design { background: #f0f7f3; border: 1px solid #b6e4cc; }
+    :where(body.post-web-design-vs-web-development) .split-box.dev { background: #f3f0f9; border: 1px solid #c8b6e4; }
+    :where(body.post-web-design-vs-web-development) .split-box.design h5 { color: var(--green-dark); }
+    :where(body.post-web-design-vs-web-development) .split-box.dev h5 { color: #2d1a50; }
+    :where(body.post-web-design-vs-web-development) .split-box.design ul li::before { background: var(--green-accent); }
+    :where(body.post-web-design-vs-web-development) .split-box.dev ul li::before { background: #9b7fd4; }
+    :where(body.post-web-design-vs-web-development) .compare-table { width: 100%; border-collapse: collapse; margin: 28px 0 24px; border-radius: 12px; overflow: hidden; font-size: .93rem; }
+    :where(body.post-web-design-vs-web-development) .compare-table thead tr { background: var(--green-dark); color: #fff; }
+    :where(body.post-web-design-vs-web-development) .compare-table thead th { padding: 14px 18px; font-weight: 600; font-size: .88rem; letter-spacing: .5px; }
+    :where(body.post-web-design-vs-web-development) .compare-table thead th:first-child { color: rgba(255,255,255,.5); }
+    :where(body.post-web-design-vs-web-development) .compare-table thead th:nth-child(2) { color: var(--green-accent); }
+    :where(body.post-web-design-vs-web-development) .compare-table thead th:nth-child(3) { color: #c8b6f0; }
+    :where(body.post-web-design-vs-web-development) .compare-table tbody tr { border-bottom: 1px solid var(--border); }
+    :where(body.post-web-design-vs-web-development) .compare-table tbody tr:last-child { border-bottom: none; }
+    :where(body.post-web-design-vs-web-development) .compare-table tbody tr:nth-child(even) { background: var(--cream); }
+    :where(body.post-web-design-vs-web-development) .compare-table tbody td { padding: 12px 18px; color: #374940; vertical-align: top; }
+    :where(body.post-web-design-vs-web-development) .compare-table tbody td:first-child { font-weight: 600; color: var(--text-dark); font-size: .86rem; }
+    :where(body.post-web-design-vs-web-development) .toc-list { list-style: none; padding: 0; margin: 0; }
+    :where(body.post-web-design-vs-web-development) .footer-links { list-style: none; padding: 0; margin: 0; }
+    @media (max-width: 768px) {
+      :where(body.post-web-design-vs-web-development) .blog-hero { padding: 48px 0 44px; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/what-are-backlinks.html (scoped to body.post-what-are-backlinks) ── */
+    :where(body.post-what-are-backlinks) .blog-hero { background: linear-gradient(135deg,#0f2d1c 0%,#1a4a2c 55%,#1e5535 100%); padding: 72px 0 64px; position: relative; overflow: hidden; margin-top: 65px; }
+    @media (max-width: 768px) {
+      :where(body.post-what-are-backlinks) .blog-hero { padding: 48px 0 44px; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/what-is-generative-engine-optimization.html (scoped to body.post-what-is-generative-engine-optimization) ── */
+    :where(body.post-what-is-generative-engine-optimization) .bam-btn-primary { background: var(--green-accent); color: #fff !important; border-radius: 50px; font-weight: 600; font-size: .85rem; padding: 8px 20px; transition: background .2s,transform .15s; text-decoration: none; display: inline-block; }
+    :where(body.post-what-is-generative-engine-optimization) .bam-btn-primary:hover { background: #34a86a; transform: translateY(-1px); }
+    :where(body.post-what-is-generative-engine-optimization) .blog-hero { background: linear-gradient(135deg,#0f2d1c 0%,#1a4a2c 55%,#1e5535 100%); padding: 72px 0 64px; position: relative; overflow: hidden; margin-top: 65px; }
+    :where(body.post-what-is-generative-engine-optimization) .blog-hero::after { content: ''; position: absolute; width: 300px; height: 300px; background: radial-gradient(circle,rgba(63,184,122,.08) 0%,transparent 70%); bottom: -60px; left: 80px; pointer-events: none; }
+    :where(body.post-what-is-generative-engine-optimization) .breadcrumb-bar a { color: rgba(255,255,255,.55); text-decoration: none; }
+    :where(body.post-what-is-generative-engine-optimization) .breadcrumb-bar a:hover { color: var(--green-accent); }
+    :where(body.post-what-is-generative-engine-optimization) .article-body a { color: var(--green-accent); text-decoration: underline; text-underline-offset: 3px; }
+    :where(body.post-what-is-generative-engine-optimization) .article-body a:hover { color: #1a3a2a; }
+    :where(body.post-what-is-generative-engine-optimization) .compare-table { width: 100%; border-collapse: collapse; border-radius: 14px; overflow: hidden; margin: 24px 0 28px; font-size: .93rem; }
+    :where(body.post-what-is-generative-engine-optimization) .compare-table thead tr { background: var(--green-dark); color: #fff; }
+    :where(body.post-what-is-generative-engine-optimization) .compare-table thead th { padding: 14px 18px; font-weight: 600; font-size: .85rem; letter-spacing: .5px; }
+    :where(body.post-what-is-generative-engine-optimization) .compare-table tbody tr { border-bottom: 1px solid var(--border); }
+    :where(body.post-what-is-generative-engine-optimization) .compare-table tbody tr:last-child { border-bottom: none; }
+    :where(body.post-what-is-generative-engine-optimization) .compare-table tbody tr:nth-child(even) { background: var(--cream); }
+    :where(body.post-what-is-generative-engine-optimization) .compare-table tbody tr:nth-child(odd) { background: #fff; }
+    :where(body.post-what-is-generative-engine-optimization) .compare-table td { padding: 13px 18px; color: #374940; vertical-align: top; }
+    :where(body.post-what-is-generative-engine-optimization) .compare-table td:first-child { font-weight: 600; color: var(--green-dark); white-space: nowrap; }
+    :where(body.post-what-is-generative-engine-optimization) .highlight-box { background: linear-gradient(135deg,rgba(63,184,122,.08) 0%,rgba(63,184,122,.04) 100%); border-left: 4px solid var(--green-accent); border-radius: 0 12px 12px 0; padding: 20px 24px; margin: 24px 0 28px; }
+    :where(body.post-what-is-generative-engine-optimization) .highlight-box p { margin: 0; color: var(--green-dark); font-size: .97rem; font-weight: 500; line-height: 1.7; }
+    :where(body.post-what-is-generative-engine-optimization) .highlight-box p em { font-style: italic; color: var(--text-muted); font-weight: 400; }
+    :where(body.post-what-is-generative-engine-optimization) .inline-cta p { color: rgba(255,255,255,.85); margin: 0; font-size: .95rem; }
+    :where(body.post-what-is-generative-engine-optimization) .btn-cta-white { background: #fff; color: var(--green-dark) !important; border-radius: 50px; padding: 10px 28px; font-weight: 700; font-size: .9rem; white-space: nowrap; text-decoration: none !important; display: inline-block; transition: background .2s,transform .15s; }
+    :where(body.post-what-is-generative-engine-optimization) .btn-cta-white:hover { background: var(--green-accent); color: #fff !important; transform: translateY(-2px); }
+    :where(body.post-what-is-generative-engine-optimization) .stat-strip { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 28px 32px; margin: 32px 0; display: flex; gap: 0; flex-wrap: wrap; }
+    :where(body.post-what-is-generative-engine-optimization) .stat-item { flex: 1; min-width: 120px; text-align: center; padding: 10px 16px; border-right: 1px solid var(--border); }
+    :where(body.post-what-is-generative-engine-optimization) .stat-item:last-child { border-right: none; }
+    :where(body.post-what-is-generative-engine-optimization) .stat-num { font-family: 'Playfair Display',serif; font-size: 2rem; font-weight: 900; color: var(--green-dark); line-height: 1; }
+    :where(body.post-what-is-generative-engine-optimization) .stat-label { font-size: .78rem; color: var(--text-muted); margin-top: 4px; font-weight: 500; }
+    :where(body.post-what-is-generative-engine-optimization) .audit-card p { font-size: .88rem; color: rgba(255,255,255,.75); margin-bottom: 22px; }
+    :where(body.post-what-is-generative-engine-optimization) .btn-audit { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 12px 28px; font-weight: 700; font-size: .9rem; width: 100%; cursor: pointer; transition: background .2s,transform .15s; text-decoration: none; display: inline-block; text-align: center; }
+    :where(body.post-what-is-generative-engine-optimization) .btn-audit:hover { background: #34a86a; transform: translateY(-2px); color: #fff; }
+    :where(body.post-what-is-generative-engine-optimization) .toc-list a { font-size: .88rem; color: var(--text-dark); text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: color .2s; }
+    :where(body.post-what-is-generative-engine-optimization) .toc-list a:hover { color: var(--green-accent); }
+    :where(body.post-what-is-generative-engine-optimization) .related-item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--border); text-decoration: none; }
+    :where(body.post-what-is-generative-engine-optimization) .related-item:last-child { border-bottom: none; padding-bottom: 0; }
+    :where(body.post-what-is-generative-engine-optimization) .bottom-cta h2 em { font-style: italic; color: var(--green-accent); }
+    :where(body.post-what-is-generative-engine-optimization) .bottom-cta p { color: rgba(255,255,255,.7); max-width: 520px; margin: 0 auto 32px; }
+    :where(body.post-what-is-generative-engine-optimization) .btn-cta-lg { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 15px 40px; font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-block; transition: background .2s,transform .15s,box-shadow .2s; box-shadow: 0 8px 32px rgba(63,184,122,.3); }
+    :where(body.post-what-is-generative-engine-optimization) .btn-cta-lg:hover { background: #34a86a; transform: translateY(-3px); box-shadow: 0 14px 40px rgba(63,184,122,.4); color: #fff; }
+    :where(body.post-what-is-generative-engine-optimization) .footer-logo { display: inline-block; background: #fff; padding: 10px 16px; border-radius: 12px; line-height: 0; text-decoration: none; }
+    :where(body.post-what-is-generative-engine-optimization) .footer-desc { font-size: .87rem; color: rgba(255,255,255,.5); line-height: 1.7; margin-top: 8px; }
+    :where(body.post-what-is-generative-engine-optimization) .footer-links a, :where(body.post-what-is-generative-engine-optimization) .footer-links span { font-size: .87rem; color: rgba(255,255,255,.5); text-decoration: none; transition: color .2s; }
+    :where(body.post-what-is-generative-engine-optimization) .footer-links a:hover { color: var(--green-accent); }
+    :where(body.post-what-is-generative-engine-optimization) .footer-copy { font-size: .8rem; color: rgba(255,255,255,.3); }
+    :where(body.post-what-is-generative-engine-optimization) .footer-copy a { color: rgba(255,255,255,.3); text-decoration: none; }
+    :where(body.post-what-is-generative-engine-optimization) .footer-copy a:hover { color: var(--green-accent); }
+    :where(body.post-what-is-generative-engine-optimization) .social-btn { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; background: rgba(255,255,255,.07); border-radius: 8px; color: rgba(255,255,255,.6); font-size: .8rem; font-weight: 700; text-decoration: none; transition: background .2s,color .2s; }
+    :where(body.post-what-is-generative-engine-optimization) .social-btn:hover { background: var(--green-accent); color: #fff; }
+    @media (max-width: 768px) {
+      :where(body.post-what-is-generative-engine-optimization) .blog-hero { padding: 48px 0 44px; }
+      :where(body.post-what-is-generative-engine-optimization) .stat-strip { flex-direction: column; }
+      :where(body.post-what-is-generative-engine-optimization) .stat-item { border-right: none; border-bottom: 1px solid var(--border); }
+      :where(body.post-what-is-generative-engine-optimization) .stat-item:last-child { border-bottom: none; }
+      :where(body.post-what-is-generative-engine-optimization) .compare-table { font-size: .82rem; }
+      :where(body.post-what-is-generative-engine-optimization) .compare-table td, :where(body.post-what-is-generative-engine-optimization) .compare-table th { padding: 10px 12px; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/what-is-seo-beginner-friendly-guide-2026.html (scoped to body.post-what-is-seo-beginner-friendly-guide-2026) ── */
+    :where(body.post-what-is-seo-beginner-friendly-guide-2026) .btn-cta-white { background: #fff; color: var(--green-dark) !important; border-radius: 50px; padding: 10px 28px; font-weight: 700; font-size: .9rem; white-space: nowrap; text-decoration: none; display: inline-block; transition: background .2s,transform .15s; }
+    :where(body.post-what-is-seo-beginner-friendly-guide-2026) .btn-cta-white:hover { background: var(--green-accent); color: #fff !important; transform: translateY(-2px); }
+    :where(body.post-what-is-seo-beginner-friendly-guide-2026) .sidebar { position: sticky; top: 32px; }
+    :where(body.post-what-is-seo-beginner-friendly-guide-2026) .toc-card { background: var(--cream); border: 1px solid var(--border); border-radius: 14px; padding: 24px 24px; margin-bottom: 28px; }
+    :where(body.post-what-is-seo-beginner-friendly-guide-2026) .toc-list a { font-size: .88rem; color: var(--text-dark); text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; transition: color .2s; }
+    :where(body.post-what-is-seo-beginner-friendly-guide-2026) .toc-list a:hover { color: var(--green-accent); }
+    :where(body.post-what-is-seo-beginner-friendly-guide-2026) .related-item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--border); text-decoration: none; }
+    :where(body.post-what-is-seo-beginner-friendly-guide-2026) .related-item:last-child { border-bottom: none; padding-bottom: 0; }
+    :where(body.post-what-is-seo-beginner-friendly-guide-2026) .btn-cta-lg { background: var(--green-accent); color: #fff; border: none; border-radius: 50px; padding: 15px 40px; font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-block; transition: background .2s,transform .15s,box-shadow .2s; box-shadow: 0 8px 32px rgba(63,184,122,.3); }
+    :where(body.post-what-is-seo-beginner-friendly-guide-2026) .btn-cta-lg:hover { background: #34a86a; transform: translateY(-3px); box-shadow: 0 14px 40px rgba(63,184,122,.4); color: #fff; }
+
+    /* ── PAGE-SPECIFIC: blogs/what-is-technical-seo.html (scoped to body.post-what-is-technical-seo) ── */
+    :where(body.post-what-is-technical-seo) .blog-hero { background: linear-gradient(135deg,#0f2d1c 0%,#1a4a2c 55%,#1e5535 100%); padding: 72px 0 64px; position: relative; overflow: hidden; margin-top: 65px; }
+    :where(body.post-what-is-technical-seo) .article-body h3 { font-family: 'Playfair Display',serif; font-size: 1.15rem; font-weight: 700; color: var(--green-mid); margin: 24px 0 10px; }
+    :where(body.post-what-is-technical-seo) .element-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+    :where(body.post-what-is-technical-seo) .element-icon { width: 38px; height: 38px; background: var(--green-dark); color: var(--green-accent); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+    :where(body.post-what-is-technical-seo) .element-card h3 { font-family: 'Playfair Display',serif; font-size: 1.1rem; font-weight: 700; color: var(--green-dark); margin: 0; line-height: 1.3; }
+    :where(body.post-what-is-technical-seo) .mistake-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; font-size: .97rem; color: #374940; }
+    :where(body.post-what-is-technical-seo) .faq-item { background: var(--cream); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
+    :where(body.post-what-is-technical-seo) .faq-item summary { padding: 16px 20px; font-weight: 600; font-size: .95rem; color: var(--green-dark); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+    :where(body.post-what-is-technical-seo) .faq-item summary::-webkit-details-marker { display: none; }
+    :where(body.post-what-is-technical-seo) .faq-item summary::after { content: '+'; font-size: 1.3rem; color: var(--green-accent); flex-shrink: 0; }
+    :where(body.post-what-is-technical-seo) .faq-item[open] summary::after { content: '−'; }
+    :where(body.post-what-is-technical-seo) .faq-body { padding: 4px 20px 16px; font-size: .92rem; color: #374940; line-height: 1.75; }
+    :where(body.post-what-is-technical-seo) .audit-card p { font-size: .88rem; color: rgba(255,255,255,.75); margin-bottom: 22px; }
+    :where(body.post-what-is-technical-seo) .toc-list li { margin-bottom: 9px; }
+    :where(body.post-what-is-technical-seo) .bottom-cta p { color: rgba(255,255,255,.7); max-width: 520px; margin: 0 auto 32px; }
+    :where(body.post-what-is-technical-seo) .footer-desc { font-size: .87rem; color: rgba(255,255,255,.5); line-height: 1.7; margin-top: 8px; }
+    :where(body.post-what-is-technical-seo) .footer-links li { margin-bottom: 8px; }
+    :where(body.post-what-is-technical-seo) .footer-copy { font-size: .8rem; color: rgba(255,255,255,.3); }
+    @media (max-width: 768px) {
+      :where(body.post-what-is-technical-seo) .blog-hero { padding: 48px 0 44px; }
+    }
+
+    /* ── PAGE-SPECIFIC: blogs/what-is-web-development.html (scoped to body.post-what-is-web-development) ── */
+    :where(body.post-what-is-web-development) .blog-hero { background: linear-gradient(135deg,#0f2d1c 0%,#1a4a2c 55%,#1e5535 100%); padding: 72px 0 64px; position: relative; overflow: hidden; margin-top: 65px; }
+    @media (max-width: 768px) {
+      :where(body.post-what-is-web-development) .blog-hero { padding: 48px 0 44px; }
     }
