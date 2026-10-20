@@ -615,6 +615,14 @@ img{max-width:100%;height:auto;}
     flex-shrink:0;
 }
 
+img.blog-img{
+    display:block;
+    width:100%;
+    height:auto;
+    aspect-ratio:16/9;
+    object-fit:cover;
+}
+
 .blog-body{
     padding:1.6rem;
     display:flex;
