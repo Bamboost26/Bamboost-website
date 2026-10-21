@@ -1045,3 +1045,29 @@
     @media (max-width: 768px) {
       :where(body.post-what-is-web-development) .blog-hero { padding: 48px 0 44px; }
     }
+
+    /* ── PAGE-SPECIFIC: blogs/how-to-increase-students-in-coaching.html (scoped to body.post-how-to-increase-students-in-coaching) ── */
+    :where(body.post-how-to-increase-students-in-coaching) .article-body h3 { font-family: 'Playfair Display',serif; font-size: 1.22rem; font-weight: 700; color: var(--green-dark); margin: 28px 0 10px; }
+    :where(body.post-how-to-increase-students-in-coaching) .article-body ol, :where(body.post-how-to-increase-students-in-coaching) .article-body ul:not(.pillar-list) { padding-left: 22px; margin-bottom: 18px; color: #374940; }
+    :where(body.post-how-to-increase-students-in-coaching) .article-body ol li, :where(body.post-how-to-increase-students-in-coaching) .article-body ul:not(.pillar-list) li { margin-bottom: 8px; line-height: 1.75; }
+    :where(body.post-how-to-increase-students-in-coaching) .callout-box p + p { margin-top: 10px; }
+    :where(body.post-how-to-increase-students-in-coaching) .takeaway-box { background: linear-gradient(135deg,var(--green-dark),#1e5535); border-radius: 14px; padding: 28px 32px; color: #fff; margin: 28px 0; }
+    :where(body.post-how-to-increase-students-in-coaching) .takeaway-box .takeaway-label { font-size: .72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--green-accent); margin-bottom: 10px; }
+    :where(body.post-how-to-increase-students-in-coaching) .takeaway-box p, :where(body.post-how-to-increase-students-in-coaching) .takeaway-box li { color: rgba(255,255,255,.88); font-size: .97rem; line-height: 1.8; margin: 0; }
+    :where(body.post-how-to-increase-students-in-coaching) .takeaway-box p { margin-bottom: 10px; }
+    :where(body.post-how-to-increase-students-in-coaching) .article-body .takeaway-box ol { padding-left: 20px; margin: 0; color: rgba(255,255,255,.88); }
+    :where(body.post-how-to-increase-students-in-coaching) .article-body .takeaway-box ol li { margin-bottom: 2px; }
+    :where(body.post-how-to-increase-students-in-coaching) .takeaway-box strong { color: #fff; }
+    :where(body.post-how-to-increase-students-in-coaching) .step-no { font-family: 'Playfair Display',serif; font-size: 3rem; font-weight: 900; line-height: 1; color: var(--green-accent); margin: 48px 0 6px; }
+    :where(body.post-how-to-increase-students-in-coaching) .step-no + h2 { margin-top: 0; }
+    :where(body.post-how-to-increase-students-in-coaching) .meta-template { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; margin: 16px 0; }
+    :where(body.post-how-to-increase-students-in-coaching) .meta-template .mt-label { font-size: .72rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px; }
+    :where(body.post-how-to-increase-students-in-coaching) .meta-template p { margin: 0 0 6px; font-size: .95rem; line-height: 1.6; }
+    :where(body.post-how-to-increase-students-in-coaching) .meta-template code, :where(body.post-how-to-increase-students-in-coaching) .article-body pre { font-size: .86rem; }
+    :where(body.post-how-to-increase-students-in-coaching) .meta-template code { color: var(--green-mid); background: var(--cream); padding: 2px 6px; border-radius: 4px; white-space: normal; }
+    :where(body.post-how-to-increase-students-in-coaching) .article-body pre { background: var(--green-dark); color: #e6f2ea; border-radius: 12px; padding: 18px 20px; margin: 20px 0; overflow-x: auto; line-height: 1.6; }
+    :where(body.post-how-to-increase-students-in-coaching) .faq-standalone { margin-top: 28px; }
+    @media (max-width: 640px) {
+      :where(body.post-how-to-increase-students-in-coaching) .takeaway-box { padding: 22px 20px; }
+      :where(body.post-how-to-increase-students-in-coaching) .step-no { font-size: 2.4rem; }
+    }
