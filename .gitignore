@@ -3,3 +3,6 @@
 
 # Keep important project files
 !.github/README.md
+
+# Local reference files — do not commit
+/reference/
