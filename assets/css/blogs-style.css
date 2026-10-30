@@ -1071,3 +1071,17 @@
       :where(body.post-how-to-increase-students-in-coaching) .takeaway-box { padding: 22px 20px; }
       :where(body.post-how-to-increase-students-in-coaching) .step-no { font-size: 2.4rem; }
     }
+
+    /* ── PAGE-SPECIFIC: blogs/what-is-llms-txt.html (scoped to body.post-what-is-llms-txt) ── */
+    :where(body.post-what-is-llms-txt) .article-body h3 { font-family: 'Playfair Display',serif; font-size: 1.22rem; font-weight: 700; color: var(--green-dark); margin: 28px 0 10px; }
+    :where(body.post-what-is-llms-txt) .article-body ol, :where(body.post-what-is-llms-txt) .article-body ul:not(.pillar-list) { padding-left: 22px; margin-bottom: 18px; color: #374940; }
+    :where(body.post-what-is-llms-txt) .article-body ol li, :where(body.post-what-is-llms-txt) .article-body ul:not(.pillar-list) li { margin-bottom: 8px; line-height: 1.75; }
+    :where(body.post-what-is-llms-txt) .takeaway-box { background: linear-gradient(135deg,var(--green-dark),#1e5535); border-radius: 14px; padding: 28px 32px; color: #fff; margin: 28px 0; }
+    :where(body.post-what-is-llms-txt) .takeaway-box .takeaway-label { font-size: .72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--green-accent); margin-bottom: 10px; }
+    :where(body.post-what-is-llms-txt) .takeaway-box p { color: rgba(255,255,255,.88); font-size: .97rem; line-height: 1.8; margin: 0; }
+    :where(body.post-what-is-llms-txt) .article-body code { color: var(--green-mid); background: var(--cream); padding: 2px 6px; border-radius: 4px; font-size: .86rem; }
+    :where(body.post-what-is-llms-txt) .article-body pre { background: var(--green-dark); color: #e6f2ea; border-radius: 12px; padding: 18px 20px; margin: 20px 0; overflow-x: auto; line-height: 1.6; font-size: .86rem; }
+    :where(body.post-what-is-llms-txt) .article-body pre code { color: inherit; background: none; padding: 0; font-size: inherit; }
+    @media (max-width: 640px) {
+      :where(body.post-what-is-llms-txt) .takeaway-box { padding: 22px 20px; }
+    }
