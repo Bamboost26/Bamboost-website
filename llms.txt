@@ -1,16 +1,24 @@
 # Bamboost
  
-Bamboost is a performance-based digital growth agency based in Kerala, India, specialising in Search Engine Optimisation (SEO), Google Ads management, and web development. The company is built around a single principle: fees tied to measurable outcomes.
- 
-Bamboost was founded to address a gap in the digital marketing industry - agencies that charge retainers regardless of results, use confusing reports to obscure poor performance, and apply generic strategies without genuine accountability. Bamboost integrates all three pillars of online growth (SEO, web development, and paid advertising) under one roof, ensuring each discipline reinforces the others.
- 
-The company name and philosophy are inspired by bamboo — a plant that spends years building an invisible root system before shooting upward rapidly. Bamboost mirrors this by investing in deep technical and content foundations before accelerating client growth.
- 
+> Bamboost is an SEO and web development company in Kozhikode, Kerala, offering SEO, web development and Google Ads management for businesses across Kerala and India.
+
+Bamboost works on a performance-based model, with fees tied to measurable outcomes. It integrates SEO, web development and paid advertising under one roof, so each discipline reinforces the others.
+
+The company name and philosophy are inspired by bamboo: a plant that spends years building an invisible root system before shooting upward rapidly. Bamboost mirrors this by investing in deep technical and content foundations before accelerating client growth.
+
 ## Services
  
 - [Search Engine Optimisation (SEO)](https://bamboost.in/best-seo-company-in-kerala.html): Full-spectrum SEO including Technical SEO, On-Page Optimisation, Off-Page Link Building, Local SEO & Google Maps, Ecommerce SEO, and Generative Engine Optimisation (GEO) for AI search platforms (ChatGPT, Google Gemini, Perplexity).
 - [Web Development](https://bamboost.in/best-web-development-company-in-kerala.html): Custom websites, ecommerce stores, CMS platforms, and web applications built with SEO-friendly architecture, mobile-first responsive design, Core Web Vitals optimisation, and conversion-focused UI/UX.
+- [Google Ads Management](https://bamboost.in/best-google-ads-company-in-kerala.html): Google Ads account audits, Search, Shopping and Performance Max campaign management, keyword and negative keyword management, conversion tracking with GA4 and Google Tag Manager, landing page optimisation, and monthly performance reporting for businesses in Kerala.
  
+## SEO Services
+
+- [Technical SEO](https://bamboost.in/services/technical-seo-services.html)
+- [On-Page SEO](https://bamboost.in/services/on-page-seo-services.html)
+- [Off-Page SEO](https://bamboost.in/services/off-page-seo-services.html)
+- [Local SEO](https://bamboost.in/services/local-seo-services.html)
+
 ## Industry-Specific SEO Services
  
 - [Education SEO](https://bamboost.in/services/seo-for-educational-institutes.html)
@@ -53,6 +61,14 @@ The company name and philosophy are inspired by bamboo — a plant that spends y
 - [Google AI Overviews & AI Mode SEO in 2026](https://bamboost.in/blogs/google-ai-overviews-ai-mode-seo-2026.html)
 - [How to Measure AI Search Visibility in 2026](https://bamboost.in/blogs/measure-ai-search-visibility.html)
 - [Real Estate SEO Strategy for Kerala Builders: A 10-Step Checklist (2026)](https://bamboost.in/blogs/real-estate-seo-strategy-kerala-builders.html)
+- [Why Is My Business Not Showing on Google?](https://bamboost.in/blogs/business-not-showing-on-google.html)
+- [How to Increase Students in Your Coaching Institute](https://bamboost.in/blogs/how-to-increase-students-in-coaching.html)
+- [Google Search Console Social Media Update](https://bamboost.in/blogs/google-search-console-social-media-update.html)
+- [How to Make Your Business Appear in ChatGPT Results](https://bamboost.in/blogs/how-to-appear-in-chatgpt-results.html)
+- [AEO vs SEO: Key Differences](https://bamboost.in/blogs/aeo-vs-traditional-seo.html)
+- [Full Stack Development Explained](https://bamboost.in/blogs/full-stack-development.html)
+- [Google Ads Landing Page Optimization](https://bamboost.in/blogs/google-ads-landing-page-optimization.html)
+- [What Is llms.txt? Does It Help SEO and AI Search?](https://bamboost.in/blogs/what-is-llms-txt.html)
  
 ## Company Details
  
