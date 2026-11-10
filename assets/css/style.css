@@ -11,7 +11,7 @@
   --g3:#15823E;   /* Growth Green — primary action / CTAs / links */
   --g4:#15823E;   /* Growth Green — accents (alias of g3) */
   --g5:#99A698;   /* Sage — light-on-dark supporting text */
-  --g6:#BCC5BC;   /* Pale Sage — chip / tint backgrounds */
+  --g6:#baffba;   /* Pale Sage — chip / tint backgrounds */
   --cream:#FFFFFF;  /* White — main background */
   --cream2:#F2F3F4; /* Cool Gray — alternate section background */
   --border:#E7E7EA; /* Light Gray — card borders / dividers */
@@ -478,7 +478,7 @@ img{max-width:100%;height:auto;}
 .bam-faq-item{border-bottom:1px solid var(--border);}
 .bam-faq-q{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 0;cursor:pointer;font-weight:500;font-size:0.93rem;color:var(--g2);gap:1rem;border:none;background:none;width:100%;text-align:left;}
 .bam-faq-q:hover{color:var(--g3);}
-.faq-toggle{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--g6);border:1px solid rgba(21,130,62,0.2);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--g3);transition:all 0.3s;line-height:1;}
+.faq-toggle{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--g3);border:1px solid rgba(21,130,62,0.2);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:#fff;transition:all 0.3s;line-height:1;}
 .bam-faq-item.open .faq-toggle{background:var(--g3);color:#fff;transform:rotate(45deg);}
 .bam-faq-a{display:none;padding:0 0 1.2rem;font-size:0.87rem;color:var(--text3);line-height:1.7;}
 .bam-faq-item.open .bam-faq-a{display:block;}
