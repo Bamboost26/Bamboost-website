@@ -251,6 +251,39 @@ src="https://www.facebook.com/tr?id=3891606284476113&ev=PageView&noscript=1"
   ]
 }
 </script>
+<style>
+/* Home "What We Do" section */
+.hw-feature{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:2.5rem;align-items:center;background:linear-gradient(135deg,#fff 0%,#fff 50%,#f0f6f2 100%);border:1px solid rgba(21,130,62,.18);border-radius:24px;padding:2.6rem;box-shadow:0 1px 2px rgba(8,45,26,.04),0 18px 44px rgba(8,45,26,.08)}
+.hw-tag{display:inline-flex;align-items:center;gap:.45rem;background:rgba(21,130,62,.1);color:var(--g2);font-size:.72rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:.4rem .9rem;border-radius:100px;margin-bottom:1.2rem}
+.hw-tag i{color:var(--g3);font-size:.7rem}
+.hw-title-row{display:flex;align-items:center;gap:1rem;margin-bottom:.9rem}
+.hw-icon{flex-shrink:0;width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,var(--g3),var(--g2));box-shadow:0 6px 14px rgba(21,130,62,.25);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:1.35rem}
+.hw-feature h3{font-family:var(--serif);font-size:1.75rem;font-weight:700;color:var(--g1);margin:0;line-height:1.2}
+.hw-feature-main>p{font-size:1rem;color:var(--text2);line-height:1.75;margin-bottom:1.1rem}
+.hw-feature-main>p.hw-ai{display:flex;gap:.65rem;align-items:flex-start;font-size:.9rem;line-height:1.6;color:var(--g1);background:rgba(21,130,62,.08);border:1px solid rgba(21,130,62,.2);border-radius:14px;padding:.85rem 1rem;margin-bottom:1.6rem}
+.hw-ai i{color:var(--g3);font-size:1rem;margin-top:.1rem}
+.hw-btn{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.8rem;font-size:.95rem}
+.hw-sublist{list-style:none;padding:0;margin:0;display:grid;gap:.75rem}
+.hw-sublist a{display:flex;align-items:center;gap:1rem;background:#fff;border:1px solid var(--border);border-radius:16px;padding:1rem 1.15rem;text-decoration:none;transition:border-color .25s,box-shadow .25s,transform .25s}
+.hw-sublist a:hover{border-color:rgba(21,130,62,.4);box-shadow:0 10px 24px rgba(8,45,26,.08);transform:translateX(3px)}
+.hw-sub-icon{flex-shrink:0;width:42px;height:42px;border-radius:12px;background:rgba(21,130,62,.1);color:var(--g3);display:inline-flex;align-items:center;justify-content:center;font-size:1.1rem}
+.hw-sublist strong{display:block;font-size:.98rem;color:var(--g1);font-weight:700}
+.hw-sublist small{display:block;font-size:.84rem;color:var(--text3);line-height:1.45}
+.hw-arrow{margin-left:auto;color:var(--g3);transition:transform .25s}
+.hw-sublist a:hover .hw-arrow{transform:translateX(3px)}
+.hw-card{height:100%;background:#fff;border:1px solid var(--border);border-radius:22px;padding:2rem;box-shadow:0 1px 2px rgba(8,45,26,.04),0 10px 28px rgba(8,45,26,.06);transition:transform .3s,box-shadow .3s,border-color .3s;display:flex;flex-direction:column}
+.hw-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(8,45,26,.1);border-color:rgba(21,130,62,.3)}
+.hw-card h3{font-family:var(--serif);font-size:1.4rem;font-weight:700;color:var(--g1);margin:0;line-height:1.25}
+.hw-card>p{font-size:.95rem;color:var(--text2);line-height:1.7;margin-bottom:1rem}
+.hw-points{list-style:none;padding:0;margin:0 0 1.2rem}
+.hw-points li{display:flex;gap:.6rem;padding:.5rem 0;border-top:1px solid var(--border);font-size:.92rem;color:var(--text1);line-height:1.5}
+.hw-points li:first-child{border-top:0}
+.hw-points i{color:var(--g3);margin-top:.15rem}
+.hw-card .card-link{margin-top:auto;font-size:.9rem}
+@media(max-width:991.98px){.hw-feature{grid-template-columns:minmax(0,1fr);gap:1.8rem;padding:2rem 1.6rem}}
+@media(max-width:575.98px){.hw-feature{padding:1.6rem 1.2rem}.hw-feature h3{font-size:1.45rem}.hw-card{padding:1.5rem 1.3rem}.hw-icon{width:46px;height:46px;font-size:1.2rem}}
+@media(prefers-reduced-motion:reduce){.hw-card,.hw-sublist a,.hw-arrow{transition:none}.hw-card:hover,.hw-sublist a:hover{transform:none}}
+</style>
 </head>
 <body class="home-page">
 <!-- Google Tag Manager (noscript) -->
@@ -324,43 +357,62 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="text-center mb-5 reveal">
       <span class="section-label">What We Do</span>
-      <h2 class="section-title">Our <em>Services</em></h2>
+      <h2 class="section-title">SEO, Websites and Google Ads, <em>One Team</em></h2>
       <div class="section-divider center"></div>
       <p class="txt-body mx-auto seo-intro">SEO comes first. Web development and Google Ads support it, so every part of your online presence works toward more enquiries.</p>
     </div>
 
-    <div class="home-svc-grid reveal">
-      <div class="home-svc-primary">
-        <span class="home-svc-tag"><i class="bi bi-star-fill" aria-hidden="true"></i>Primary service</span>
-        <span class="home-svc-icon" aria-hidden="true"><i class="bi bi-search"></i></span>
-        <h3>SEO</h3>
-        <p>Technical, on-page, off-page and local SEO that gets your business found on Google and Google Maps by people who are ready to call, visit or buy.</p>
-        <p class="home-svc-ai"><i class="bi bi-stars" aria-hidden="true"></i><span>Includes AI search optimisation (GEO and AEO), so ChatGPT, Gemini and Google AI Overviews can find, understand and mention your business.</span></p>
-        <ul class="home-svc-links">
-          <li><a href="services/technical-seo-services.html">Technical SEO <i class="bi bi-arrow-right" aria-hidden="true"></i></a></li>
-          <li><a href="services/on-page-seo-services.html">On-Page SEO <i class="bi bi-arrow-right" aria-hidden="true"></i></a></li>
-          <li><a href="services/off-page-seo-services.html">Off-Page SEO <i class="bi bi-arrow-right" aria-hidden="true"></i></a></li>
-          <li><a href="services/local-seo-services.html">Local SEO <i class="bi bi-arrow-right" aria-hidden="true"></i></a></li>
-        </ul>
-        <a href="best-seo-company-in-kerala.html" class="home-svc-btn">Explore SEO <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
-      </div>
-
-      <div class="home-svc-card">
-        <span class="home-svc-icon" aria-hidden="true"><i class="bi bi-laptop"></i></span>
-        <div>
-          <h3>Web Development</h3>
-          <p>Fast, mobile-first websites with SEO built in from day one, so they're ready to rank and turn visitors into enquiries.</p>
-          <a href="best-web-development-company-in-kerala.html" class="card-link">Explore Web Development &#8594;</a>
+    <!-- Primary service: SEO -->
+    <article class="hw-feature reveal" aria-labelledby="svc-seo">
+      <div class="hw-feature-main">
+        <span class="hw-tag"><i class="bi bi-star-fill" aria-hidden="true"></i>Primary service</span>
+        <div class="hw-title-row">
+          <span class="hw-icon" aria-hidden="true"><i class="bi bi-search"></i></span>
+          <h3 id="svc-seo">Search Engine Optimization (SEO)</h3>
         </div>
+        <p>Get found on Google and Google Maps by people who are ready to call, visit or buy. We fix your site, target the right searches and build the local signals Google trusts.</p>
+        <p class="hw-ai"><i class="bi bi-stars" aria-hidden="true"></i><span>Includes AI search optimisation (GEO and AEO), so ChatGPT, Gemini and Google AI Overviews can find, understand and mention your business.</span></p>
+        <a href="best-seo-company-in-kerala.html" class="btn bam-btn-primary hw-btn">Explore SEO services <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
       </div>
+      <ul class="hw-sublist" aria-label="SEO services">
+        <li><a href="services/technical-seo-services.html"><span class="hw-sub-icon" aria-hidden="true"><i class="bi bi-gear"></i></span><span><strong>Technical SEO</strong><small>Speed, crawling, indexing and site structure</small></span><i class="bi bi-arrow-right hw-arrow" aria-hidden="true"></i></a></li>
+        <li><a href="services/on-page-seo-services.html"><span class="hw-sub-icon" aria-hidden="true"><i class="bi bi-file-earmark-text"></i></span><span><strong>On-Page SEO</strong><small>Titles, content and internal links</small></span><i class="bi bi-arrow-right hw-arrow" aria-hidden="true"></i></a></li>
+        <li><a href="services/off-page-seo-services.html"><span class="hw-sub-icon" aria-hidden="true"><i class="bi bi-link-45deg"></i></span><span><strong>Off-Page SEO</strong><small>Relevant links and mentions, earned not bought</small></span><i class="bi bi-arrow-right hw-arrow" aria-hidden="true"></i></a></li>
+        <li><a href="services/local-seo-services.html"><span class="hw-sub-icon" aria-hidden="true"><i class="bi bi-geo-alt"></i></span><span><strong>Local SEO</strong><small>Google Business Profile and Maps rankings</small></span><i class="bi bi-arrow-right hw-arrow" aria-hidden="true"></i></a></li>
+      </ul>
+    </article>
 
-      <div class="home-svc-card">
-        <span class="home-svc-icon" aria-hidden="true"><i class="bi bi-badge-ad"></i></span>
-        <div>
-          <h3>Google Ads</h3>
-          <p>Search and Maps campaigns that bring calls while your SEO builds, tracked so you know what each enquiry costs.</p>
-          <a href="best-google-ads-company-in-kerala.html" class="card-link">Explore Google Ads &#8594;</a>
-        </div>
+    <!-- Supporting services -->
+    <div class="row g-4 mt-1">
+      <div class="col-md-6 reveal">
+        <article class="hw-card" aria-labelledby="svc-web">
+          <div class="hw-title-row">
+            <span class="hw-icon" aria-hidden="true"><i class="bi bi-laptop"></i></span>
+            <h3 id="svc-web">Web Development</h3>
+          </div>
+          <p>Fast, mobile-first websites with SEO built in from day one, ready to rank and turn visitors into enquiries.</p>
+          <ul class="hw-points">
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i>Business websites and ecommerce stores</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i>Built mobile-first and tested for speed</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i>SEO-ready structure and schema at launch</li>
+          </ul>
+          <a href="best-web-development-company-in-kerala.html" class="card-link">Explore web development →</a>
+        </article>
+      </div>
+      <div class="col-md-6 reveal">
+        <article class="hw-card" aria-labelledby="svc-ads">
+          <div class="hw-title-row">
+            <span class="hw-icon" aria-hidden="true"><i class="bi bi-badge-ad"></i></span>
+            <h3 id="svc-ads">Google Ads</h3>
+          </div>
+          <p>Search and Maps campaigns that bring calls while your SEO builds, so you're not waiting months for enquiries.</p>
+          <ul class="hw-points">
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i>Search, Maps and Shopping campaigns</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i>Call and form tracking, so you know what each enquiry costs</li>
+            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i>Landing pages built to convert clicks</li>
+          </ul>
+          <a href="best-google-ads-company-in-kerala.html" class="card-link">Explore Google Ads →</a>
+        </article>
       </div>
     </div>
   </div>
