@@ -115,6 +115,47 @@
 }
 </script>
 
+  <!-- FAQ Schema (must match the visible FAQ) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is AEO the same as GEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They overlap heavily. AEO focuses on giving direct answers that search features, voice assistants and AI tools can use. GEO focuses on being cited by generative AI tools such as ChatGPT and Google AI Overviews. Many people use the terms interchangeably."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does schema markup guarantee my content appears in AI answers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Schema markup helps search engines understand your content, but it doesn't guarantee a place in AI answers or rich results. Clear, accurate content on a trusted website matters more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need separate content for AEO and SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The same page can serve both. Start each section with a short, direct answer, then add detail, examples and proof. That structure suits search engines, answer engines and readers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a small business benefit from AEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Answering common customer questions on your website, adding an FAQ section and keeping your Google Business Profile accurate are simple steps that help both search rankings and AI answers."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
@@ -245,6 +286,52 @@
 
           <h2 id="conclusion">Conclusion</h2>
           <p>AEO and traditional SEO are not rivals - they are two sides of the same visibility strategy. Traditional SEO gets you found; AEO makes sure you're understood and quoted by the AI tools shaping how people discover information today. Businesses that invest in both will be best positioned to stay visible, no matter how search continues to evolve.</p>
+          <!-- FAQ -->
+          <h2 id="faq">Frequently Asked Questions</h2>
+
+          <div class="faq-accordion">
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Is AEO the same as GEO?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                They overlap heavily. AEO focuses on giving direct answers that search features, voice assistants and AI tools can use. GEO focuses on being cited by generative AI tools such as ChatGPT and Google AI Overviews. Many people use the terms interchangeably.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Does schema markup guarantee my content appears in AI answers?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                No. Schema markup helps search engines understand your content, but it doesn't guarantee a place in AI answers or rich results. Clear, accurate content on a trusted website matters more.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Do I need separate content for AEO and SEO?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                No. The same page can serve both. Start each section with a short, direct answer, then add detail, examples and proof. That structure suits search engines, answer engines and readers.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Can a small business benefit from AEO?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Yes. Answering common customer questions on your website, adding an FAQ section and keeping your Google Business Profile accurate are simple steps that help both search rankings and AI answers.
+              </div>
+            </div>
+
+          </div>
 
         </article>
 
@@ -279,6 +366,7 @@
               <li><a href="#why-both">Why You Need Both</a></li>
               <li><a href="#how-to">How to Optimize for Both</a></li>
               <li><a href="#conclusion">Conclusion</a></li>
+              <li><a href="#faq">FAQs</a></li>
             </ul>
           </div>
 
@@ -437,5 +525,14 @@
 </footer>
 
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    document.querySelectorAll('.faq-item').forEach(el => {
+      if (el !== item) el.classList.remove('open');
+    });
+    item.classList.toggle('open');
+  }
+</script>
 </body>
 </html>
