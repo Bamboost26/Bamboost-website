@@ -88,6 +88,47 @@
   ]
 }
 </script>
+  <!-- FAQ Schema (must match the visible FAQ) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Should I send Google Ads traffic to my homepage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually not. A homepage speaks to everyone, while a dedicated landing page matches the exact offer in your ad. That closer match tends to improve both conversion rates and Quality Score."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast should a Google Ads landing page load?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aim for under three seconds on mobile. Most ad clicks come from phones, and slow pages lose visitors before they see your offer. Test your page with Google PageSpeed Insights."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I A/B test a landing page?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Create two versions that differ in one element, such as the headline or the call to action. Split traffic between them using Google Ads experiments or your landing page builder, and wait for enough conversions before choosing a winner."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a good landing page conversion rate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It varies widely by industry, offer and traffic source, so there is no single target. Measure your own starting rate first, then aim to improve it step by step through testing."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body class="post-google-ads-landing-page-optimization">
 
@@ -213,6 +254,52 @@
           <p>Your Google Ads campaign is only as strong as the page it sends people to. An optimised landing page reduces your cost-per-click, improves your Quality Score, and converts more of your hard-earned traffic into real leads and sales. Focus on message match, clear CTAs, speed, and consistent testing - and you will see compounding returns on every rupee you invest in paid ads.</p>
 
           <p>If you want a team that manages both your ad campaigns and the landing pages behind them, our Google Ads specialists in Kerala build end-to-end paid search strategies designed to maximise return on every campaign.</p>
+          <!-- FAQ -->
+          <h2 id="faq">Frequently Asked Questions</h2>
+
+          <div class="faq-accordion">
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Should I send Google Ads traffic to my homepage?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Usually not. A homepage speaks to everyone, while a dedicated landing page matches the exact offer in your ad. That closer match tends to improve both conversion rates and Quality Score.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                How fast should a Google Ads landing page load?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Aim for under three seconds on mobile. Most ad clicks come from phones, and slow pages lose visitors before they see your offer. Test your page with Google PageSpeed Insights.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                How do I A/B test a landing page?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Create two versions that differ in one element, such as the headline or the call to action. Split traffic between them using Google Ads experiments or your landing page builder, and wait for enough conversions before choosing a winner.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                What is a good landing page conversion rate?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                It varies widely by industry, offer and traffic source, so there is no single target. Measure your own starting rate first, then aim to improve it step by step through testing.
+              </div>
+            </div>
+
+          </div>
 
         </article>
 
@@ -245,6 +332,7 @@
               <li><a href="#page-speed">Page Speed Is Non-Negotiable</a></li>
               <li><a href="#testing">Test, Measure, and Iterate</a></li>
               <li><a href="#conclusion">Conclusion</a></li>
+              <li><a href="#faq">FAQs</a></li>
             </ul>
           </div>
 
@@ -351,5 +439,14 @@
 </footer>
 
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    document.querySelectorAll('.faq-item').forEach(el => {
+      if (el !== item) el.classList.remove('open');
+    });
+    item.classList.toggle('open');
+  }
+</script>
 </body>
 </html>

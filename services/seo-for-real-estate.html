@@ -198,15 +198,8 @@ src="https://www.facebook.com/tr?id=3891606284476113&ev=PageView&noscript=1"
 .re-cta-contact{display:flex;flex-direction:column;gap:.7rem;position:relative;z-index:2}
 .re-cta-contact a{display:inline-flex;align-items:center;gap:.6rem;color:#fff;text-decoration:none;font-size:.95rem}
 .re-cta-contact a i{width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.25);display:inline-flex;align-items:center;justify-content:center}
-.re-form{position:relative;z-index:2}
-.re-form label{font-size:.8rem;font-weight:600;color:rgba(255,255,255,.75);margin-bottom:.35rem}
-.re-form .form-control,.re-form .form-select{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);color:#fff;border-radius:12px;padding:.8rem 1rem;font-size:.92rem}
-.re-form .form-control::placeholder{color:rgba(255,255,255,.45)}
-.re-form .form-select option{color:var(--text1)}
-.re-form .form-control:focus,.re-form .form-select:focus{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.55);box-shadow:none;color:#fff}
-.re-form .btn{width:100%;background:#fff;color:var(--g1)!important;font-size:.95rem}
-.re-form .btn:hover{background:var(--g6)}
-.re-form-msg{margin-top:1rem;font-size:.9rem;color:#fff;background:rgba(255,255,255,.1);border-radius:12px;padding:.8rem 1rem;position:relative;z-index:2}
+.re-cta-btn{display:block;width:100%;margin-bottom:1.25rem;background:#fff;color:var(--g1)!important;font-size:.95rem;font-weight:600;position:relative;z-index:2}
+.re-cta-btn:hover{background:var(--g6)}
 @media(min-width:992px){.seo-sticky-cta{display:none!important}}
 </style>
 </head>
@@ -660,52 +653,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- SECTION 10 — FINAL CTA + FORM -->
+<!-- SECTION 10 — FINAL CTA -->
 <section class="bam-cta bam-cta-v2" id="free-audit">
   <div class="container">
     <div class="cta-card re-cta-card" style="max-width:1040px;">
       <div class="row g-5 align-items-center">
-        <div class="col-lg-6">
+        <div class="col-lg-7">
           <h2>Tell Us What You Are Selling and <em style="color:var(--g5);font-style:italic;">Where</em></h2>
-          <p>Share four details. We'll send a free audit showing how buyers search for projects like yours, and what's stopping them from finding you.</p>
+          <p>Get a free audit showing how buyers search for projects like yours, and what's stopping them from finding you.</p>
+        </div>
+        <div class="col-lg-5">
+          <a href="../contact.html" class="btn re-cta-btn px-4 py-3" data-link-location="re_final_cta">Get a Free Real Estate SEO Audit &#8594;</a>
           <div class="re-cta-contact">
             <a href="tel:+919090209054" data-link-location="re_final_cta"><i class="bi bi-telephone" aria-hidden="true"></i>+91 90902 09054</a>
             <a href="https://wa.me/919090209054?text=Hi%20Bamboost%2C%20I%27d%20like%20a%20free%20real%20estate%20SEO%20audit" target="_blank" rel="noopener" data-link-location="re_final_cta"><i class="bi bi-whatsapp" aria-hidden="true"></i>Chat on WhatsApp</a>
           </div>
-        </div>
-        <div class="col-lg-6">
-          <form id="reAuditForm" class="re-form" data-form-location="re_final_cta" novalidate>
-            <div class="row g-3">
-              <div class="col-sm-6">
-                <label for="reName">Name</label>
-                <input type="text" class="form-control" id="reName" name="name" placeholder="Your name" autocomplete="name" required>
-              </div>
-              <div class="col-sm-6">
-                <label for="rePhone">Phone / WhatsApp</label>
-                <input type="tel" class="form-control" id="rePhone" name="phone" placeholder="+91" inputmode="tel" autocomplete="tel" pattern="^\+?[0-9 ]{8,}$" required>
-              </div>
-              <div class="col-sm-6">
-                <label for="reType">Project type</label>
-                <select class="form-select" id="reType" name="type" required>
-                  <option value="">Select</option>
-                  <option>Apartments</option>
-                  <option>Villas</option>
-                  <option>Plots</option>
-                  <option>Commercial</option>
-                  <option>Agent listings</option>
-                </select>
-              </div>
-              <div class="col-sm-6">
-                <label for="reLocation">Location</label>
-                <input type="text" class="form-control" id="reLocation" name="location" placeholder="e.g. Kozhikode" required>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn px-4 py-3">Get a Free Real Estate SEO Audit →</button>
-              </div>
-            </div>
-          </form>
-          <div class="re-form-msg" id="reSuccess" role="status" hidden>Thanks! We'll be in touch shortly on the number you shared.</div>
-          <div class="re-form-msg" id="reError" role="alert" hidden>Something went wrong. Please call or WhatsApp us instead.</div>
         </div>
       </div>
     </div>
@@ -813,41 +775,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
   });
 
-  // Audit form: posts to the same Google Form as contact.html
-  var form = document.getElementById('reAuditForm');
-  if (form) {
-    var btn = form.querySelector('button[type="submit"]');
-    var btnLabel = btn.innerHTML;
-    var ok = document.getElementById('reSuccess');
-    var err = document.getElementById('reError');
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (!form.checkValidity()) { form.reportValidity(); return; }
-      ok.hidden = true; err.hidden = true;
-      btn.disabled = true; btn.textContent = 'Submitting...';
-      var val = function (n) { return form.elements[n].value.trim(); };
-      var details = '[Free real estate SEO audit request - seo-for-real-estate.html]' +
-        '\nProject type: ' + val('type') + '\nLocation: ' + val('location');
-      // The Google Form marks Email and Business as required; this form doesn't collect email
-      var data = new FormData();
-      data.append('entry.404753692', val('name'));
-      data.append('entry.312593962', val('phone'));
-      data.append('entry.1927653492', 'Not collected (real estate page form)');
-      data.append('entry.40326543', 'Real estate - ' + val('type'));
-      data.append('entry.1702953462', 'SEO (Search Engine Optimization)');
-      data.append('entry.1531124645', details);
-      fetch('https://docs.google.com/forms/d/e/1FAIpQLScsItvNV2zVcysWJI5PHCMkiM7Zk1Xe2k6PW7_BrQjR6oLKAw/formResponse', {
-        method: 'POST', mode: 'no-cors', body: data
-      }).then(function () {
-        form.reset(); form.hidden = true; ok.hidden = false;
-        window.dataLayer.push({ event: 'generate_lead', form_location: 're_final_cta' });
-      }).catch(function () {
-        err.hidden = false; btn.disabled = false; btn.innerHTML = btnLabel;
-      });
-    });
-  }
-
-  // Mobile sticky CTA: show after the hero, hide while the audit form is on screen
+  // Mobile sticky CTA: show after the hero, hide while the final CTA is on screen
   var sticky = document.getElementById('seoStickyCta');
   var heroCtas = document.getElementById('heroCtas');
   var audit = document.getElementById('free-audit');

@@ -88,6 +88,47 @@
   ]
 }
 </script>
+  <!-- FAQ Schema (must match the visible FAQ) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between on-page and off-page SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On-page SEO covers everything you change on your own pages, such as content, title tags, headings, images and internal links. Off-page SEO covers signals from outside your site, mainly backlinks and brand mentions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long should a title tag be?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Keep title tags to about 50 to 60 characters so they don't get cut off in search results. Put your main keyword near the start where it reads naturally, and make every page's title unique."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do meta descriptions affect rankings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not directly. Meta descriptions don't count as a ranking factor, but a clear, relevant description can persuade more people to click your result. Google sometimes rewrites them to match the search."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I update my on-page SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Review your most important pages every few months, and right away if their rankings drop. Update outdated facts, improve thin sections and add internal links to newer related pages."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body class="post-on-page-seo-guide-2026">
 
@@ -390,6 +431,52 @@
           <p>Start with the fundamentals: get your keyword research right, write titles and meta descriptions that earn clicks, and create content that genuinely helps your audience. Master those three areas first, and the rest of on-page SEO will feel far more manageable as you build your skills.</p>
 
           <p>If you would like expert support implementing these techniques on your website, Bamboost's SEO team is ready to help you turn these principles into measurable growth.</p>
+          <!-- FAQ -->
+          <h2 id="faq">Frequently Asked Questions</h2>
+
+          <div class="faq-accordion">
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                What is the difference between on-page and off-page SEO?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                On-page SEO covers everything you change on your own pages, such as content, title tags, headings, images and internal links. Off-page SEO covers signals from outside your site, mainly backlinks and brand mentions.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                How long should a title tag be?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Keep title tags to about 50 to 60 characters so they don't get cut off in search results. Put your main keyword near the start where it reads naturally, and make every page's title unique.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Do meta descriptions affect rankings?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Not directly. Meta descriptions don't count as a ranking factor, but a clear, relevant description can persuade more people to click your result. Google sometimes rewrites them to match the search.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                How often should I update my on-page SEO?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Review your most important pages every few months, and right away if their rankings drop. Update outdated facts, improve thin sections and add internal links to newer related pages.
+              </div>
+            </div>
+
+          </div>
 
         </article>
 
@@ -431,6 +518,7 @@
               <li><a href="#schema">Step 10 - Schema Markup</a></li>
               <li><a href="#checklist">Full Checklist</a></li>
               <li><a href="#conclusion">Conclusion</a></li>
+              <li><a href="#faq">FAQs</a></li>
             </ul>
           </div>
 
@@ -545,5 +633,14 @@
 
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/main.js"></script>
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    document.querySelectorAll('.faq-item').forEach(el => {
+      if (el !== item) el.classList.remove('open');
+    });
+    item.classList.toggle('open');
+  }
+</script>
 </body>
 </html>

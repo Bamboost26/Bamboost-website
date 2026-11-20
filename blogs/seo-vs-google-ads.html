@@ -86,6 +86,47 @@
   ]
 }
 </script>
+  <!-- FAQ Schema (must match the visible FAQ) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is cheaper, SEO or Google Ads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google Ads charges for every click for as long as you run it. SEO needs upfront investment in content and optimisation, but the clicks it brings are free. Over the long term, SEO usually costs less per lead, though it is slower to start."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does running Google Ads improve my SEO rankings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Paying for ads has no direct effect on organic rankings. Ads do show you which keywords convert into customers, and you can use that data to plan your SEO content."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly do SEO and Google Ads show results?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google Ads can bring visitors the day your campaign is approved. SEO usually takes 3 to 6 months to show meaningful movement, but rankings can keep bringing traffic long after the work is done."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should a small business start with SEO or Google Ads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you need enquiries this week, start with Google Ads while you build your SEO. If you can wait a few months, invest in SEO for lasting growth. Most businesses get the best results by using both."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body class="post-seo-vs-google-ads">
 
@@ -296,6 +337,52 @@
             <p>Renting gets you in the door fast. Owning builds an asset that grows in value over time - one that no competitor can take away simply by outbidding you on an auction.</p>
             <p>Most business owners get the best results by starting with a small Google Ads budget to generate early traction, while simultaneously investing in SEO for sustainable, long-term online visibility. Neither channel works best in isolation - together, they cover every stage of your customer's search journey.</p>
           </div>
+          <!-- FAQ -->
+          <h2 id="faq">Frequently Asked Questions</h2>
+
+          <div class="faq-accordion">
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Which is cheaper, SEO or Google Ads?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Google Ads charges for every click for as long as you run it. SEO needs upfront investment in content and optimisation, but the clicks it brings are free. Over the long term, SEO usually costs less per lead, though it is slower to start.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Does running Google Ads improve my SEO rankings?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                No. Paying for ads has no direct effect on organic rankings. Ads do show you which keywords convert into customers, and you can use that data to plan your SEO content.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                How quickly do SEO and Google Ads show results?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Google Ads can bring visitors the day your campaign is approved. SEO usually takes 3 to 6 months to show meaningful movement, but rankings can keep bringing traffic long after the work is done.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Should a small business start with SEO or Google Ads?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                If you need enquiries this week, start with Google Ads while you build your SEO. If you can wait a few months, invest in SEO for lasting growth. Most businesses get the best results by using both.
+              </div>
+            </div>
+
+          </div>
 
         </article>
 
@@ -330,6 +417,7 @@
               <li><a href="#comparison">Head-to-Head Comparison</a></li>
               <li><a href="#which-to-use">Which Should You Use?</a></li>
               <li><a href="#best-strategy">The Smartest Strategy</a></li>
+              <li><a href="#faq">FAQs</a></li>
             </ul>
           </div>
 
@@ -437,5 +525,14 @@
 </footer>
 
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    document.querySelectorAll('.faq-item').forEach(el => {
+      if (el !== item) el.classList.remove('open');
+    });
+    item.classList.toggle('open');
+  }
+</script>
 </body>
 </html>

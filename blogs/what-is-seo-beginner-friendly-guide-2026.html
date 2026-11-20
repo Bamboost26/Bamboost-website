@@ -93,6 +93,47 @@
   ]
 }
 </script>
+  <!-- FAQ Schema (must match the visible FAQ) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does SEO take to show results?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most websites see early movement within 3 to 6 months. Competitive keywords can take longer. The timeline depends on your competitors, the condition of your website and how consistently you publish useful content and earn quality links."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is SEO better than paid advertising?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They do different jobs. SEO builds traffic that keeps coming without paying per click, while paid ads give instant visibility that stops when the budget ends. Many businesses use ads for quick leads and SEO for long-term growth."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I do SEO for my website myself?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you can handle the basics: set up Google Search Console, write clear titles and headings, create helpful pages and complete your Google Business Profile. Technical fixes and link building usually benefit from expert help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does SEO still matter with AI search?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Google's AI Overviews and AI Mode draw on pages in Google's search index, so a crawlable, fast website with clear, trustworthy content is still the foundation for appearing in both regular and AI-generated results."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body class="post-what-is-seo-beginner-friendly-guide-2026">
 
@@ -258,6 +299,52 @@
           <p>SEO is the practice of improving a website so that it becomes more visible in search engine results. By optimizing content, improving website performance, and building authority through backlinks, businesses and website owners can increase their chances of attracting organic traffic.</p>
           <p>For beginners, the most effective approach is to focus on creating valuable content, using relevant keywords, and ensuring that their website is easy for both users and search engines to navigate.</p>
           <p>With consistent effort and the right strategy, SEO can become a powerful driver of long-term online growth.</p>
+          <!-- FAQ -->
+          <h2 id="faq">Frequently Asked Questions</h2>
+
+          <div class="faq-accordion">
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                How long does SEO take to show results?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Most websites see early movement within 3 to 6 months. Competitive keywords can take longer. The timeline depends on your competitors, the condition of your website and how consistently you publish useful content and earn quality links.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Is SEO better than paid advertising?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                They do different jobs. SEO builds traffic that keeps coming without paying per click, while paid ads give instant visibility that stops when the budget ends. Many businesses use ads for quick leads and SEO for long-term growth.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Can I do SEO for my website myself?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Yes, you can handle the basics: set up Google Search Console, write clear titles and headings, create helpful pages and complete your Google Business Profile. Technical fixes and link building usually benefit from expert help.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Does SEO still matter with AI search?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Yes. Google's AI Overviews and AI Mode draw on pages in Google's search index, so a crawlable, fast website with clear, trustworthy content is still the foundation for appearing in both regular and AI-generated results.
+              </div>
+            </div>
+
+          </div>
 
         </article>
 
@@ -295,6 +382,7 @@
               <li><a href="#tips">Beginner Tips for SEO</a></li>
               <li><a href="#cro">Turning SEO into Business Opportunities</a></li>
               <li><a href="#conclusion">Conclusion</a></li>
+              <li><a href="#faq">FAQs</a></li>
             </ul>
           </div>
 
@@ -402,5 +490,14 @@
 
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/main.js"></script>
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    document.querySelectorAll('.faq-item').forEach(el => {
+      if (el !== item) el.classList.remove('open');
+    });
+    item.classList.toggle('open');
+  }
+</script>
 </body>
 </html>

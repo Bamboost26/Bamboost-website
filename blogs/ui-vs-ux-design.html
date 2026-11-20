@@ -88,6 +88,47 @@
   ]
 }
 </script>
+  <!-- FAQ Schema (must match the visible FAQ) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can one person do both UI and UX design?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Smaller projects and startups often hire one UI/UX designer who handles both. Larger teams usually separate the roles so each designer can go deeper into research or visual design."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is more important, UI or UX?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Neither works well alone. Good UX makes a site easy to use, and good UI makes it clear and appealing. A beautiful site that confuses visitors loses customers, and so does a usable site that looks untrustworthy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What tools do UI and UX designers use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both commonly use Figma for wireframes, prototypes and final designs. UX designers also rely on user interviews, usability testing and analytics to understand how people use a site."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does UX design affect SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google's page experience signals, including Core Web Vitals, reward pages that load quickly and stay stable as they load. Good UX also helps visitors find what they need, so they stay longer and are more likely to enquire."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body class="post-ui-vs-ux-design">
 
@@ -281,6 +322,52 @@
           <p>So, what is the bottom line on <strong>UI vs UX design</strong>? They are two sides of the same coin. UX shapes the logic and flow of your website. UI shapes the look and feel. One without the other produces a product that either frustrates users or fails to make a strong impression.</p>
 
           <p>If you are investing in a new website or redesigning an existing one, make sure the team you work with understands both disciplines deeply. The difference between a website that just exists and one that actively grows your business often comes down to how seriously UI and UX design were taken during the build.</p>
+          <!-- FAQ -->
+          <h2 id="faq">Frequently Asked Questions</h2>
+
+          <div class="faq-accordion">
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Can one person do both UI and UX design?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Yes. Smaller projects and startups often hire one UI/UX designer who handles both. Larger teams usually separate the roles so each designer can go deeper into research or visual design.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Which is more important, UI or UX?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Neither works well alone. Good UX makes a site easy to use, and good UI makes it clear and appealing. A beautiful site that confuses visitors loses customers, and so does a usable site that looks untrustworthy.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                What tools do UI and UX designers use?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Both commonly use Figma for wireframes, prototypes and final designs. UX designers also rely on user interviews, usability testing and analytics to understand how people use a site.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                How does UX design affect SEO?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Google's page experience signals, including Core Web Vitals, reward pages that load quickly and stay stable as they load. Good UX also helps visitors find what they need, so they stay longer and are more likely to enquire.
+              </div>
+            </div>
+
+          </div>
 
         </article>
 
@@ -316,6 +403,7 @@
               <li><a href="#why-it-matters">Why It Matters for Your Website</a></li>
               <li><a href="#design-process">Practical UI/UX Design Process</a></li>
               <li><a href="#conclusion">Conclusion</a></li>
+              <li><a href="#faq">FAQs</a></li>
             </ul>
           </div>
 
@@ -423,5 +511,14 @@
 </footer>
 
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    document.querySelectorAll('.faq-item').forEach(el => {
+      if (el !== item) el.classList.remove('open');
+    });
+    item.classList.toggle('open');
+  }
+</script>
 </body>
 </html>

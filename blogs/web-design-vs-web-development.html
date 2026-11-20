@@ -88,6 +88,47 @@
   ]
 }
 </script>
+  <!-- FAQ Schema (must match the visible FAQ) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can one person do both web design and web development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Many freelancers and small teams handle both, especially for small business websites. Larger projects usually benefit from specialists who focus on design or development."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which comes first, web design or web development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Design usually comes first. Wireframes and mockups set the layout and look, then developers build the site from them. In practice, the two teams work together throughout the project."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is UX part of web design?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. UX design plans how visitors move through your site and complete tasks, while UI design handles the visual layout. Read our guide on UI vs UX design to learn more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does web design affect SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Clear layouts, readable text and mobile-friendly design help visitors stay and find what they need. Development handles the technical side, such as page speed and clean code."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body class="post-web-design-vs-web-development">
 
@@ -261,6 +302,52 @@
           <p>Web design and web development are two distinct crafts, but they are two sides of the same coin. Design creates the impression; development makes it real. The businesses that invest in both - and find a team that bridges them seamlessly - are the ones that build websites their customers actually love to use.</p>
 
           <p>Whether you need a visual refresh, a brand-new build, or a complex web application, start by understanding what problem you are actually solving. The right team will take it from there.</p>
+          <!-- FAQ -->
+          <h2 id="faq">Frequently Asked Questions</h2>
+
+          <div class="faq-accordion">
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Can one person do both web design and web development?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Yes. Many freelancers and small teams handle both, especially for small business websites. Larger projects usually benefit from specialists who focus on design or development.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Which comes first, web design or web development?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Design usually comes first. Wireframes and mockups set the layout and look, then developers build the site from them. In practice, the two teams work together throughout the project.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Is UX part of web design?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Yes. UX design plans how visitors move through your site and complete tasks, while UI design handles the visual layout. Read our guide on <a href="../blogs/ui-vs-ux-design.html">UI vs UX design</a> to learn more.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Does web design affect SEO?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Yes. Clear layouts, readable text and mobile-friendly design help visitors stay and find what they need. Development handles the technical side, such as page speed and clean code.
+              </div>
+            </div>
+
+          </div>
 
         </article>
 
@@ -295,6 +382,7 @@
               <li><a href="#where-they-overlap">Where They Overlap</a></li>
               <li><a href="#which-do-you-need">Which Does Your Business Need?</a></li>
               <li><a href="#conclusion">Conclusion</a></li>
+              <li><a href="#faq">FAQs</a></li>
             </ul>
           </div>
 
@@ -402,5 +490,14 @@
 </footer>
 
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    document.querySelectorAll('.faq-item').forEach(el => {
+      if (el !== item) el.classList.remove('open');
+    });
+    item.classList.toggle('open');
+  }
+</script>
 </body>
 </html>

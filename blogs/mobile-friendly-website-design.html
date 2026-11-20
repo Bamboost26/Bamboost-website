@@ -93,6 +93,47 @@
   ]
 }
 </script>
+  <!-- FAQ Schema (must match the visible FAQ) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I check if my website is mobile-friendly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google retired its Mobile-Friendly Test tool in 2023. Use PageSpeed Insights or Lighthouse in Chrome to check mobile performance, and test your site on a few real phones to make sure text, buttons and forms are easy to use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is mobile-first indexing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mobile-first indexing means Google mainly uses the mobile version of your website to index and rank it. If content or features are missing on mobile, your rankings can suffer on every device."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between responsive and mobile-friendly design?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Responsive design is one way to be mobile-friendly: the same page adjusts its layout to fit any screen size. Google recommends responsive design because it keeps one URL and the same content for every device."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast should a mobile website load?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aim for the main content to appear within 2.5 seconds, which is Google's threshold for a good Largest Contentful Paint score. Compressed images, less JavaScript and good hosting make the biggest difference."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body class="post-mobile-friendly-website-design">
 
@@ -196,7 +237,7 @@
             <li><div class="icon-dot"><i class="bi bi-check-lg"></i></div><div>Content readability</div></li>
             </ul>
 
-            <p>Optimizing your website for mobile helps improve visibility and attract more organic traffic.</p>
+            <p>Optimizing your website for mobile helps improve visibility and attract more <a href="../best-seo-company-in-kerala.html">organic traffic</a>.</p>
 
             <h2 id="speed">Faster Loading Speed</h2>
             <p>Mobile users expect websites to load quickly. If a website takes too long to load, users are likely to leave and visit a competitor’s site instead.</p>
@@ -255,6 +296,52 @@
             <p>Businesses that prioritize mobile optimization are better positioned to attract and retain users, ultimately driving long-term growth.</p>
 
             <p>If you want your website to perform effectively, investing in mobile-friendly design should be a top priority working with a <a href="../best-web-development-company-in-kerala.html" style="color: var(--green-dark);">best web development company in Kerala</a> that understands modern user behavior and responsive design standards.</p>
+          <!-- FAQ -->
+          <h2 id="faq">Frequently Asked Questions</h2>
+
+          <div class="faq-accordion">
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                How can I check if my website is mobile-friendly?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Google retired its Mobile-Friendly Test tool in 2023. Use PageSpeed Insights or Lighthouse in Chrome to check mobile performance, and test your site on a few real phones to make sure text, buttons and forms are easy to use.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                What is mobile-first indexing?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Mobile-first indexing means Google mainly uses the mobile version of your website to index and rank it. If content or features are missing on mobile, your rankings can suffer on every device.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                What is the difference between responsive and mobile-friendly design?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Responsive design is one way to be mobile-friendly: the same page adjusts its layout to fit any screen size. Google recommends responsive design because it keeps one URL and the same content for every device.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                How fast should a mobile website load?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Aim for the main content to appear within 2.5 seconds, which is Google's threshold for a good Largest Contentful Paint score. Compressed images, less JavaScript and good hosting make the biggest difference.
+              </div>
+            </div>
+
+          </div>
 
         </article>
 
@@ -294,6 +381,7 @@
               <li><a href="#future">Adapt to Future Technology</a></li>
               <li><a href="#factors">Keyfactors of Mobile Friendly Design</a></li>
               <li><a href="#conversion">Conclusion</a></li>
+              <li><a href="#faq">FAQs</a></li>
             </ul>
           </div>
 
@@ -401,5 +489,14 @@
 
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/main.js"></script>
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    document.querySelectorAll('.faq-item').forEach(el => {
+      if (el !== item) el.classList.remove('open');
+    });
+    item.classList.toggle('open');
+  }
+</script>
 </body>
 </html>

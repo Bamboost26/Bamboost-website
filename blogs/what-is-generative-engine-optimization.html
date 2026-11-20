@@ -88,6 +88,47 @@
   ]
 }
 </script>
+  <!-- FAQ Schema (must match the visible FAQ) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is GEO replacing SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. GEO builds on SEO. AI tools draw on content that is already indexed, trusted and clearly written, so a website with strong SEO is in the best position to be cited in AI-generated answers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if AI tools mention my business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask ChatGPT, Perplexity and Google AI Mode the questions your customers ask, and note which sources they cite. Our guide on how to measure AI visibility explains how to track this over time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does an llms.txt file help with GEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not for Google. Google Search ignores llms.txt, so it doesn't affect rankings or AI Overviews. Some AI agents and developer tools do read it. Our article What Is llms.txt? covers the details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does GEO take to work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no fixed timeline, and no one can guarantee AI citations. AI tools pick up changes as your pages are re-crawled, so clearer answers and stronger authority usually show their effect over weeks to months."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body class="post-what-is-generative-engine-optimization">
 
@@ -269,6 +310,52 @@
           <p>Generative Engine Optimization is not a distant future concept - it is a present reality that is reshaping how businesses earn online visibility. As AI search continues to grow, the brands that invest in authoritative, well-structured, and genuinely helpful content will be the ones that get cited, discovered, and trusted.</p>
 
           <p>The good news is that the core principles of great SEO - expertise, clarity, trustworthiness, and helpfulness - are exactly the same qualities that make content succeed in generative search. Start building that foundation today, and your business will be ready for wherever search goes next.</p>
+          <!-- FAQ -->
+          <h2 id="faq">Frequently Asked Questions</h2>
+
+          <div class="faq-accordion">
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Is GEO replacing SEO?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                No. GEO builds on SEO. AI tools draw on content that is already indexed, trusted and clearly written, so a website with strong SEO is in the best position to be cited in AI-generated answers.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                How do I know if AI tools mention my business?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Ask ChatGPT, Perplexity and Google AI Mode the questions your customers ask, and note which sources they cite. Our guide on <a href="../blogs/measure-ai-search-visibility.html">how to measure AI visibility</a> explains how to track this over time.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Does an llms.txt file help with GEO?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Not for Google. Google Search ignores llms.txt, so it doesn't affect rankings or AI Overviews. Some AI agents and developer tools do read it. Our article <a href="../blogs/what-is-llms-txt.html">What Is llms.txt?</a> covers the details.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                How long does GEO take to work?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                There is no fixed timeline, and no one can guarantee AI citations. AI tools pick up changes as your pages are re-crawled, so clearer answers and stronger authority usually show their effect over weeks to months.
+              </div>
+            </div>
+
+          </div>
 
         </article>
 
@@ -303,6 +390,7 @@
               <li><a href="#how">How to Optimise for AI Search</a></li>
               <li><a href="#seo-geo-together">GEO and SEO Work Together</a></li>
               <li><a href="#conclusion">Conclusion</a></li>
+              <li><a href="#faq">FAQs</a></li>
             </ul>
           </div>
 
@@ -410,5 +498,14 @@
 </footer>
 
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    document.querySelectorAll('.faq-item').forEach(el => {
+      if (el !== item) el.classList.remove('open');
+    });
+    item.classList.toggle('open');
+  }
+</script>
 </body>
 </html>

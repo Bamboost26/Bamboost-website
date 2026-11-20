@@ -88,6 +88,47 @@
   ]
 }
 </script>
+  <!-- FAQ Schema (must match the visible FAQ) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the minimum budget for Google Ads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google Ads has no minimum spend, and you can set any daily budget. Your budget should still be enough to get regular clicks on your main keywords, otherwise you won't have enough data to judge results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Google Ads worth it for local businesses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, especially for service businesses. You can target a city, pincode or radius around your location, so your budget is spent only on people who can actually reach you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I measure the return on Google Ads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Set up conversion tracking for the actions that matter, such as calls, form enquiries and WhatsApp clicks. Then compare your cost per lead with the value of a new customer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can Google Ads bring results?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ads can start bringing clicks as soon as they are approved, often within a day. Allow a few weeks of data before making big changes, so you can see which keywords and ads actually bring enquiries."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body class="post-benifits-of-google-ads-for-small-business">
 
@@ -254,6 +295,52 @@
           <p>For small businesses in India, Google Ads is one of the most direct and measurable routes to customer acquisition available. It puts your business in front of people who are actively looking for what you sell, gives you complete control over your budget, and delivers transparent data on every rupee spent. Whether you run a local service business, an e-commerce store, a restaurant, or a professional services firm, Google Ads can generate real, qualified leads - starting from day one.</p>
 
           <p>The key to success lies in campaign strategy, keyword selection, ad copywriting, and continuous optimisation. When done well, Google Ads consistently delivers one of the highest returns on investment of any marketing channel available to small businesses in India today.</p>
+          <!-- FAQ -->
+          <h2 id="faq">Frequently Asked Questions</h2>
+
+          <div class="faq-accordion">
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                What is the minimum budget for Google Ads?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Google Ads has no minimum spend, and you can set any daily budget. Your budget should still be enough to get regular clicks on your main keywords, otherwise you won't have enough data to judge results.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Is Google Ads worth it for local businesses?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Yes, especially for service businesses. You can target a city, pincode or radius around your location, so your budget is spent only on people who can actually reach you.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                How do I measure the return on Google Ads?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Set up conversion tracking for the actions that matter, such as calls, form enquiries and WhatsApp clicks. Then compare your cost per lead with the value of a new customer.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                How quickly can Google Ads bring results?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Ads can start bringing clicks as soon as they are approved, often within a day. Allow a few weeks of data before making big changes, so you can see which keywords and ads actually bring enquiries.
+              </div>
+            </div>
+
+          </div>
 
         </article>
 
@@ -288,6 +375,7 @@
               <li><a href="#india-specific">Why It Works in India</a></li>
               <li><a href="#seo-plus-ads">Google Ads + SEO Together</a></li>
               <li><a href="#conclusion">Conclusion</a></li>
+              <li><a href="#faq">FAQs</a></li>
             </ul>
           </div>
 
@@ -395,5 +483,14 @@
 </footer>
 
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    document.querySelectorAll('.faq-item').forEach(el => {
+      if (el !== item) el.classList.remove('open');
+    });
+    item.classList.toggle('open');
+  }
+</script>
 </body>
 </html>

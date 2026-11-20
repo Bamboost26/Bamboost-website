@@ -86,6 +86,47 @@
   ]
 }
 </script>
+  <!-- FAQ Schema (must match the visible FAQ) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does it take for a new page to rank on Google?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google can index a new page within days or weeks, especially if it is in your sitemap and linked from other pages. Ranking well for competitive keywords usually takes several months of quality content and links."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I pay Google to rank higher in organic results?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Organic rankings cannot be bought. Google Ads places paid listings marked as Sponsored, but they are separate from organic results and have no effect on where your pages rank."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why did my Google rankings drop suddenly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include a Google core update, technical errors such as accidental noindex tags or blocked pages, lost backlinks, or competitors publishing better content. Check Google Search Console first for indexing problems and manual actions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do AI Overviews use the same ranking signals?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI Overviews draw on pages in Google's search index, so the same fundamentals apply: your page must be indexed, helpful and clearly written. Google says no special optimisation is required beyond good SEO practice."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body class="post-how-google-ranks-websites">
 
@@ -331,6 +372,52 @@
             <p>The algorithm is sophisticated, but its goal is straightforward- surface the most helpful, trustworthy, and well-performing page for every search. Businesses that invest consistently in quality content, a clean technical foundation, and a strong backlink profile will always win in the long run.</p>
             <p>SEO is not about tricking Google. It is about building a website so good that Google has no choice but to rank it.</p>
           </div>
+          <!-- FAQ -->
+          <h2 id="faq">Frequently Asked Questions</h2>
+
+          <div class="faq-accordion">
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                How long does it take for a new page to rank on Google?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Google can index a new page within days or weeks, especially if it is in your sitemap and linked from other pages. Ranking well for competitive keywords usually takes several months of quality content and links.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Can I pay Google to rank higher in organic results?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                No. Organic rankings cannot be bought. Google Ads places paid listings marked as Sponsored, but they are separate from organic results and have no effect on where your pages rank.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Why did my Google rankings drop suddenly?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Common causes include a Google core update, technical errors such as accidental noindex tags or blocked pages, lost backlinks, or competitors publishing better content. Check Google Search Console first for indexing problems and manual actions.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Do AI Overviews use the same ranking signals?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                AI Overviews draw on pages in Google's search index, so the same fundamentals apply: your page must be indexed, helpful and clearly written. Google says no special optimisation is required beyond good SEO practice.
+              </div>
+            </div>
+
+          </div>
 
         </article>
 
@@ -367,6 +454,7 @@
               <li><a href="#backlinks">Backlinks &amp; Authority</a></li>
               <li><a href="#technical-ux">Technical Performance</a></li>
               <li><a href="#how-to-rank">How to Rank on Page One</a></li>
+              <li><a href="#faq">FAQs</a></li>
             </ul>
           </div>
 
@@ -474,5 +562,14 @@
 </footer>
 
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    document.querySelectorAll('.faq-item').forEach(el => {
+      if (el !== item) el.classList.remove('open');
+    });
+    item.classList.toggle('open');
+  }
+</script>
 </body>
 </html>

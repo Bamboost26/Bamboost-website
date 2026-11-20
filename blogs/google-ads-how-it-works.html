@@ -94,6 +94,47 @@
   ]
 }
 </script>
+  <!-- FAQ Schema (must match the visible FAQ) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does Google Ads cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You set your own daily budget, and there is no minimum spend. With pay-per-click bidding you pay only when someone clicks your ad. The cost per click depends on your keywords, competition, location and Quality Score."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I pay when people see my ad but don't click?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not with the usual cost-per-click bidding used in Search campaigns. You pay only for clicks. Some campaign types and bid strategies charge for impressions or video views instead, so check your bidding settings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How soon will my ads start showing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google reviews new ads before they run, and most reviews finish within one business day. Once approved, your ads can appear right away, as long as your budget and bids are enough to compete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a good Quality Score?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Quality Score runs from 1 to 10. A score of 7 or higher is generally considered good. Improve it by matching your ads closely to your keywords and sending clicks to a fast, relevant landing page."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body class="post-google-ads-how-it-works">
 
@@ -280,7 +321,7 @@
 
             <p>Google Ads delivers instant results by placing ads at the top of search pages. It is useful for gaining quick visibility and targeting high-intent users.</p>
 
-            <p>On the other hand, SEO focuses on improving a website’s organic ranking over time. While it takes longer to achieve results, it helps build long-term credibility and consistent traffic.</p>
+            <p>On the other hand, <a href="../best-seo-company-in-kerala.html">SEO</a> focuses on improving a website’s organic ranking over time. While it takes longer to achieve results, it helps build long-term credibility and consistent traffic.</p>
 
             <p>Many businesses use both approaches together to create a balanced online presence.</p>
             
@@ -303,6 +344,52 @@
             <p>Google Ads is a powerful advertising platform that enables businesses to connect with users at the exact moment they are searching for relevant information. By combining keyword targeting, auction-based bidding, and quality evaluation, it creates a system that prioritizes relevance and user experience.</p>
 
             <p>Understanding how Google Ads works provides valuable insight into modern online advertising. It highlights the importance of intent-driven marketing and shows how businesses can use data and strategy to improve visibility in a competitive digital landscape.</p>
+          <!-- FAQ -->
+          <h2 id="faq">Frequently Asked Questions</h2>
+
+          <div class="faq-accordion">
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                How much does Google Ads cost?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                You set your own daily budget, and there is no minimum spend. With pay-per-click bidding you pay only when someone clicks your ad. The cost per click depends on your keywords, competition, location and Quality Score.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                Do I pay when people see my ad but don't click?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Not with the usual cost-per-click bidding used in Search campaigns. You pay only for clicks. Some campaign types and bid strategies charge for impressions or video views instead, so check your bidding settings.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                How soon will my ads start showing?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Google reviews new ads before they run, and most reviews finish within one business day. Once approved, your ads can appear right away, as long as your budget and bids are enough to compete.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFaq(this)">
+                What is a good Quality Score?
+                <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+              </button>
+              <div class="faq-answer">
+                Quality Score runs from 1 to 10. A score of 7 or higher is generally considered good. Improve it by matching your ads closely to your keywords and sending clicks to a fast, relevant landing page.
+              </div>
+            </div>
+
+          </div>
 
         </article>
 
@@ -343,6 +430,7 @@
               <li><a href="#seo-vs-ads">Google Ads vs Organic Search</a></li>
               <li><a href="#performance">Key Factors for Better Google Ads Performance</a></li>
               <li><a href="#conclusion">Conclusion</a></li>
+              <li><a href="#faq">FAQs</a></li>
             </ul>
           </div>
 
@@ -450,5 +538,14 @@
 
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/main.js"></script>
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    document.querySelectorAll('.faq-item').forEach(el => {
+      if (el !== item) el.classList.remove('open');
+    });
+    item.classList.toggle('open');
+  }
+</script>
 </body>
 </html>
